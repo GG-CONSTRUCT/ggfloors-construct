@@ -13,3 +13,38 @@
   --beige: #eeece2;
   --topbar-heigth: 40px;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 1px solid gray;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  min-width: var(--min, 320px);
+  max-width: var(--max, 1980px);
+  margin: 0 auto;
+}
+
+header {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
