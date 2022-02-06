@@ -1037,6 +1037,12 @@ footer {
   flex-direction: column;
 }
 
+@media (max-width: 500px) {
+  .widget {
+    bottom: 20px;
+  }
+}
+
 .widget__button,
 .widget__input {
   font-size: 28px;
