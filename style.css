@@ -938,7 +938,20 @@ footer {
 }
 
 .dark .footnav ul a:hover {
-  background-color: #444;
+  color: var(--blue-light);
+  background-color: #1A1A1A;
+}
+
+@media (max-width: 500px) {
+  .dark .footnav ul:not(:last-child) a {
+    color: var(--blue-light);
+  }
+  .dark .footnav ul::before {
+    color: #E1E8ED;
+  }
+  .dark .footnav ul::after {
+    background-color: #E1E8ED;
+  }
 }
 
 .footnav ul a:active {

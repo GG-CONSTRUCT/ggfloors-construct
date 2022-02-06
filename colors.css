@@ -15,8 +15,9 @@
 
 .dark {
   --blue: #0051a3;
-  --beige: #1d1b11;
-  --base: #222;
+  --blue-light: #1DA1F2;
+  --beige: #111;
+  --base: #14171A;
   --base-shadow: #333;
   --base-border: #444;
   --text: #fff;
