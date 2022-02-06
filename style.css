@@ -746,6 +746,13 @@ ul {
   color: #555;
 }
 
+@media (max-width: 500px) {
+  .search__form ul a {
+    font: initial;
+    font-family: sans-serif;
+  }
+}
+
 .dark .search__form ul a {
   color: #ddd;
 }
