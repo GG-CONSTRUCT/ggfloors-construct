@@ -615,7 +615,6 @@ ul {
 }
 
 .search input[type='checkbox'] {
-  -webkit-appearance: none;
   position: absolute;
   z-index: 1;
   top: -56px;
@@ -707,6 +706,7 @@ ul {
   border: 2px solid var(--blue);
   border-radius: 4px;
   outline: none;
+  -webkit-appearance: none;
 }
 
 .search__form input:focus {
