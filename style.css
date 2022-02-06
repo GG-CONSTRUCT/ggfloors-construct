@@ -432,7 +432,7 @@ ul {
   font-size: 14px;
   position: relative;
   white-space: nowrap;
-  color: var(--topnav-link, #0e4ed5);
+  color: var(--text, #222);
 }
 
 .subnav__link:hover:after {
@@ -746,7 +746,7 @@ ul {
 }
 
 .dark .search__form ul a {
-  color: #bbb;
+  color: #ddd;
 }
 
 .search__form ul a:hover {
@@ -947,10 +947,10 @@ footer {
     color: var(--blue-light);
   }
   .dark .footnav ul::before {
-    color: #E1E8ED;
+    color: #AAB8C2;
   }
   .dark .footnav ul::after {
-    background-color: #E1E8ED;
+    background-color: #AAB8C2;
   }
 }
 
@@ -966,7 +966,7 @@ footer {
   position: relative;
   width: 320px;
   border-radius: 12px;
-  background-color: rgba(50, 115, 245, .13);
+  background-color: rgba(50, 115, 245, .12);
 }
 
 .footnav ul:nth-last-child(1) a {
@@ -977,7 +977,7 @@ footer {
   display: flex;
   padding: 20px calc(var(--padding, 16px) * 2);
   border-bottom: 6px solid var(--blue);
-  background-color: rgba(50, 115, 245, .13);
+  background-color: rgba(50, 115, 245, .12);
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -1124,7 +1124,7 @@ footer {
 
 .widget__link:hover {
   color: #222;
-  background-color: rgba(50, 115, 245, .13);
+  background-color: rgba(50, 115, 245, .12);
 }
 
 .dark .widget__link:hover {
