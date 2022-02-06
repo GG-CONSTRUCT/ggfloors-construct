@@ -597,7 +597,7 @@ ul {
 
 .btn-call {
   position: absolute;
-  right: calc(var(--padding, 16px) * 2 + 48px);
+  right: calc(var(--padding, 16px) * 2 + 40px);
   width: 110px;
   height: 48px;
   align-self: center;
@@ -618,7 +618,7 @@ ul {
   position: absolute;
   z-index: 1;
   top: -56px;
-  right: var(--padding, 16px);
+  right: calc(var(--padding) - 8px);
   width: 48px;
   height: 48px;
   cursor: pointer;
@@ -654,7 +654,7 @@ ul {
 
 .btn-search {
   position: absolute;
-  right: var(--padding, 16px);
+  right: calc(var(--padding) - 8px);
   width: 48px;
   height: 48px;
   border: none;
