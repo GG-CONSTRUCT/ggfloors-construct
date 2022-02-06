@@ -1382,6 +1382,24 @@ html[lang='fr'] .hero {
   background-image: url('images/hero/04.jpg');
 }
 
+@media (max-width: 490px) {
+  html[lang='nl'] .hero {
+  background-image: url('images/hero/01-min.jpg');
+}
+
+html[lang='en'] .hero {
+  background-image: url('images/hero/02-min.jpg');
+}
+
+html[lang='de'] .hero {
+  background-image: url('images/hero/03-min.jpg');
+}
+
+html[lang='fr'] .hero {
+  background-image: url('images/hero/04-min.jpg');
+}
+}
+
 ::-webkit-scrollbar {
   width: 4px;
   border-radius: 2px;
