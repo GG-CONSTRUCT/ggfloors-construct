@@ -283,7 +283,8 @@ ul {
 
 .logo__image {
   z-index: 1;
-  width: 48px;
+  width: 42px;
+  margin-top: 4px;
   transition: .5s transform;
   animation: rotate .4s alternate;
 }
@@ -291,7 +292,7 @@ ul {
 .logo::after {
   position: absolute;
   z-index: 0;
-  top: 32px;
+  top: 36px;
   width: 0;
   height: 0;
   content: '';
