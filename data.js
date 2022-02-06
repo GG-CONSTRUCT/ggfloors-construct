@@ -62,10 +62,10 @@ const footnavTitles = {
 }
 
 const legals = {
-  nl: ['Maatschappelijke Zetel', 'Rubriek Oprichting', 'Financiële Gegevens', 'Algemene Voorwaarden', 'Ontworpen door GitHub.com',],
-  en: ['Registered Office', 'Incorporation Section', 'Financial Data', 'Terms and Conditions', 'Designed by GitHub.com',],
-  fr: ['Siège social', 'Section d\'incorporation', 'Données financières', 'Termes et conditions', 'Conçu par GitHub.com',],
-  de: ['Eingetragener Sitz', 'Gründungsabschnitt', 'Finanzdaten', 'Allgemeine Geschäftsbedingungen', 'Entworfen von GitHub.com',],
+  nl: ['Maatschappelijke Zetel', 'Rubriek Oprichting', 'Financiële Gegevens', 'Algemene Voorwaarden', 'Thema veranderen', 'Ontworpen door GitHub.com',],
+  en: ['Registered Office', 'Incorporation Section', 'Financial Data', 'Terms and Conditions', 'Сhange theme', 'Designed by GitHub.com',],
+  fr: ['Siège social', 'Section d\'incorporation', 'Données financières', 'Termes et conditions', 'Change le thème', 'Conçu par GitHub.com',],
+  de: ['Eingetragener Sitz', 'Gründungsabschnitt', 'Finanzdaten', 'Allgemeine Geschäftsbedingungen', 'Thema wechseln', 'Entworfen von GitHub.com',],
 }
 
 const more = {

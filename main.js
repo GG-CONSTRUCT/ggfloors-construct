@@ -303,3 +303,5 @@ email.createLink(mail);
 
 const print = new Link('print', 'javascript:window.print()');
 print.createLink(toPrint);
+
+let isDark = false;
