@@ -296,7 +296,7 @@ ul {
   height: 0;
   content: '';
   transition: .2s box-shadow;
-  box-shadow: 0 0 20px 15px var(--btn-shadow: #aaa);
+  box-shadow: 0 0 20px 15px var(--btn-shadow, #aaa);
 }
 
 .logo__title {
@@ -1132,7 +1132,8 @@ footer {
 }
 
 .chat-to {
-  font: inherit;
+  font: initial;
+  font-family: sans-serif;
   position: fixed;
   z-index: 4000;
   right: 85px;
