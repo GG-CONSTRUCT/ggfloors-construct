@@ -1117,7 +1117,7 @@ footer {
   height: 48px;
   margin: 5px;
   border-radius: 50%;
-  background-color: var(--shadow);
+  background-color: var(--base-shadow);
   justify-content: center;
   align-items: center;
 }
