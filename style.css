@@ -1160,6 +1160,13 @@ footer {
   -webkit-tap-highlight-color: transparent;
 }
 
+@media (max-width: 500px) {
+  .chat-to {
+    bottom: 35px;
+  }
+}
+
+
 .chat-to:after {
   position: absolute;
   z-index: 1;
