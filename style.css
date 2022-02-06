@@ -615,6 +615,7 @@ ul {
 }
 
 .search input[type='checkbox'] {
+  -webkit-appearance: none;
   position: absolute;
   z-index: 1;
   top: -56px;
