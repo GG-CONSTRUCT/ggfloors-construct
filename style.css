@@ -629,7 +629,7 @@ ul {
   position: absolute;
   right: var(--padding, 16px);
   bottom: 10px;
-  left: calc(100% - var(--padding, 16px) - 48px);
+  left: calc(100% - var(--padding, 16px) - 40px);
   width: 0;
   height: 2px;
   margin: auto;
