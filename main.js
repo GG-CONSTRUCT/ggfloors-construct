@@ -6,7 +6,7 @@ const clearNode = (node) => {
 
 const getTextContent = (items, data, lang) => {
   for (let i in items) {
-    items[i].textContent = data[lang][i];
+    items[i].textContent = (lang) ? data[lang][i] : data[i];
   }
 }
 
@@ -33,8 +33,7 @@ const getFootNav = (lang) => {
   const legalLink = getAll('.legal__link');
   const footNavLink = getAll('a', footNavList[0],);
   const footNavActivitiesLink = getAll('a', footNavList[1]);
-
-  getTextContent(footNavLink, navigation, lang);
+  getTextContent(footNavLink, [...navigation[lang].slice(0, -1), ...contact[lang]]);
   getTextContent(footNavActivitiesLink, activities, lang);
   getTextContent(legalLink, legals, lang);
 
