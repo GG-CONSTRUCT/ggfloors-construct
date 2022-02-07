@@ -26,6 +26,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-display: swap;
   position: relative;
   min-width: var(--min, 320px);
   max-width: var(--max, 1980px);
