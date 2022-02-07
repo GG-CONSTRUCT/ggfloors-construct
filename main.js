@@ -134,6 +134,8 @@ class Partner {
     partnerLogo.title = this.name.toUpperCase();
     partnerLogo.draggable = false;
     partnerLogo.src = `images/partners/${this.name}.png`;
+    partnerLogo.width = 96;
+    partnerLogo.height = 48;
     partnerLogo.loading = `lazy`;
     partnerLink.append(partnerLogo);
     partnerItem.append(partnerLink);
