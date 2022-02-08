@@ -572,6 +572,13 @@ ul {
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .dark .btn-default:hover {
+    border-color: rgba(0, 99, 229, 1);
+    outline: 1px solid #000;
+  }
+}
+
 .btn_size_l {
   height: 48px;
   padding: 7px 8px;
@@ -735,11 +742,6 @@ ul {
 .search__form button {
   width: 74px;
   margin-left: 10px;
-}
-
-.dark .btn-default:hover {
-  border-color: rgba(0, 99, 229, 1);
-  outline: 1px solid #000;
 }
 
 .search__form button img {
