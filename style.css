@@ -709,9 +709,18 @@ ul {
   -webkit-appearance: none;
 }
 
+.dark .search__form input:hover {
+  outline: 2px solid #222;
+}
+
 .search__form input:focus {
   color: #777;
   border-color: rgba(0, 99, 229, 1);
+  outline: 1px solid var(--blue);
+}
+
+.dark .search__form input:focus {
+  outline: 2px solid var(--blue-dark);
 }
 
 .search input:focus::placeholder {
@@ -726,6 +735,11 @@ ul {
 .search__form button {
   width: 74px;
   margin-left: 10px;
+}
+
+.dark .btn-default:hover {
+  border-color: rgba(0, 99, 229, 1);
+  outline: 1px solid #000;
 }
 
 .search__form button img {
