@@ -1271,7 +1271,6 @@ footer {
 
 @keyframes chat-to {
   0% {
-    visibility: visible;
     transform: translateX(600px);
     animation-timing-function: ease-in;
     opacity: 0;
@@ -1304,7 +1303,6 @@ footer {
     opacity: 1;
   }
   100% {
-    visibility: hidden;
     transform: translateX(4px);
     opacity: 0;
   }
