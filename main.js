@@ -309,5 +309,5 @@ window.addEventListener('load', () => {
   getSearchList(lang.toLowerCase());
   getSocials(socials);
   getPartners();
-  setTimeout(() => document.querySelector('.chat-chat').style.display = 'none', 5000);
+  setTimeout(() => document.querySelector('.chat-to').style.display = 'none', 5000);
 });
