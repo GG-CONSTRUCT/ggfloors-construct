@@ -922,7 +922,6 @@ footer {
   color: var(--text, #222);
 }
 
-
 .footnav ul:active::after {
   width: 74px;
   height: 8px;
@@ -1272,6 +1271,7 @@ footer {
 
 @keyframes chat-to {
   0% {
+    visibility: visible;
     transform: translateX(600px);
     animation-timing-function: ease-in;
     opacity: 0;
