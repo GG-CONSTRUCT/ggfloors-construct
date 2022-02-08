@@ -807,7 +807,9 @@ ul {
 .email__link,
 .print__link {
   font-size: var(--size, 16px);
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: var(--size, 16px);
   height: var(--size, 16px);
   padding: calc(var(--size, 16px) / 2);
