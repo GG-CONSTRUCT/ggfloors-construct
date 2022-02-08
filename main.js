@@ -135,7 +135,6 @@ class Partner {
     partnerLogo.src = `images/partners/${this.name}.png`;
     partnerLogo.width = 96;
     partnerLogo.height = 48;
-    partnerLogo.loading = `lazy`;
     partnerLink.append(partnerLogo);
     partnerItem.append(partnerLink);
     parent.append(partnerItem);
@@ -260,6 +259,7 @@ class Social {
       socialLink.classList.add('social__link');
       socialLink.classList.add(`icon-${this.name}`);
       socialLink.href = this.url;
+      socialLink.title = this.name;
       socialItem.append(socialLink);
       parent.append(socialItem);
     }
