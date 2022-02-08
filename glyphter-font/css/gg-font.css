@@ -13,7 +13,6 @@
 [class*='icon-']:before{
 	display: inline-block;
    font-family: 'gg font', sans-serif;
-   font-display: swap;
    font-style: normal;
    font-weight: normal;
    line-height: 1;
