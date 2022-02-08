@@ -307,4 +307,5 @@ let isDark = false;
 window.addEventListener('load', () => {
   getPartners();
   getSocials(socials);
+  setTimeout(() => document.querySelector('.chat-to').style.display = 'none', 5000);
 });
