@@ -305,7 +305,9 @@ print.createLink(toPrint);
 let isDark = false;
 
 window.addEventListener('load', () => {
-  getPartners();
+  getMobileMenu(lang.toLowerCase());
+  getSearchList(lang.toLowerCase());
   getSocials(socials);
-  setTimeout(() => document.querySelector('.chat-to').style.display = 'none', 5000);
+  getPartners();
+  setTimeout(() => document.querySelector('.chat-chat').style.display = 'none', 5000);
 });
