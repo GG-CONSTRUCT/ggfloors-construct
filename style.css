@@ -17,7 +17,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /*outline: 1px solid gray;*/
 }
 
 html {
@@ -1482,4 +1481,8 @@ html[lang='fr'] .hero {
 
 ::-webkit-scrollbar-thumb:window-inactive {
   background-color: #002e3b;
+}
+
+.test * {
+  outline: 1px solid #777;
 }
