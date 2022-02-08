@@ -151,8 +151,6 @@ const getPartners = () => {
   }
 }
 
-getPartners()
-
 const html = get('html');
 html.setAttribute('lang', localStorage
 .getItem('current lang') ? localStorage
@@ -189,8 +187,6 @@ getSearchList(lang.toLowerCase());
 const getNav = (lang) => {
   getTopNav(lang.toLowerCase());
   getFootNav(lang.toLowerCase());
-  getMobileMenu(lang.toLowerCase());
-  getSearchList(lang.toLowerCase());
 }
 
 // Sticky
@@ -277,8 +273,6 @@ function getSocials() {
   }
 }
 
-getSocials(socials);
-
 class Link {
   constructor(name, address) {
     this.name = name;
@@ -307,3 +301,10 @@ const print = new Link('print', 'javascript:window.print()');
 print.createLink(toPrint);
 
 let isDark = false;
+
+window.addEventListener('load', () => {
+  getMobileMenu(lang.toLowerCase());
+  getSearchList(lang.toLowerCase());
+  getPartners();
+  getSocials(socials);
+});
