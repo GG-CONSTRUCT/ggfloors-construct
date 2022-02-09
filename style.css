@@ -995,10 +995,6 @@ footer {
   background-color: #1A1A1A;
 }
 
-.dark .footnav ul:not(:last-child) a {
-    color: #AAB8C2;
- }
-
 .dark .footnav ul::before {
   color: var(--blue-light);
 }
