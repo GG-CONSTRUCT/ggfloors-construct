@@ -997,15 +997,14 @@ footer {
 
 .dark .footnav ul:not(:last-child) a {
     color: #AAB8C2;
-  }
+ }
 
-@media (max-width: 500px) {
-  .dark .footnav ul::before {
-    color: var(--blue-light);
-  }
-  .dark .footnav ul::after {
-    background-color: var(--blue-light);
-  }
+.dark .footnav ul::before {
+  color: var(--blue-light);
+}
+
+.dark .footnav ul::after {
+  background-color: var(--blue-light);
 }
 
 .footnav ul a:active {
