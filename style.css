@@ -1400,13 +1400,37 @@ footer {
   max-width: 1980px;
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 2px;
+  background-color: var(--light-blue);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 2px;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, .3);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: var(--blue);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, .5);
+}
+
+.test * {
+  outline: 1px solid #777;
+}
+
 .hero {
-  height: 90vh;
+  height: calc(100vh - var(--topbar-heigth) * var(--ratio));
   transition: .2s background-image;
-  background-color: #ddd;
+  background-image: url(images/background.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 html[lang='nl'] .hero {
@@ -1445,39 +1469,37 @@ html[lang='fr'] .hero {
 
 @media (max-width: 490px) {
   html[lang='nl'] .hero {
-  background-image: url('images/hero/01-min.jpg');
+    background-image: url('images/hero/01-min.jpg');
+  }
+
+  html[lang='en'] .hero {
+    background-image: url('images/hero/02-min.jpg');
+  }
+
+  html[lang='de'] .hero {
+    background-image: url('images/hero/03-min.jpg');
+  }
+
+  html[lang='fr'] .hero {
+    background-image: url('images/hero/04-min.jpg');
+  }
 }
 
-html[lang='en'] .hero {
-  background-image: url('images/hero/02-min.jpg');
+html[lang='nl'] .dark .hero {
+  background-image: url(images/background.svg);
 }
 
-html[lang='de'] .hero {
-  background-image: url('images/hero/03-min.jpg');
-}
-
-html[lang='fr'] .hero {
-  background-image: url('images/hero/04-min.jpg');
-}
-}
-
-::-webkit-scrollbar {
-  width: 4px;
-  border-radius: 2px;
-  background-color: var(--light-blue);
-}
-
-::-webkit-scrollbar-track {
-  border-radius: 2px;
-  box-shadow: inset 0 0 2px rgba(0, 0, 0, .3);
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 2px;
-  background-color: var(--blue);
-  box-shadow: inset 0 0 2px rgba(0, 0, 0, .5);
-}
-
-.test * {
-  outline: 1px solid #777;
+.hero__heading {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 800px;
+  padding: var(--size, 16px);
+  text-align: center;
+  color: var(--text);
+  opacity: 0.92;
+  border-radius: 16px 16px 0 0;
+  border-top: 2px solid var(--base-border);
+  box-shadow: inset 0 0 4px 4px var(--base-shadow, #eee);
+  background: var(--base);
 }
