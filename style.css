@@ -991,7 +991,7 @@ footer {
 }
 
 .dark .footnav ul a:hover {
-  color: var(--blue-light);
+  color: var(--blue-light, #1DA1F2);
   background-color: #1A1A1A;
 }
 
