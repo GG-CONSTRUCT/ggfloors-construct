@@ -165,8 +165,8 @@ for (const option of getAll('.option')) {
       get('html').setAttribute('lang', this.textContent.toLowerCase());
       this.classList.add('selected');
       getNav(this.textContent.toLowerCase());
-      getMobileMenu(lang.toLowerCase());
-      getSearchList(lang.toLowerCase());
+      getMobileMenu(this.textContent.toLowerCase());
+      getSearchList(this.textContent.toLowerCase());
       this.closest('.dropdown').querySelector('.dropdown__title').textContent = this.textContent;
     }
   })
