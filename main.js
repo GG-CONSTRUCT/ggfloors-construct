@@ -5,12 +5,8 @@ const clearNode = (node) => {
 }
 
 const getTextContent = (items, data, lang) => {
-  if (items.length > 1) {
-    for (let i in items) {
-      items[i].textContent = (lang) ? data[lang][i] : data[i];
-    }
-  } else {
-    items.textContent = (lang) ? data[lang] : data;
+  for (let i in items) {
+    items[i].textContent = (lang) ? data[lang][i] : data[i]
   }
 }
 
@@ -30,11 +26,6 @@ const getTopNav = (lang) => {
   getTextContent(topNavLink, navigation, lang);
   getTextContent(activitiesLink, activities, lang);
   getTextContent(contactLink, contact, lang);
-}
-
-const getStartPageContent = (lang) => {
-  const heroSubTitle = get('.hero__subtitle');
-  getTextContent(heroSubTitle, tagline, lang);
 }
 
 const getFootNav = (lang) => {
@@ -191,14 +182,12 @@ for (const option of getAll('.option')) {
 
 if (lang !== 'NL') getTopNav(lang.toLowerCase());
 if (lang !== 'NL') getFootNav(lang.toLowerCase());
-if (lang !== 'NL') getStartPageContent(lang.toLowerCase());
 getMobileMenu(lang.toLowerCase());
 getSearchList(lang.toLowerCase());
 
 const getNav = (lang) => {
   getTopNav(lang.toLowerCase());
   getFootNav(lang.toLowerCase());
-  getStartPageContent(lang.toLowerCase());
 }
 
 // Sticky
