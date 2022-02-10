@@ -1014,6 +1014,7 @@ footer {
 }
 
 .footnav ul:nth-last-child(1) {
+  font-family: 'Raleway', sans-serif;
   position: relative;
   width: 320px;
   border-radius: 12px;
