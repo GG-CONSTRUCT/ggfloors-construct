@@ -750,6 +750,8 @@ ul {
 }
 
 .search__form ul {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
   display: flex;
   margin-top: var(--size, 16px);
   flex-wrap: wrap;
@@ -762,13 +764,6 @@ ul {
 .search__form ul a {
   transition: .2s all;
   color: #555;
-}
-
-@media (max-width: 500px) {
-  .search__form ul a {
-    font: initial;
-    font-family: sans-serif;
-  }
 }
 
 .dark .search__form ul a {
