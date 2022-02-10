@@ -6,7 +6,7 @@ const clearNode = (node) => {
 
 const getTextContent = (items, data, lang) => {
   for (let i in items) {
-    items[i].textContent = (lang) ? data[lang][i] : data[i]
+    items[i].textContent = (lang) ? data[lang][i] : data[i];
   }
 }
 
@@ -182,8 +182,6 @@ for (const option of getAll('.option')) {
 
 if (lang !== 'NL') getTopNav(lang.toLowerCase());
 if (lang !== 'NL') getFootNav(lang.toLowerCase());
-getMobileMenu(lang.toLowerCase());
-getSearchList(lang.toLowerCase());
 
 const getNav = (lang) => {
   getTopNav(lang.toLowerCase());
