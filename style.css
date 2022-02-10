@@ -876,7 +876,6 @@ footer {
   width: 51%;
   display: flex;
   justify-content: space-between;
-  /*flex-wrap: wrap;*/
 }
 
 @media (max-width: 1300px) {
@@ -1010,7 +1009,6 @@ footer {
 }
 
 .footnav ul:nth-last-child(1) {
-  font-family: 'Raleway', sans-serif;
   position: relative;
   width: 320px;
   border-radius: 12px;
