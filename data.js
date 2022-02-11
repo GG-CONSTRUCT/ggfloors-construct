@@ -82,9 +82,17 @@ const widgetTitle = {
   de: 'Kontaktiere uns',
 }
 
+
 const tagline = {
   nl: 'Laten we bouwen met GG',
   en: 'Let\'s build with GG',
   fr: 'Construisons avec GG',
   de: 'Lass uns mit GG bauen',
+}
+
+const followTitle = {
+  nl: 'Blijf in contact met ons',
+  en: 'Stay in touch with us',
+  fr: 'Restez en contact avec nous',
+  de: 'Bleiben Sie mit uns in Kontakt',
 }

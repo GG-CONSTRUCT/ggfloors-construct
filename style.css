@@ -798,7 +798,7 @@ ul {
 }
 
 .social_size_l {
-  --size: 128px;
+  --size: 64px;
 }
 
 .social__list {
@@ -911,7 +911,7 @@ footer {
 
 .footnav ul::after {
   position: absolute;
-  top: 32px;
+  bottom: -8px;
   width: 52px;
   height: 3px;
   content: '';
@@ -1519,6 +1519,79 @@ html[lang='nl'] .dark .hero {
 .block {
   height: 200px;
   margin-top: 32px;
-  background-color: var(--beige);
+  background-color: var(--base);
 }
 
+.follow {
+  padding: var(--padding);
+}
+
+.follow .title {
+  text-align: center;
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: var(--text);
+}
+
+.follow .title::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -8px;
+  width: 52px;
+  height: 4px;
+  content: '';
+  transition: .2s all;
+  background-color: var(--blue);
+}
+
+.follow .social__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 24px auto 48px;
+}
+
+.follow .social__item {
+  border-radius: 50%;
+  position: relative;
+  margin: calc(var(--size, 16px) / 2) calc(var(--size, 16px) / 2);
+  background-color: var(--beige);
+  border: 6px solid rgba(50, 115, 245, .12);
+}
+
+.follow .social__item::after {
+  position: absolute;
+  bottom: -48px;
+  width: calc(var(--size) + var(--size) / 2  + 12px);
+  text-align: center;
+  left: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 21px;
+  font-weight: 300;
+  content: attr(aria-label);
+  color: var(--text);
+  text-transform: capitalize;
+}
+
+.follow .social__link {
+  color: var(--text);
+  padding: calc(var(--size, 16px) / 3);
+  border-radius: 50%;
+}
+
+.follow .social__item:hover {
+  border-color: rgba(0, 99, 229, 1);
+  background-color: rgba(0, 99, 229, 1);
+}
+
+.follow .social__item:hover .social__link {
+  color: #fff;
+}
+
+.follow .social__item:hover::after {
+  color: var(--blue);
+}

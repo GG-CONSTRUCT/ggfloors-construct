@@ -253,6 +253,7 @@ class Social {
     if (parent) {
       const socialItem = document.createElement('li');
       socialItem.classList.add('social__item');
+      socialItem.setAttribute('aria-label', this.name);
       const socialLink = document.createElement('a');
       socialLink.classList.add('social__link');
       socialLink.classList.add(`icon-${this.name}`);
