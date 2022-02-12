@@ -801,6 +801,10 @@ ul {
   --size: 18px;
 }
 
+.social_size_m {
+  --size: 21px;
+}
+
 .social_size_l {
   --size: 64px;
 }
@@ -1419,6 +1423,7 @@ footer {
 .hero {
   height: calc(100vh - var(--topbar-heigth) * var(--ratio));
   transition: .2s background-image;
+  background-color: rgb(80, 120, 205);
   background-image: url(images/background.svg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -1427,6 +1432,10 @@ footer {
   display: flex;
   justify-content: center;
   border-bottom: 2px solid var(--base-border);
+}
+
+.dark .hero {
+  background-color: transparent;
 }
 
 html[lang='nl'] .hero {
@@ -1504,6 +1513,10 @@ html[lang='nl'] .dark .hero {
   color: #444;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.dark .hero__title {
+  color: var(--text);
 }
 
 .hero__subtitle {
@@ -1689,5 +1702,101 @@ html[lang='nl'] .dark .hero {
   }
   .card::after {
     top: 98px;
+  }
+}
+
+.about {
+  margin: 32px auto;
+  padding: var(--padding) var(--padding) var(--padding) 0;
+  display: flex;
+  background: linear-gradient(var(--beige), var(--base));
+}
+
+.about > * {
+  width: 50%;
+  padding-top: 16px;
+}
+
+.about__image {
+  margin-right: 32px;
+  background-color: rgb(80, 120, 205);
+  background-image: url(images/facade-renovation.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.about__content {
+  padding-left: 16px;
+  padding-right: 32px;
+  border-bottom: 2px solid var(--base-border);
+}
+
+.about__content > * {
+  margin-bottom: 16px;
+}
+
+.about__copy {
+  color: var(--text);
+  line-height: 26px;
+  letter-spacing: 0;
+}
+
+.about__activities {
+  list-style-image: url(icons/next.svg);
+  margin-left: 20px;
+}
+
+.dark .about__activities {
+  list-style-image: url(icons/next-dark.svg);
+}
+
+.about__activities li {
+  margin-top: 4px;
+  padding: 2px 4px;
+  transition: .2s transform;
+  vertical-align: baseline;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.about__activities li a {
+  color: var(--blue);
+}
+
+.about__activities li:hover {
+  transform: translateX(8px);
+  border-radius: 2px;
+  background-color: var(--base-shadow);
+  cursor: pointer;
+}
+
+.about .social {
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: rgba(50, 115, 245, .12);
+}
+
+.about .social__link {
+  color: var(--text);
+}
+
+.about .social__link:hover {
+  color: #fff;
+}
+
+@media (max-width: 1000px) {
+  .about {
+    padding: var(--padding);
+    flex-wrap: wrap;
+  }
+  .about > * {
+    width: 100%;
+  }
+  .about__image {
+    height: 400px;
+    margin-right: 0;
   }
 }
