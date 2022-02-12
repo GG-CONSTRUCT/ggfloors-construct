@@ -55,8 +55,12 @@ ul {
   padding: 0 var(--padding, 16px);
   user-select: none;
   color: #fff;
-  background-color: var(--blue);
+  background-color: #0e4ed5;
   align-items: center;
+}
+
+.dark .topbar {
+  background-color: var(--blue);
 }
 
 .dropdown {
