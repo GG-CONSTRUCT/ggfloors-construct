@@ -45,12 +45,12 @@ const getFootNav = (lang) => {
   chatTitle.textContent = widgetTitle[lang];
 }
 
-const createLink = (item) => `${item
+const createLink = (item, format) => `${item
 .toLowerCase()
 .replace(/ /g, '-')
 .replace(/ï/g, 'i')
 .replace('...', '')}
-.html`;
+${format}`;
 
 const getMobileMenu = (lang) => {
   const mobileMenu = get('#mobileMenu ul');
@@ -59,7 +59,7 @@ const getMobileMenu = (lang) => {
     const li = document.createElement('li');
     const a = document.createElement('a');
     a.textContent = navigation[lang][i];
-    a.href = createLink(navigation.nl[i]);
+    a.href = createLink(navigation.nl[i], '.html');
     li.appendChild(a);
     mobileMenu.appendChild(li);
   }
@@ -80,7 +80,7 @@ const getSearchList = (lang) => {
     const li = document.createElement('li');
     const a = document.createElement('a');
     a.textContent = searchItems[i];
-    a.href = createLink(searchLinks[i]);
+    a.href = createLink(searchLinks[i], '.html');
     li.appendChild(a);
     searchList.appendChild(li);
   }
@@ -167,6 +167,7 @@ for (const option of getAll('.option')) {
       getNav(this.textContent.toLowerCase());
       getMobileMenu(this.textContent.toLowerCase());
       getSearchList(this.textContent.toLowerCase());
+      getCards(activities[this.textContent.toLowerCase()], activities.nl);
       this.closest('.dropdown').querySelector('.dropdown__title').textContent = this.textContent;
     }
   })
@@ -310,3 +311,39 @@ window.addEventListener('load', () => {
   getPartners();
   setTimeout(() => document.querySelector('.chat-to').style.display = 'none', 5000);
 });
+
+const cards = get('.cards');
+
+class Card {
+  constructor(name, link) {
+    this.name = name;
+    this.link = link;
+  }
+  createCard(parent) {
+    if (parent) {
+      const card = document.createElement('a');
+      card.classList.add('card');
+      card.setAttribute('title', this.name);
+      card.href = createLink(this.link, '.html');
+      const cardImage = document.createElement('img');
+      cardImage.src = `images/${createLink(this.link, '')}.jpg`;
+      cardImage.alt = this.name;
+      card.append(cardImage);
+      parent.append(card);
+    }
+  }
+}
+
+function getCards() {
+  const items = arguments[0];
+  const links = arguments[1];
+  clearNode(cards);
+  for (let i in items) {
+    if (i < 4) {
+      const card = new Card(items[i], links[i]);
+      card.createCard(cards);
+    }
+  }
+}
+
+getCards(activities[lang.toLowerCase()], activities.nl);
