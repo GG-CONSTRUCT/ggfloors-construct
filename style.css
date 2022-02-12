@@ -1726,8 +1726,8 @@ html[lang='nl'] .dark .hero {
 }
 
 .about__content {
-  padding-left: 16px;
-  padding-right: 32px;
+  padding-left: var(--padding);
+  padding-right: calc(var(--padding) * 2);
   border-bottom: 2px solid var(--base-border);
 }
 
@@ -1739,6 +1739,10 @@ html[lang='nl'] .dark .hero {
   color: var(--text);
   line-height: 26px;
   letter-spacing: 0;
+}
+
+.about__copy span {
+  font-size: 24px;
 }
 
 .about__activities {
@@ -1798,5 +1802,14 @@ html[lang='nl'] .dark .hero {
   .about__image {
     height: 400px;
     margin-right: 0;
+  }
+  .about__content {
+    padding: 0 var(--padding);
+  }
+  .about__copy {
+    margin-top: 16px;
+  }
+  .about__copy span {
+    font-size: 32px;
   }
 }
