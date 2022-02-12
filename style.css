@@ -1529,7 +1529,7 @@ html[lang='nl'] .dark .hero {
   padding: var(--padding);
 }
 
-.follow .title {
+.title {
   text-align: center;
   position: relative;
   font-family: 'Raleway', sans-serif;
@@ -1538,7 +1538,7 @@ html[lang='nl'] .dark .hero {
   color: var(--text);
 }
 
-.follow .title::after {
+.title::after {
   position: absolute;
   left: 0;
   right: 0;
@@ -1600,6 +1600,7 @@ html[lang='nl'] .dark .hero {
 }
 
 .cards {
+  margin: 16px auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -1624,12 +1625,12 @@ html[lang='nl'] .dark .hero {
   background-color: #aaa;
 }
 
-.card:nth-child(3)::before{
+.card:nth-child(2)::before{
   background-color: var(--blue);
   color: #fff;
 }
 
-.card:nth-child(3)::after {
+.card:nth-child(2)::after {
   border-top: 25px solid var(--blue);
 }
 
