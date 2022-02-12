@@ -1669,6 +1669,15 @@ html[lang='nl'] .dark .hero {
   transform: scale(1.05);
 }
 
+@media (min-width: 1024px) and (max-width: 1400px){
+  .cards {
+    flex-wrap: nowrap;
+  }
+  .card:last-child {
+    display: none;
+  }
+}
+
 @media (max-width: 500px) {
   .card {
     height: 300px;
