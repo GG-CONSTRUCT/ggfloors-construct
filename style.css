@@ -12,6 +12,7 @@
   --topbar-heigth: 40px;
 }
 
+
 *,
 *::before,
 *::after {
@@ -1710,9 +1711,10 @@ html[lang='nl'] .dark .hero {
   padding: var(--padding) var(--padding) var(--padding) 0;
   display: flex;
   background: linear-gradient(var(--beige), var(--base));
+  position: relative;
 }
 
-.about > * {
+.about > div {
   width: 50%;
   padding-top: 16px;
 }
@@ -1805,7 +1807,7 @@ html[lang='nl'] .dark .hero {
     padding: var(--padding);
     flex-wrap: wrap;
   }
-  .about > * {
+  .about > div {
     width: 100%;
   }
   .about__image {
@@ -1896,4 +1898,22 @@ html[lang='nl'] .dark .hero {
   .about.flex .about__content * {
     width: 100%;
   }
+}
+
+.toggleView {
+  font-size: 24px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  position: absolute;
+  right: 16px;
+  top: -28px;
+  color: var(--text);
+  opacity: 0.4;
+  cursor: pointer;
+  transition: 0.2 opacity;
+}
+
+.toggleView:hover {
+  opacity: 0.8;
 }
