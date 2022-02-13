@@ -339,7 +339,7 @@ function getCards() {
   const links = arguments[1];
   clearNode(cards);
   for (let i in items) {
-    if (i < 4) {
+    if (i % 2 == 0 && i < 8) {
       const card = new Card(items[i], links[i]);
       card.createCard(cards);
     }

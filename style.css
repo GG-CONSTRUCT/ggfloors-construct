@@ -1683,7 +1683,7 @@ html[lang='nl'] .dark .hero {
   transform: scale(1.05);
 }
 
-@media (min-width: 1024px) and (max-width: 1400px){
+@media (min-width: 1024px) and (max-width: 1430px){
   .cards {
     flex-wrap: nowrap;
   }
@@ -1739,6 +1739,15 @@ html[lang='nl'] .dark .hero {
   color: var(--text);
   line-height: 26px;
   letter-spacing: 0;
+}
+
+.about__copy a {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+.about__copy a:hover {
+  color: var(--blue);
 }
 
 .about__copy span {
@@ -1811,5 +1820,83 @@ html[lang='nl'] .dark .hero {
   }
   .about__copy span {
     font-size: 32px;
+  }
+}
+
+.about.flex .about__image,
+.about.flex .social,
+.about.flex .social__copy {
+  display: none;
+}
+
+.about.flex {
+  padding: 0;
+}
+
+.about.flex .about__content {
+  width: 100%;
+  display: flex;
+  padding: 0;
+}
+
+.about.flex .about__copy {
+  flex: 2;
+}
+
+.about.flex .about__activities {
+  flex: 1;
+}
+
+.about.flex .about__copy:first-child {
+  display: table;
+  margin: auto;
+  padding: 16px 64px;
+}
+
+.about.flex .about__activities {
+  margin: 0;
+  background-color: rgba(50, 115, 245, .12);
+}
+
+.about.flex .about__activities li {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.about.flex .about__activities li:nth-child(odd) {
+  display: none;
+}
+
+.about.flex .about__activities li::before {
+  content: url(icons/next-m.svg);
+  padding: 0 16px 0 8px;
+}
+
+.dark .about.flex .about__activities li::before {
+  content: url(icons/next-dark-m.svg);
+}
+
+.about__activities li:hover {
+  transform: translateX(0);
+}
+
+@media (max-width: 1000px) {
+  .about.flex .about__content {
+    padding: var(--padding);
+    flex-wrap: wrap;
+  }
+  .about.flex .about__copy:first-child {
+    flex: none;
+    padding: var(--size);
+  }
+  .about.flex .about__activities {
+    flex: none;
+  }
+  .about.flex .about__content * {
+    width: 100%;
   }
 }
