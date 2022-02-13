@@ -1946,6 +1946,9 @@ html[lang='nl'] .dark .hero {
   padding-left: var(--padding);
   padding-right: calc(var(--padding) * 2);
   border-bottom: 2px solid var(--base-border);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .floor h2 {
@@ -1983,7 +1986,7 @@ html[lang='nl'] .dark .hero {
     width: 100%;
   }
   .floor__image {
-    height: 400px;
+    min-height: 320px;
     margin-left: 0;
   }
   .floor__content {
