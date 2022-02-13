@@ -1818,9 +1818,6 @@ html[lang='nl'] .dark .hero {
   .about__copy {
     margin-top: 16px;
   }
-  .about__copy span {
-    font-size: 32px;
-  }
 }
 
 .about.flex .about__image,
@@ -1850,7 +1847,7 @@ html[lang='nl'] .dark .hero {
 .about.flex .about__copy:first-child {
   display: table;
   margin: auto;
-  padding: 16px 64px;
+  padding: 16px 32px 16px 16px;
 }
 
 .about.flex .about__activities {
@@ -1891,7 +1888,7 @@ html[lang='nl'] .dark .hero {
   }
   .about.flex .about__copy:first-child {
     flex: none;
-    padding: var(--size);
+    padding: var(--padding);
   }
   .about.flex .about__activities {
     flex: none;
