@@ -1142,7 +1142,7 @@ footer {
 }
 
 .widget__input:checked~.widget__button::before {
-  content: '\004b';
+  content: '\004f';
 }
 
 .widget__input:checked~.widget__body {
@@ -1422,7 +1422,8 @@ footer {
 }
 
 .hero {
-  height: calc(100vh - var(--topbar-heigth) * var(--ratio));
+  height: calc(70vh - var(--topbar-heigth) * var(--ratio));
+  min-height: 600px;
   transition: .2s background-image;
   background-color: rgb(80, 120, 205);
   background-image: url(images/background.svg);
@@ -1739,7 +1740,7 @@ html[lang='nl'] .dark .hero {
 
 .about__copy {
   color: var(--text);
-  line-height: 26px;
+  line-height: 24px;
   letter-spacing: 0;
 }
 
@@ -1753,7 +1754,7 @@ html[lang='nl'] .dark .hero {
 }
 
 .about__copy span {
-  font-size: 24px;
+  font-size: 21px;
 }
 
 .about__activities {
@@ -1775,6 +1776,10 @@ html[lang='nl'] .dark .hero {
 
 .about__activities li a {
   color: var(--blue);
+}
+
+.dark .about__activities li a {
+  color: var(--blue-light);
 }
 
 .about__activities li:hover {
@@ -2054,4 +2059,28 @@ html[lang='nl'] .dark .hero {
   color: var(--text);
   content: attr(title);
   bottom: 4px;
+}
+
+.location {
+  color: #eee;
+  font-size: 18px;
+  padding: 4px 8px;
+  background-color: #0009;
+  border-radius: 4px;
+  margin-left: 8px;
+  opacity: 0.4;
+  transition: 0.2s all;
+  position: sticky;
+  top: 78px;
+}
+
+.location:hover {
+  opacity: 1;
+}
+
+.location:hover::after {
+  margin-left: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  content: 'Tiensesteenweg 59, 3010 Leuven, Belgia';
 }
