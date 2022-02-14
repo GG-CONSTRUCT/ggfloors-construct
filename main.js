@@ -194,6 +194,7 @@ const navbar = get('.navbar');
 const sticky = navbar.offsetTop;
 const mobileMenu = get('#mobileMenu');
 const search = get('.search');
+const heroSubtitle = get('.hero__subtitle');
 
 const getSticky = () => {
   if (window.pageYOffset >= sticky) {
@@ -213,6 +214,11 @@ const getSticky = () => {
     for (const dropdown of document.querySelectorAll('.dropdown')) {
       dropdown.classList.remove('opened');
     }
+  }
+  if (window.pageYOffset > 300) {
+    heroSubtitle.style.transform = 'translateY(12px) scale(1.1)';
+  } else {
+    heroSubtitle.style.transform = 'translateY(0) scale(1)';
   }
 }
 
