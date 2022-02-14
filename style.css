@@ -1736,7 +1736,7 @@ html[lang='nl'] .dark .hero {
   background-image: url(images/facade-renovation.jpg);
   background-size: cover;
   background-position: center center;
-  padding-top: 16px;
+  padding: 16px 8px;
 }
 
 .about__content {
@@ -2059,6 +2059,10 @@ html[lang='nl'] .dark .hero {
   background-color: #bbb;
 }
 
+.dark .floor-activities figure {
+  background-color: #333;
+}
+
 .floor-activities__link {
   width: 100%;
   height: 100%;
@@ -2095,9 +2099,144 @@ html[lang='nl'] .dark .hero {
   opacity: 1;
 }
 
+.location::after {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  line-height: 36px;
+  font-weight: 300;
+  content: '';
+}
+
 .location:hover::after {
   margin-left: 16px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
+  font-style: normal;
   content: 'Tiensesteenweg 59, 3010 Leuven, Belgia';
+}
+
+.parallax {
+  display: flex;
+  width: 100%;
+  min-height: 360px;
+  background-image: url(images/test.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+
+.parallax-content {
+  font-size: 14px;
+  width: 60%;
+  margin: 20px;
+  padding: 20px;
+  color: #fff;
+  border-radius: 8px;
+  background: #222d;
+}
+
+@media (max-width: 500px) {
+  .parallax-content {
+    width: 96%;
+  }
+}
+
+.parallax-content h2 {
+  font-size: 28px;
+  font-weight: 300;
+  color: #fff;
+  text-align: left;
+}
+
+.parallax-content h2::after {
+  margin: 0;
+}
+
+.parallax-content p {
+  margin-top: 16px;
+}
+
+.parallax-content .button {
+  display: inline-flex;
+  min-width: 270px;
+  min-height: 30px;
+  margin: 20px 0 10px;
+  color: #fff;
+  line-height: 24px;
+  border-radius: 8px;
+  background: var(--blue);
+  align-items: center;
+  transition: 0.2s;
+}
+
+.parallax-content .button:hover {
+  padding-left: 40px;
+}
+
+.button.button-reveal,
+.icon-reveal {
+  position: relative;
+  overflow: hidden;
+  padding: 0 28px;
+}
+
+.button.button-reveal i,
+.icon-reveal i {
+  line-height: 32px;
+  position: absolute;
+  top: 0;
+  left: -32px;
+  display: flex;
+  width: 32px;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  border-radius: 6px 0 0 6px;
+  background-color: rgba(0, 0, 0, .1);
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s all;
+}
+
+.button.button-reveal a,
+.icon-reveal span {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  color: #fff;
+}
+
+.icon-reveal {
+  height: 50px;
+  margin-top: 5px;
+  cursor: default;
+  background: #ccc;
+}
+
+.icon-reveal span {
+  font-size: 36px;
+}
+
+.icon-reveal img {
+  min-width: 24px;
+}
+
+.arrow-right {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+
+.arrow-right {
+  transform: rotate(135deg);
+}
+
+.button-reveal:hover i {
+  left: 0;
 }
