@@ -1961,6 +1961,9 @@ html[lang='nl'] .dark .hero {
 .floor .section__content {
   padding-left: var(--padding);
   padding-right: calc(var(--padding) * 2);
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
 }
 
 .floor .section__content {
@@ -1996,6 +1999,7 @@ html[lang='nl'] .dark .hero {
   margin: 0 auto;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
   margin-bottom: 64px;
 }
 
@@ -2003,7 +2007,7 @@ html[lang='nl'] .dark .hero {
   display: flex;
   flex-direction: column;
   width: 160px;
-  height: 112px;
+  min-height: 112px;
   margin: 64px 64px 0;
   border: 2px solid transparent;
   border-radius: 12px;
@@ -2046,12 +2050,12 @@ html[lang='nl'] .dark .hero {
 
 .floor-activities__link::after {
   font-family: 'Raleway', sans-serif;
-  position: absolute;
   font-size: 18px;
   font-weight: 500;
+  text-align: center;
   color: var(--text);
   content: attr(title);
-  bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .location {
@@ -2146,6 +2150,7 @@ html[lang='nl'] .dark .hero {
 
 .parallax-content .button:hover {
   padding-left: 40px;
+  background-color: #0063e5;
 }
 
 .button.button-reveal,
@@ -2186,7 +2191,7 @@ html[lang='nl'] .dark .hero {
   height: 50px;
   margin-top: 5px;
   cursor: default;
-  background: #ccc;
+  background-color: #ccc;
 }
 
 .icon-reveal span {
@@ -2211,4 +2216,131 @@ html[lang='nl'] .dark .hero {
 
 .button-reveal:hover i {
   left: 0;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  min-width: 300px;
+  max-width: 400px;
+  height: 274px;
+  margin: 20px;
+  transition: .4s transform, .6s background;
+  border: 2px solid var(--base-shadow);
+  border-radius: 6px;
+  align-items: center;
+}
+
+.box:hover {
+  transform: scale(1.02);
+  background-color: var(--beige);
+}
+
+.box-heading {
+  display: flex;
+  height: 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.box-content {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-content ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-content li {
+  display: flex;
+  width: 90%;
+  height: 32%;
+  border-bottom: 1px dotted #bbb;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+}
+
+.box-content i {
+  margin-right: 16px;
+}
+
+.box:nth-child(2) li {
+  font-size: 15px;
+  justify-content: flex-start;
+}
+
+.dark .box-content .bank-logo {
+  filter: invert(100%);
+}
+
+.box-footer {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-footer button,
+.box-footer a {
+  font-size: 14px;
+  display: flex;
+  overflow: hidden;
+  width: 90%;
+  height: 60%;
+  color: #fff;
+  border-radius: 8px;
+  background-color: var(--blue);
+  justify-content: center;
+  align-items: center;
+}
+
+.box-footer img {
+  transition: 1s ease-in-out;
+}
+
+.box-footer span {
+  position: absolute;
+  transition: .2s ease-in .3s;
+  opacity: 0;
+}
+
+.box-footer a:hover img {
+  transform: translateX(240px);
+  opacity: 0;
+}
+
+.box-footer a:hover span {
+  opacity: 1;
+}
+
+.box-footer button:hover,
+.box-footer a:hover {
+  background-color: #0063e5;
 }
