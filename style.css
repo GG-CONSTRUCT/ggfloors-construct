@@ -2242,7 +2242,7 @@ html[lang='nl'] .dark .hero {
 }
 
 .box:hover {
-  transform: scale(1.02);
+  border-color: var(--base-border);
   background-color: var(--beige);
 }
 
