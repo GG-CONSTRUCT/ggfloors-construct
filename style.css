@@ -1777,7 +1777,7 @@ html[lang='nl'] .dark .hero {
 .list {
   list-style-image: url(icons/next.svg);
   margin-left: 20px;
-  max-width: 98%;
+  padding-right: 0;
 }
 
 .dark .list {
@@ -1790,6 +1790,7 @@ html[lang='nl'] .dark .hero {
   transition: .2s transform;
   vertical-align: baseline;
   -webkit-tap-highlight-color: transparent;
+  max-width: 100%;
 }
 
 .list li a {
@@ -1946,10 +1947,6 @@ html[lang='nl'] .dark .hero {
 
 .floor > div {
   padding-top: 16px;
-}
-
-.floor ul {
-  width: 100%;
 }
 
 .floor .section__image {
