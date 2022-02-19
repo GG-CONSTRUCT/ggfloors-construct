@@ -1940,13 +1940,9 @@ html[lang='nl'] .dark .hero {
 }
 
 .floor {
-  padding: var(--padding) 0 var(--padding) var(--padding);
+  padding: 0 0 var(--padding) var(--padding);
   flex-direction: row-reverse;
   flex-wrap: wrap;
-}
-
-.floor > div {
-  padding-top: 16px;
 }
 
 .floor .uk-slideshow-items {
@@ -1959,15 +1955,10 @@ html[lang='nl'] .dark .hero {
 }
 
 .floor .section__content {
-  padding-left: var(--padding);
-  padding-right: calc(var(--padding) * 2);
+  margin-right: calc(var(--margin) * 2);
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.floor .section__content {
-  padding-left: 0;
 }
 
 .floor .title {
