@@ -1461,22 +1461,22 @@ html[lang='fr'] .hero {
 }
 
 @supports (background-image: -webkit-image-set(url('images/hero/01.webp') 1x)) {
-    html[lang='nl'] .hero {
-      background-image: url('images/hero/01.webp');
-    }
-
-    html[lang='en'] .hero {
-      background-image: url('images/hero/02.webp');
-    }
-
-    html[lang='de'] .hero {
-      background-image: url('images/hero/03.webp');
-    }
-
-    html[lang='fr'] .hero {
-      background-image: url('images/hero/04.webp');
-    }
+  html[lang='nl'] .hero {
+    background-image: url('images/hero/01.webp');
   }
+
+  html[lang='en'] .hero {
+    background-image: url('images/hero/02.webp');
+  }
+
+  html[lang='de'] .hero {
+    background-image: url('images/hero/03.webp');
+  }
+
+  html[lang='fr'] .hero {
+    background-image: url('images/hero/04.webp');
+  }
+}
 
 @media (max-width: 490px) {
   html[lang='nl'] .hero {
@@ -1534,6 +1534,8 @@ html[lang='nl'] .dark .hero {
   font-size: 32px;
   text-transform: uppercase;
   transition: 0.3s all;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 @media (max-width: 500px) {
@@ -1775,7 +1777,7 @@ html[lang='nl'] .dark .hero {
 .list {
   list-style-image: url(icons/next.svg);
   margin-left: 20px;
-  max-width: 95%;
+  max-width: 98%;
 }
 
 .dark .list {

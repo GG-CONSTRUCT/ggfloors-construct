@@ -216,11 +216,9 @@ const getSticky = () => {
     }
   }
   if (window.pageYOffset > 300) {
-    heroSubtitle.style.transform = 'translateY(12px)';
-    heroSubtitle.style.fontSize = '28px';
+    heroSubtitle.style.transform = 'translateY(12px) scale(1.1)';
   } else {
-    heroSubtitle.style.transform = 'translateY(0)';
-    heroSubtitle.style.fontSize = '24px';
+    heroSubtitle.style.transform = 'translateY(0) scale(1)';
   }
 }
 
