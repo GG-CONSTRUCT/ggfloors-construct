@@ -1755,7 +1755,7 @@ html[lang='nl'] .dark .hero {
 .section__paragraph {
   color: var(--text);
   line-height: 24px;
-  letter-spacing: 0;
+  letter-spacing: 0.04em;
 }
 
 .section__paragraph a {
@@ -1955,6 +1955,7 @@ html[lang='nl'] .dark .hero {
 }
 
 .floor .section__content {
+  padding-top: var(--padding);
   margin-right: calc(var(--margin) * 2);
   display: flex;
   flex-direction: column;
