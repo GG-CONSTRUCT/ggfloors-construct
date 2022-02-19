@@ -6,6 +6,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="format-detection" content="telephone=no">
   <title>GG FLOORS & CONSTRUCT</title>
+  <link rel="stylesheet" href="css/uikit.css">
+  <script src="js/uikit.min.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="glyphter-font/css/gg-font.css">
 </head>
@@ -150,7 +152,9 @@
   <div class="about section">
     <button class="toggleView icon-align-right" onclick="document.querySelector('.about').classList.toggle('no-image')"></button>
     <div class="section__image">
-      <i class="location icon-location-pin"></i>
+      <a href="javascript:void(0)">
+        <i class="location icon-location-pin"></i>
+      </a>
     </div>
     <div class="section__content">
       <p class="section__paragraph"><b><span>GG</span> Floors & Construct</b> bouwt aan een duurzame partnerschip.<br>
@@ -209,7 +213,21 @@ Ons grootste kapitaal, zijn onze vakmannen, hun veiligheid en welzijn is voor GG
     </div>
   </div>
   <div class="floor section">
-    <div class="section__image"></div>
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="autoplay: true; animation: pull">
+      <ul class="uk-slideshow-items">
+        <li>
+          <img src="images/floor.jpg" alt="" uk-cover>
+        </li>
+        <li>
+          <img src="images/floor2.jpg" alt="" uk-cover>
+        </li>
+        <li>
+          <img src="images/floor3.jpg" alt="" uk-cover>
+        </li>
+      </ul>
+      <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+      <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    </div>
     <div class="section__content">
       <h2 class="title">Vloerder</h2>
       <p class="section__paragraph">

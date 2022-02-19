@@ -1949,12 +1949,13 @@ html[lang='nl'] .dark .hero {
   padding-top: 16px;
 }
 
-.floor .section__image {
-  min-height: 400px;
-  margin-right: 0;
-  margin-left: 32px;
-  background-color: #222;
-  background-image: url(images/floor.jpg);
+.floor .uk-slideshow-items {
+  height: 100%;
+}
+
+.floor .uk-slideshow-items img {
+  object-fit: cover;
+  object-position: center;
 }
 
 .floor .section__content {
