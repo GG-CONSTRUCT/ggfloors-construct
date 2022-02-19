@@ -2241,6 +2241,10 @@ html[lang='nl'] .dark .hero {
   align-items: center;
 }
 
+.dark .box{
+  background-color: rgb(30, 33, 39);
+}
+
 .box:hover {
   border-color: var(--base-border);
   background-color: var(--beige);
