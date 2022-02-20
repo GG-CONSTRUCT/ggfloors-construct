@@ -390,4 +390,4 @@ function getCards() {
 }
 
 getCards(activities[lang.toLowerCase()], activities.nl);
-translateStartPage(lang.toLowerCase());
+if (lang !== 'NL') translateStartPage(lang.toLowerCase());
