@@ -1437,3 +1437,23 @@ footer {
 .test * {
   border: 1px solid #777;
 }
+
+#themeToggle {
+  padding: 2px 4px;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #555;
+}
+
+#themeToggle:hover {
+  opacity: 0.9;
+}
+
+.dark #themeToggle  {
+  color: #222;
+  background-color: #ddd;
+}
+
+#themeToggle:hover {
+  text-decoration: none;
+}

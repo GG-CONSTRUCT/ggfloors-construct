@@ -391,3 +391,9 @@ function getCards() {
 
 getCards(activities[lang.toLowerCase()], activities.nl);
 if (lang !== 'NL') translateStartPage(lang.toLowerCase());
+
+let now = new Date().getHours();
+
+if (now > 7 && now < 20) {
+  document.body.classList.remove('dark');
+} 
