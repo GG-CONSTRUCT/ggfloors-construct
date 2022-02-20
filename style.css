@@ -378,6 +378,10 @@ img {
   background-color: var(--blue, #0e4ed5);
 }
 
+.subnav__link::after {
+  bottom: -4px;
+}
+
 .topnav__link:hover::after {
   width: 100%;
 }
@@ -436,13 +440,14 @@ img {
 }
 
 .subnav__item {
-  padding: calc(var(--size, 16px) / 3) calc(var(--size, 16px) / 2);
+  padding: calc(var(--size, 16px) / 8) calc(var(--size, 16px) / 4);
 }
 
 .subnav__link {
   font-size: 14px;
   position: relative;
   white-space: nowrap;
+  letter-spacing: 0;
   color: var(--text, #222);
 }
 
@@ -1074,18 +1079,21 @@ footer {
   flex-wrap: wrap;
 }
 
-.legal__item {
+.legal__item,
+.legal__list li {
   margin: 4px 16px 4px 0;
 }
 
-.legal__link {
+.legal__link,
+.legal__list a  {
   font: inherit;
   font-size: 12px;
   cursor: pointer;
   color: var(--text, #444);
 }
 
-.legal__link:hover {
+.legal__link:hover,
+.legal__list a:hover {
   text-decoration: underline;
 }
 

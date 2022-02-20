@@ -1,12 +1,48 @@
 const companyName = 'GG Floors & Construct';
 
+const translateStartPage = (lang) => {
+  get('.hero__subtitle').textContent = tagline[lang];
+  get('.section__paragraph').innerHTML = aboutCompany[lang];
+  get('.social__paragraph').textContent = socialMediaInvite[lang];
+  getTextContentIn(getAll('.about .list__link'), activities, lang);
+  get('.about .list__link').textContent += ` (${floor[lang].slice(0, 7).join(', ').toLowerCase()}, ... )`;
+  getTitleAttr(getAll('.floor-activities__link'), floor[lang].slice(0, 7));
+  get('.about .list')
+  .lastElementChild.querySelector('a')
+  .textContent = `${more[lang]} ...`;
+  get('.services .title').textContent = servicesTitle[lang];
+  get('.floor .title').textContent = activities[lang][0];
+  get('.floor .section__paragraph').innerHTML = aboutFlooring[lang];
+  get('.floor .list')
+  .firstElementChild.querySelector('a')
+  .textContent = `${more[lang]}`;
+  get('.parallax .title').textContent = flooringOfferTitle[lang].toUpperCase();
+  get('.parallax p').textContent = flooringOfferText[lang];
+  get('.button-reveal span').textContent = flooringOfferBtn[lang].toUpperCase();
+  get('.follow .title').textContent = followTitle[lang];
+  getTextContentIn(getAll('.box-title'), boxTitles, lang);
+  getTextContentOf(getAll('.box-footer span'), boxBtn, lang);
+}
+
 const clearNode = (node) => {
   while (node.firstChild) node.removeChild(node.firstChild);
 }
 
-const getTextContent = (items, data, lang) => {
+const getTextContentIn = (items, data, lang) => {
   for (let i in items) {
     items[i].textContent = (lang) ? data[lang][i] : data[i];
+  }
+}
+
+const getTextContentOf = (items, data, lang) => {
+  for (let item of items) {
+    item.textContent = (lang) ? data[lang] : data;
+  }
+}
+
+const getTitleAttr = (items, data, lang) => {
+  for (let i in items) {
+    items[i].title = (lang) ? data[lang][i] : data[i];
   }
 }
 
@@ -23,9 +59,9 @@ const getTopNav = (lang) => {
   logo.title = `${companyName.toUpperCase()} | ${homePage[lang]}`;
   partnersTitle.textContent = partnersTitleContent[lang];
   topbarLink.textContent = contactLinkContent[lang];
-  getTextContent(topNavLink, navigation, lang);
-  getTextContent(activitiesLink, activities, lang);
-  getTextContent(contactLink, contact, lang);
+  getTextContentIn(topNavLink, navigation, lang);
+  getTextContentIn(activitiesLink, activities, lang);
+  getTextContentIn(contactLink, contact, lang);
 }
 
 const getFootNav = (lang) => {
@@ -33,9 +69,9 @@ const getFootNav = (lang) => {
   const legalLink = getAll('.legal__link');
   const footNavLink = getAll('a', footNavList[0],);
   const footNavActivitiesLink = getAll('a', footNavList[1]);
-  getTextContent(footNavLink, [...navigation[lang].slice(0, -1), ...contact[lang]]);
-  getTextContent(footNavActivitiesLink, activities, lang);
-  getTextContent(legalLink, legals, lang);
+  getTextContentIn(footNavLink, [...navigation[lang].slice(0, -1), ...contact[lang]]);
+  getTextContentIn(footNavActivitiesLink, activities, lang);
+  getTextContentIn(legalLink, legals, lang);
 
   for (let i = 0; i < footNavList.length; i++) {
     footNavList[footNavList.length - 1].lastElementChild.querySelector('a').textContent = more[lang];
@@ -167,6 +203,7 @@ for (const option of getAll('.option')) {
       getNav(this.textContent.toLowerCase());
       getMobileMenu(this.textContent.toLowerCase());
       getSearchList(this.textContent.toLowerCase());
+      translateStartPage(this.textContent.toLowerCase());
       getCards(activities[this.textContent.toLowerCase()], activities.nl);
       this.closest('.dropdown').querySelector('.dropdown__title').textContent = this.textContent;
     }
@@ -353,3 +390,4 @@ function getCards() {
 }
 
 getCards(activities[lang.toLowerCase()], activities.nl);
+translateStartPage(lang.toLowerCase());

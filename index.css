@@ -321,7 +321,7 @@ html[lang='nl'] .dark .hero {
 
 .section__paragraph {
   line-height: 24px;
-  letter-spacing: .04em;
+  letter-spacing: .02em;
   color: var(--text, #222);
 }
 
@@ -362,6 +362,7 @@ html[lang='nl'] .dark .hero {
 
 .list li a {
   color: var(--blue, #0e4ed5);
+  text-transform: capitalize;
 }
 
 .dark .list li a {
