@@ -186,6 +186,10 @@ html[lang='nl'] .dark .hero {
   color: var(--blue, #0e4ed5);
 }
 
+.services .title {
+  display: none;
+}
+
 .cards {
   display: flex;
   margin: 16px auto;
