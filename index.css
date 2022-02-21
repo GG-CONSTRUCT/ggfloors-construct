@@ -554,7 +554,7 @@ html[lang='nl'] .dark .hero {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  margin-bottom: 64px;
+  margin-bottom: 32px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
@@ -571,6 +571,12 @@ html[lang='nl'] .dark .hero {
   border-radius: 12px;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width:  500px) {
+  .flooring-activities__item {
+    margin: 48px 64px 0;
+  }
 }
 
 .flooring-activities__item:hover {
