@@ -2,18 +2,18 @@ const companyName = 'GG Floors & Construct';
 
 const translateStartPage = (lang) => {
   get('.hero__subtitle').textContent = tagline[lang];
-  get('.section__paragraph').innerHTML = aboutCompany[lang];
-  get('.social__paragraph').textContent = socialMediaInvite[lang];
+  getAll('.paragraph')[0].innerHTML = aboutCompany[lang];
+  getAll('.paragraph')[1].textContent = socialMediaInvite[lang];
   getTextContentIn(getAll('.about .list__link'), activities, lang);
-  get('.about .list__link').textContent += ` (${floor[lang].slice(0, 7).join(', ').toLowerCase()}, ... )`;
-  getTitleAttr(getAll('.floor-activities__link'), floor[lang].slice(0, 7));
-  get('.about .list')
+  get('.about-gg .list__link').textContent += ` (${floor[lang].slice(0, 7).join(', ').toLowerCase()}, ... )`;
+  getTitleAttr(getAll('.flooring-activities__link'), floor[lang].slice(0, 7));
+  get('.about-gg .list')
   .lastElementChild.querySelector('a')
   .textContent = `${more[lang]} ...`;
   get('.services .title').textContent = servicesTitle[lang];
-  get('.floor .title').textContent = activities[lang][0];
-  get('.floor .section__paragraph').innerHTML = aboutFlooring[lang];
-  get('.floor .list')
+  get('.about-flooring .title').textContent = activities[lang][0];
+  get('.about-flooring .paragraph').innerHTML = aboutFlooring[lang];
+  get('.about-flooring .list')
   .firstElementChild.querySelector('a')
   .textContent = `${more[lang]}`;
   get('.parallax .title').textContent = flooringOfferTitle[lang].toUpperCase();

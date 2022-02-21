@@ -112,12 +112,6 @@ html[lang='nl'] .dark .hero {
   }
 }
 
-.block {
-  height: 200px;
-  margin-top: calc(var(--margin, 16px) * 2);
-  background-color: var(--base, #fff);
-}
-
 .follow {
   padding: var(--padding, 16px);
 }
@@ -285,7 +279,7 @@ html[lang='nl'] .dark .hero {
   }
 }
 
-.section {
+.article {
   position: relative;
   display: flex;
   margin: 32px auto;
@@ -293,51 +287,52 @@ html[lang='nl'] .dark .hero {
   background: linear-gradient(var(--beige, #eeece2), var(--base, #fff));
 }
 
-.section>div {
+.article > aside,
+.article > section {
   width: 48%;
 }
 
-.section__image {
+.article__image {
   margin-right: 32px;
   padding: 16px 8px;
   background-position: center center;
   background-size: cover;
 }
 
-.about .section__image {
+.about-gg__image {
   background-color: #5078cd;
   background-image: url(images/facade-renovation.jpg);
 }
 
-.section__content {
+.section {
   padding-right: calc(var(--padding, 16px) * 2);
   padding-left: var(--padding, 16px);
   border-bottom: 2px solid var(--base-border, #ddd);
 }
 
-.section__content>* {
+.section > * {
   margin-bottom: 16px;
 }
 
-.section__paragraph {
+.paragraph {
   line-height: 24px;
   letter-spacing: .02em;
   color: var(--text, #222);
 }
 
-.section__paragraph a {
+.paragraph a {
   color: var(--blue, #0e4ed5);
 }
 
-.dark .section__paragraph a {
+.dark .paragraph a {
   color: var(--blue-light);
 }
 
-.section__paragraph a:hover {
+.paragraph a:hover {
   text-decoration: underline;
 }
 
-.section__paragraph span {
+.paragraph span {
   font-size: 21px;
 }
 
@@ -395,28 +390,29 @@ html[lang='nl'] .dark .hero {
 }
 
 @media (max-width: 1000px) {
-  .section {
+  .article {
     padding: var(--padding, 16px);
     flex-wrap: wrap;
   }
-  .section>div {
+  .article > aside,
+  .article > section {
     width: 100%;
   }
-  .section__image {
+  .article__image {
     height: 400px;
     margin-right: 0;
   }
-  .section__content {
+  .section {
     padding: 0 var(--padding, 16px);
   }
-  .section__paragraph {
+  .paragraph {
     margin-top: 16px;
   }
 }
 
-.no-image .section__image,
-.no-image .social,
-.no-image .social__paragraph {
+.no-image .article__image,
+.no-image .paragraph:not(:first-child),
+.no-image .social {
   display: none;
 }
 
@@ -424,29 +420,29 @@ html[lang='nl'] .dark .hero {
   padding: 0;
 }
 
-.no-image .section__content {
+.no-image .section {
   display: flex;
   width: 100%;
   padding: 0;
 }
 
-.no-image .section__paragraph {
+.no-image .paragraph {
   flex: 2;
 }
 
-.no-image .section__paragraph:first-child {
+.no-image .paragraph:first-child {
   display: table;
   margin: auto;
   padding: 16px 32px 16px 16px;
 }
 
-.no-image .section__content .list {
+.no-image .list {
   margin: 0;
   background-color: rgba(50, 115, 245, .12);
   flex: 1;
 }
 
-.no-image .section__content .list li {
+.no-image .list li {
   font-size: 18px;
   font-weight: 500;
   display: flex;
@@ -455,36 +451,36 @@ html[lang='nl'] .dark .hero {
   align-items: center;
 }
 
-.no-image .section__content .list li:nth-child(odd) {
+.no-image .list li:nth-child(odd) {
   display: none;
 }
 
-.no-image .section__content .list li::before {
+.no-image .list li::before {
   padding: 0 16px 0 8px;
   content: url(icons/next-m.svg);
 }
 
-.dark .no-image .section__content .list li::before {
+.dark .no-image .list li::before {
   content: url(icons/next-dark-m.svg);
 }
 
-.no-image .section__content .list li:hover {
+.no-image .list li:hover {
   transform: translateX(0);
 }
 
 @media (max-width: 1000px) {
-  .no-image .section__content {
+  .no-image .section {
     padding: var(--padding, 16px);
     flex-wrap: wrap;
   }
-  .no-image .section__paragraph:first-child {
+  .no-image .paragraph:first-child {
     padding: var(--padding, 16px);
     flex: none;
   }
-  .no-image .section__content .list {
+  .no-image .list {
     flex: none;
   }
-  .no-image .section__content * {
+  .no-image .section * {
     width: 100%;
   }
 }
@@ -507,22 +503,22 @@ html[lang='nl'] .dark .hero {
   opacity: .8;
 }
 
-.floor {
+.about-flooring {
   flex-direction: row-reverse;
   padding: 0 0 var(--padding, 16px) var(--padding, 16px);
   flex-wrap: wrap;
 }
 
-.floor .uk-slideshow-items {
+.about-flooring .uk-slideshow-items {
   height: 100%;
 }
 
-.floor .uk-slideshow-items img {
+.about-flooring  .uk-slideshow-items img {
   object-fit: cover;
   object-position: center;
 }
 
-.floor .section__content {
+.about-flooring__content {
   display: flex;
   flex-direction: column;
   margin-right: calc(var(--margin, 16px) * 2);
@@ -530,29 +526,26 @@ html[lang='nl'] .dark .hero {
   justify-content: center;
 }
 
-.floor .title {
+.about-flooring .title {
   font-size: 32px;
   font-weight: 300;
   text-align: left;
 }
 
-.floor .title::after {
+.about-flooring .title::after {
   margin: 0;
 }
 
 @media (max-width: 1000px) {
-  .floor {
+  .about-flooring {
     padding: var(--padding, 16px);
   }
-  .floor .section__image {
-    margin-left: 0;
-  }
-  .floor .section__content {
+  .about-flooring__content {
     padding: var(--padding, 16px);
   }
 }
 
-.floor-activities {
+.flooring-activities {
   display: flex;
   width: 100%;
   max-width: 1200px;
@@ -563,7 +556,7 @@ html[lang='nl'] .dark .hero {
   align-items: flex-start;
 }
 
-.floor-activities__item {
+.flooring-activities__item {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -576,16 +569,16 @@ html[lang='nl'] .dark .hero {
   justify-content: space-between;
 }
 
-.floor-activities__item:hover {
+.flooring-activities__item:hover {
   border: 2px solid var(--base-shadow);
   background-color: rgba(50, 115, 245, .12);
 }
 
-.floor-activities__item:hover figure {
+.flooring-activities__item:hover figure {
   background-color: #444;
 }
 
-.floor-activities figure {
+.flooring-activities figure {
   display: flex;
   width: 100px;
   height: 50px;
@@ -595,11 +588,11 @@ html[lang='nl'] .dark .hero {
   align-items: center;
 }
 
-.dark .floor-activities figure {
+.dark .flooring-activities figure {
   background-color: #333;
 }
 
-.floor-activities__link {
+.flooring-activities__link {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -608,7 +601,7 @@ html[lang='nl'] .dark .hero {
   align-items: center;
 }
 
-.floor-activities__link::after {
+.flooring-activities__link::after {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 500;
