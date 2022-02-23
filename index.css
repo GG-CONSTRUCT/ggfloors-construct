@@ -905,3 +905,22 @@ html[lang='nl'] .dark .hero {
 .box-footer a:hover {
   background-color: #0063e5;
 }
+
+.about-flooring aside li::after {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 2px 8px;
+  border-radius: 2px; 
+  content: attr(title);
+  background-color: #000d;
+  opacity: 0.2;
+  transition: 0.2s opacity ease-in-out;
+}
+
+.about-flooring aside:hover li::after {
+  opacity: 0.9;
+}
