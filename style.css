@@ -1457,3 +1457,33 @@ footer {
 #themeToggle:hover {
   text-decoration: none;
 }
+
+@media print {
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  p:first-line,
+  div:first-line,
+  blockquote:first-line,
+  li:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    page-break-inside: avoid;
+  }
+  @page {
+    margin: 1cm;
+  }
+
+  body > *:not(main) {
+    display: none !important;
+  }
+  main > *:not(article) {
+    display: none !important;
+  }
+  article > *:not(section, .about-flooring aside) {
+    display: none !important;
+  }
+}
