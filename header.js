@@ -11,7 +11,7 @@ Vue.component('topbar', {
     <a class="topbar__link" href="contact.html">Contact</a>
     <a style="margin-left: 20px; color: #fff; display: flex; align-items: center;" id="themToggle" href="#top" onclick="document.body.classList.toggle('dark'); 
       isDark = (!isDark) ? true : false;">
-      <img width="16" height="16" src="icons/sun.svg">
+      <img width="16" height="16" src="icons/black-and-white.svg">
     </a>
     <div class="social social_size_s">
       <ul class="social__list"></ul>
