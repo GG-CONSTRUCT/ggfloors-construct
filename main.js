@@ -1,29 +1,5 @@
 const companyName = 'GG Floors & Construct';
 
-const translateStartPage = (lang) => {
-  get('.hero__subtitle').textContent = tagline[lang];
-  getAll('.paragraph')[0].innerHTML = aboutCompany[lang];
-  getAll('.paragraph')[1].textContent = socialMediaInvite[lang];
-  getTextContentIn(getAll('.about-gg .list__link'), activities, lang);
-  get('.about-gg .list__link').textContent += ` (${floor[lang].slice(0, 7).join(', ').toLowerCase()}, ... )`;
-  getTitleAttr(getAll('.flooring-activities__link'), floor[lang].slice(0, 7));
-  get('.about-gg .list')
-  .lastElementChild.querySelector('a')
-  .textContent = `${more[lang]} ...`;
-  get('.services .title').textContent = servicesTitle[lang];
-  get('.about-flooring .title').textContent = activities[lang][0];
-  get('.about-flooring .paragraph').innerHTML = aboutFlooring[lang];
-  get('.about-flooring .list')
-  .firstElementChild.querySelector('a')
-  .textContent = `${more[lang]}`;
-  get('.parallax .title').textContent = flooringOfferTitle[lang].toUpperCase();
-  get('.parallax p').textContent = flooringOfferText[lang];
-  get('.button-reveal span').textContent = flooringOfferBtn[lang].toUpperCase();
-  get('.follow .title').textContent = followTitle[lang];
-  getTextContentIn(getAll('.box-title'), boxTitles, lang);
-  getTextContentOf(getAll('.box-footer span'), boxBtn, lang);
-}
-
 const clearNode = (node) => {
   while (node.firstChild) node.removeChild(node.firstChild);
 }
@@ -48,6 +24,13 @@ const getTitleAttr = (items, data, lang) => {
 
 let getAll = (selector, parent) => parent ? parent.querySelectorAll(selector) : document.querySelectorAll(selector);
 let get = (selector) => document.querySelector(selector);
+
+const createLink = (item, format) => `${item
+.toLowerCase()
+.replace(/ /g, '-')
+.replace(/ï/g, 'i')
+.replace('...', '')}
+${format}`;
 
 const getTopNav = (lang) => {
   const topNavLink = getAll('.topnav__link');
@@ -81,13 +64,6 @@ const getFootNav = (lang) => {
   chatTitle.textContent = widgetTitle[lang];
 }
 
-const createLink = (item, format) => `${item
-.toLowerCase()
-.replace(/ /g, '-')
-.replace(/ï/g, 'i')
-.replace('...', '')}
-${format}`;
-
 const getMobileMenu = (lang) => {
   const mobileMenu = get('#mobileMenu ul');
   clearNode(mobileMenu);
@@ -101,6 +77,7 @@ const getMobileMenu = (lang) => {
   }
 }
 
+// Search
 const getSearchList = (lang) => {
   const searchList = get('.search ul');
   clearNode(searchList);
@@ -122,6 +99,24 @@ const getSearchList = (lang) => {
   }
 }
 
+const getSearchFilter = () => {
+  let inputSearch, filterSearch, ulSearch, liSearch, aSearch, i;
+  inputSearch = get('#search');
+  filterSearch = inputSearch.value.toUpperCase();
+  ulSearch = get('.search ul');
+  liSearch = ulSearch.getElementsByTagName('li');
+  
+  for (i = 0; i < liSearch.length; i++) {
+    aSearch = liSearch[i].getElementsByTagName('a')[0];
+    if (aSearch.innerHTML.toUpperCase().indexOf(filterSearch) > -1) {
+      liSearch[i].style.display = 'block';
+    } else {
+      liSearch[i].style.display = 'none';
+    }
+  }
+}
+
+// dropdown open/close
 for (const dropdown of getAll('.dropdown')) {
   dropdown.addEventListener('click', function () {
     this.classList.toggle('opened');
@@ -140,6 +135,7 @@ window.addEventListener('click', function (e) {
   }
 });
 
+// Partners
 const partnerLists = getAll('.partners .dropdown__list')
 
 const partners = {
@@ -192,24 +188,6 @@ html.setAttribute('lang', localStorage
 .getItem('current lang')
 .toLowerCase() : 'nl');
 
-
-for (const option of getAll('.option')) {
-  option.addEventListener('click', function () {
-    if (!this.classList.contains('selected')) {
-      this.parentNode.querySelector('.option.selected').classList.remove('selected');
-      localStorage.setItem('current lang', this.textContent);
-      get('html').setAttribute('lang', this.textContent.toLowerCase());
-      this.classList.add('selected');
-      getNav(this.textContent.toLowerCase());
-      getMobileMenu(this.textContent.toLowerCase());
-      getSearchList(this.textContent.toLowerCase());
-      translateStartPage(this.textContent.toLowerCase());
-      getCards(activities[this.textContent.toLowerCase()], activities.nl);
-      this.closest('.dropdown').querySelector('.dropdown__title').textContent = this.textContent;
-    }
-  })
-}
-
 const lang = get('.lang .dropdown__title').textContent = localStorage.getItem('current lang') || 'NL';
 for (const option of getAll('.option')) {
   if (option.textContent === localStorage.getItem('current lang')) {
@@ -252,32 +230,18 @@ const getSticky = () => {
       dropdown.classList.remove('opened');
     }
   }
-  if (window.pageYOffset > 300) {
-    heroSubtitle.style.transform = 'translateY(8px) scale(1.1)';
-  } else {
-    heroSubtitle.style.transform = 'translateY(0) scale(1)';
-  }
-}
-
-const getSearchFilter = () => {
-  let inputSearch, filterSearch, ulSearch, liSearch, aSearch, i;
-  inputSearch = get('#search');
-  filterSearch = inputSearch.value.toUpperCase();
-  ulSearch = get('.search ul');
-  liSearch = ulSearch.getElementsByTagName('li');
-  
-  for (i = 0; i < liSearch.length; i++) {
-    aSearch = liSearch[i].getElementsByTagName('a')[0];
-    if (aSearch.innerHTML.toUpperCase().indexOf(filterSearch) > -1) {
-      liSearch[i].style.display = 'block';
+  if (heroSubtitle) {
+    if (window.pageYOffset > 300) {
+      heroSubtitle.style.transform = 'translateY(8px) scale(1.1)';
     } else {
-      liSearch[i].style.display = 'none';
+      heroSubtitle.style.transform = 'translateY(0) scale(1)';
     }
   }
 }
 
 window.onscroll = () => getSticky();
 
+// Socials
 const socialLists = getAll('.social__list');
 const mail = get('.e-mail');
 const toPrint = get('.to-print');
@@ -345,7 +309,29 @@ email.createLink(mail);
 const print = new Link('print', 'javascript:window.print()');
 print.createLink(toPrint);
 
+// color theme mode
 let isDark = false;
+let now = new Date().getHours();
+if (now > 7 && now < 20) {
+  document.body.classList.remove('dark');
+} 
+
+// switch language
+for (const option of getAll('.option')) {
+  option.addEventListener('click', function () {
+    if (!this.classList.contains('selected')) {
+      this.parentNode.querySelector('.option.selected').classList.remove('selected');
+      localStorage.setItem('current lang', this.textContent);
+      get('html').setAttribute('lang', this.textContent.toLowerCase());
+      this.classList.add('selected');
+      getNav(this.textContent.toLowerCase());
+      getMobileMenu(this.textContent.toLowerCase());
+      getSearchList(this.textContent.toLowerCase());
+      (typeof getPageContent !== 'undefined') ? getPageContent(this.textContent.toLowerCase()) : '';
+      this.closest('.dropdown').querySelector('.dropdown__title').textContent = this.textContent;
+    }
+  })
+}
 
 window.addEventListener('load', () => {
   getMobileMenu(lang.toLowerCase());
@@ -354,46 +340,3 @@ window.addEventListener('load', () => {
   getPartners();
   setTimeout(() => document.querySelector('.chat-to').style.display = 'none', 5000);
 });
-
-const cards = get('.cards');
-
-class Card {
-  constructor(name, link) {
-    this.name = name;
-    this.link = link;
-  }
-  createCard(parent) {
-    if (parent) {
-      const card = document.createElement('a');
-      card.classList.add('card');
-      card.setAttribute('title', this.name);
-      card.href = createLink(this.link, '.html');
-      const cardImage = document.createElement('img');
-      cardImage.src = `images/${createLink(this.link, '')}.jpg`;
-      cardImage.alt = this.name;
-      card.append(cardImage);
-      parent.append(card);
-    }
-  }
-}
-
-function getCards() {
-  const items = arguments[0];
-  const links = arguments[1];
-  clearNode(cards);
-  for (let i in items) {
-    if (i % 2 == 0 && i < 8) {
-      const card = new Card(items[i], links[i]);
-      card.createCard(cards);
-    }
-  }
-}
-
-getCards(activities[lang.toLowerCase()], activities.nl);
-if (lang !== 'NL') translateStartPage(lang.toLowerCase());
-
-let now = new Date().getHours();
-
-if (now > 7 && now < 20) {
-  document.body.classList.remove('dark');
-} 
