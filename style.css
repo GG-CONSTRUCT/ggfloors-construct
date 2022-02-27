@@ -829,7 +829,7 @@ main {
 }
 
 .social__list {
-  display: inline-block;
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -838,7 +838,7 @@ main {
 .social__item,
 .to-print,
 .e-mail {
-  display: inline-block;
+  display: block;
   margin: 0 calc(var(--size, 16px) / 2);
   color: var(--text);
 }
