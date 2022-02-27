@@ -841,6 +841,7 @@ main {
 .e-mail {
   display: inline-block;
   margin: 0 calc(var(--size, 16px) / 2);
+  color: var(--text);
 }
 
 .social__link,
