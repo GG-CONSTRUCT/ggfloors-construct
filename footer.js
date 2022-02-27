@@ -165,7 +165,7 @@ Vue.component('widget', {
             <a class="widget__link icon-email" href="mailto:ggfloorsconstruct@gmail.com" title="e-mail"></a>
           </li>
           <li class="widget__item">
-            <a class="widget__link icon-view-list" href="contactformulier.html" title="contactformulier"></a>
+            <a class="widget__link icon-clipboard" href="contactformulier.html" title="contactformulier"></a>
           </li>
         </ul>
       </div>
