@@ -1631,3 +1631,29 @@ video {
 #gallery img:hover {
   opacity: 0.9;
 }
+
+.toggle-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  float: right;
+  display: none;
+  cursor: pointer;
+  opacity: 0.7;
+  color: var(--text);
+}
+
+.toggle-button:hover {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .toggle-button {
+    display: inline-block;
+  }
+}
+
+.toggle-button ~ div {
+  clear: right;
+}
