@@ -5181,10 +5181,10 @@ ul.uk-nav-sub {
   content: "›";
   display: inline-block;
   /* 1 */
-  margin: 0 12px 0 calc(12px - 4px);
+  margin: 0 8px 0 calc(8px - 4px);
   /* 2 */
   font-size: 16px;
-  color: #999;
+  color: var(--blue);
 }
 /* ========================================================================
    Component: Pagination
@@ -5232,9 +5232,9 @@ ul.uk-nav-sub {
   transition: color 0.1s ease-in-out;
 }
 /* Hover */
-.uk-pagination > * > :hover {
+.uk-pagination > * > *:hover {
   color: #666;
-  text-decoration: none;
+  text-decoration: underline;
 }
 /* Active */
 .uk-pagination > .uk-active > * {

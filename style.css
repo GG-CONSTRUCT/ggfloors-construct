@@ -1409,6 +1409,7 @@ footer {
 
 @media (max-width: 400px) {
   .logo__title {
+    font-size: 11px;
     white-space: nowrap;
   }
 }
@@ -1492,7 +1493,7 @@ footer {
 }
 
 .heading {
-  padding: var(--padding);
+  padding: 8px var(--padding);
   color: var(--text);
   background-color: var(--beige);
   border-bottom: 1px solid var(--base-shadow);
@@ -1513,8 +1514,11 @@ footer {
 }
 
 .titlebar h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
   margin-right: 24px;
   transition: 0.5s all;
+  color: var(--text);
 }
 
 .share {
@@ -1611,9 +1615,12 @@ footer {
 
 .heading ~ .article {
   border-top: 1px solid var(--base-shadow);
+  margin-top: 0;
 }
 
 .heading ~ .article > .section {
+  display: table;
+  margin: auto;
   padding-top: calc(var(--padding) * 2);
 }
 
@@ -1648,5 +1655,54 @@ video {
 }
 
 .button-reveal {
-  padding-left: 8px !important;
+  padding: 4px 16px 4px 8px !important;
+  margin-right: 12px !important;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+form button {
+  width: 120px;
+  margin: 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form label {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 70px;
+  margin-top: 10px;
+  justify-content: space-around;
+  color: #fff;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 5px;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+form input {
+  height: 36px;
+}
+
+.footnote,
+form textarea::placeholder {
+  color: #eee;
 }

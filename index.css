@@ -299,8 +299,8 @@ html[lang='nl'] .dark .hero {
 }
 
 .article__image {
+  position: relative;
   margin-right: 32px;
-  padding: 16px 8px;
   background-position: center center;
   background-size: cover;
   max-height: 960px;
@@ -314,6 +314,7 @@ html[lang='nl'] .dark .hero {
 }
 
 .about-gg__image {
+  padding: 8px;
   background-color: #5078cd;
   background-image: url(images/facade-renovation.jpg);
 }
@@ -411,12 +412,11 @@ html[lang='nl'] .dark .hero {
   .article > aside,
   .article > section {
     width: 100%;
-    height: 100%;
+  }
+  .article > aside {
+    height: 540px;
   }
   .article__image {
-    min-height: 400px;
-    max-height: 600px;
-    overflow: hidden;
     margin-right: 0;
   }
   .section {
@@ -638,6 +638,7 @@ html[lang='nl'] .dark .hero {
   font-size: 18px;
   position: sticky;
   top: 78px;
+  left: 8px;
   padding: 4px 8px;
   transition: .2s all;
   opacity: .2;
