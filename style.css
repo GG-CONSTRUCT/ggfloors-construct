@@ -290,7 +290,6 @@ main {
 .logo {
   display: inline-flex;
   flex-direction: column;
-  min-width: 148px;
   height: calc(var(--topbar-heigth, 40px) * var(--ratio));
   justify-content: space-around;
   align-items: center;
@@ -1408,12 +1407,9 @@ footer {
   }
 }
 
-@media (max-width: 360px) {
-  .logo {
-    min-width: 136px;
-  }
+@media (max-width: 400px) {
   .logo__title {
-    font-size: 10px;
+    white-space: nowrap;
   }
 }
 
@@ -1638,7 +1634,6 @@ video {
   outline: none;
   font-size: 18px;
   float: right;
-  display: none;
   cursor: pointer;
   opacity: 0.7;
   color: var(--text);
@@ -1648,12 +1643,10 @@ video {
   opacity: 1;
 }
 
-@media (max-width: 600px) {
-  .toggle-button {
-    display: inline-block;
-  }
-}
-
 .toggle-button ~ div {
   clear: right;
+}
+
+.button-reveal {
+  padding-left: 8px !important;
 }
