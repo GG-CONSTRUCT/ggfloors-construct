@@ -1627,3 +1627,7 @@ video {
   max-height: 80vh;
   margin: var(--margin, 16px) auto;
 }
+
+#gallery img:hover {
+  opacity: 0.8;
+}
