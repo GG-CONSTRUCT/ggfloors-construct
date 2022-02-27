@@ -18,7 +18,7 @@
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale
 }
-.icon-view-list:before{content:'\0041';}
+.icon-layout-width-full:before{content:'\0041';}
 .icon-grid:before{content:'\0042';}
 .icon-share:before{content:'\0043';}
 .icon-twitter:before{content:'\0044';}

@@ -1618,7 +1618,7 @@ footer {
 }
 
 .heading ~ .article > .section {
-  padding-top: calc(var(--padding) * 3);
+  padding-top: calc(var(--padding) * 2);
 }
 
 video {
@@ -1636,7 +1636,7 @@ video {
   background-color: transparent;
   border: none;
   outline: none;
-  font-size: 24px;
+  font-size: 18px;
   float: right;
   display: none;
   cursor: pointer;
