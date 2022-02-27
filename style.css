@@ -879,7 +879,7 @@ main {
 
 footer {
   position: relative;
-  margin-top: calc(var(--topbar-heigth) + var(--topbar-heigth) * var(--ratio));
+  margin-top: calc(var(--topbar-heigth) * 2 + var(--topbar-heigth) * var(--ratio) * 2);
   z-index: 0;
 }
 
@@ -1517,7 +1517,7 @@ footer {
 
 .titlebar h1 {
   margin-right: 24px;
-  transition: 0.4s all;
+  transition: 0.5s all;
 }
 
 .share {
@@ -1617,5 +1617,5 @@ footer {
 }
 
 .heading ~ .article > .section {
-  padding-top: 36px;
+  padding-top: calc(var(--padding) * 3);
 }
