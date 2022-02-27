@@ -293,18 +293,13 @@ class Link {
   constructor(name, address) {
     this.name = name;
     this.href = address;
-    this.icon = `icons/${name}.svg`;
   }
   createLink(parent) {
     if (parent) {
       const link = document.createElement('a');
       link.classList.add(`${this.name}__link`);
-      const icon = document.createElement('img');
-      icon.classList.add(`${this.name}__icon`);
-      icon.src = this.icon;
-      icon.alt = this.name;
+      link.classList.add(`icon-${this.name}`);
       link.href = this.href;
-      link.append(icon);
       parent.append(link);
     }
   }

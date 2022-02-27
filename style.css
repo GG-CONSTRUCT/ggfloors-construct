@@ -858,6 +858,16 @@ main {
   align-items: center;
 }
 
+.email__link,
+.print__link {
+  color: var(--text);
+}
+
+.email__link:hover,
+.print__link:hover {
+  color: var(--blue);
+}
+
 .email__icon,
 .print__icon {
   width: var(--size, 16px);
