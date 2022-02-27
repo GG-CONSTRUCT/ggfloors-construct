@@ -716,7 +716,7 @@ html[lang='nl'] .dark .hero {
   min-height: 30px;
   margin: 20px 0 10px;
   transition: .2s;
-  color: #fff;
+  color: #fff !important;
   border-radius: 8px;
   background: var(--blue, #0e4ed5);
   align-items: center;

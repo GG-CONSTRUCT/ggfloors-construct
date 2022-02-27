@@ -880,7 +880,7 @@ main {
 
 footer {
   position: relative;
-  margin-top: calc(var(--topbar-heigth) * 2 + var(--topbar-heigth) * var(--ratio) * 2);
+  margin-top: calc(var(--topbar-heigth) + var(--topbar-heigth) * var(--ratio));
   z-index: 0;
 }
 
@@ -1619,4 +1619,11 @@ footer {
 
 .heading ~ .article > .section {
   padding-top: calc(var(--padding) * 3);
+}
+
+video {
+  width: 100%;
+  display: block;
+  max-height: 80vh;
+  margin: var(--margin, 16px) auto;
 }
