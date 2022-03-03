@@ -487,7 +487,10 @@ html[lang='nl'] .dark .hero {
 
 .no-image .paragraph {
   flex: 2;
-  margin: var(--margin);
+  display: table;
+  margin: auto var(--margin);
+  padding: var(--size) 0;
+
 }
 
 .no-image .paragraph:first-child {
