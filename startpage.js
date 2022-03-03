@@ -1,5 +1,6 @@
 const translateStartPage = (lang) => {
   get('.hero__subtitle').textContent = tagline[lang];
+  get('.about-gg .title').innerHTML = aboutTitle[lang];
   getAll('.paragraph')[0].innerHTML = aboutCompany[lang];
   getAll('.paragraph')[1].textContent = socialMediaInvite[lang];
   getTextContentIn(getAll('.about-gg .list__link'), activities, lang);

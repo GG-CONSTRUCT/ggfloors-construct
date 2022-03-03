@@ -89,29 +89,36 @@ const tagline = {
   de: 'Lass uns mit GG bauen',
 }
 
+const aboutTitle = {
+  nl: 'GG Floors & Construct bouwt aan een duurzame partnerschip.',
+  en: `GG Floors & Construct is building a sustainable partnership.`,
+  fr: `GG Floors & Construct construit un partenariat durable.`,
+  de: `GG Floors & Construct baut eine nachhaltige Partnerschaft auf.`
+}
+
 const aboutCompany =  {
-  nl: `<b><span>GG</span> Floors & Construct</b> bouwt aan een duurzame partnerschip.<br>
+  nl: `
 Al meer dan <b>15 jaar</b> ervaring in <a href="vloerder.html">vloerbekledingen</a>, maar ook daken hebben voor ons geen geheimen meer.<br>
 Onze specialiteit blijft nog steeds allerhande vloeren, harde als zachte. Van grote renovaties tot kleinere herstellingen alsook volledige <a href="nieuwbouw.html">nieuwbouw</a> woningen.<br>
 Door een nauwe samenwerking met de opdrachtgevers, medewerkers en partners gaan we voor de hoogst haalbare topkwaliteit. Telkens weer in een open en respectvolle sfeer.<br>
 <b>GG Floors & Construct</b> brengt uw bouwproject tot een goed einde. Zo maken we het leven van de klant makkelijk doordat wij het totaalconcept kunnen aanbieden.<br>
 Ons grootste kapitaal, zijn onze vakmannen, hun veiligheid en welzijn is voor GG Floors & Construct topprioriteit, want alleen zo kan je ook topkwaliteit afleveren op de werf. Heeft u bouw of verbouwplannen:`,
 
-  en: `<b><span>GG</span> Floors & Construct</b> is building a sustainable partnership.<br>
+  en: `
 More than <b>15 years</b> of experience in <a href="vloerder.html">floor coverings</a>, but roofs no longer hold any secrets for us.<br>
 Our specialty is still all kinds of floors, hard and soft. From major renovations to smaller repairs as well as complete <a href="nieuwbouw.html">new construction</a> homes.<br>
 Through close collaboration with clients, employees and partners, we aim for the highest achievable top quality. Again and again in an open and respectful atmosphere.<br>
 <b>GG Floors & Construct</b> brings your construction project to a successful conclusion. In this way we make the customer's life easy because we can offer the total concept.<br>
 Our greatest capital is our craftsmen, their safety and well-being is a top priority for GG Floors & Construct, because only then can you deliver top quality on site. Do you have construction or renovation plans:`,
 
-  fr: `<b><span>GG</span> Floors & Construct</b> construit un partenariat durable.<br>
+  fr: `
 Plus de <b>15 ans</b> d'expérience dans les <a href="vloerder.html">revêtements de sol</a>, mais les toits n'ont plus de secret pour nous.<br>
 Notre spécialité est toujours toutes sortes de sols, durs et souples. Qu'il s'agisse de rénovations majeures, de petites réparations ou de maisons <a href="nieuwbouw.html">nouvelles constructions</a> complètes.<br>
 Grâce à une étroite collaboration avec les clients, les employés et les partenaires, nous visons la meilleure qualité possible. Encore et encore dans une ambiance ouverte et respectueuse.<br>
 <b>GG Floors & Construct</b> mène à bien votre projet de construction. De cette façon, nous facilitons la vie du client car nous pouvons offrir le concept total.<br>
 Notre plus grand capital est nos artisans, leur sécurité et leur bien-être sont une priorité absolue pour GG Floors & Construct, car ce n'est qu'alors que vous pourrez livrer la meilleure qualité sur place. Avez-vous des projets de construction ou de rénovation:`,
 
-  de: `<b><span>GG</span> Floors & Construct</b> baut eine nachhaltige Partnerschaft auf.<br>
+  de: `
 Mehr als <b>15 Jahre</b> Erfahrung in <a href="vloerder.html">Bodenbelägen</a>, aber Dächer bergen für uns keine Geheimnisse mehr.<br>
 Unsere Spezialität sind nach wie vor alle Arten von Böden, hart und weich. Von größeren Renovierungen über kleinere Reparaturen bis hin zu kompletten <a href="nieuwbouw.html">Neubauten</a> von Häusern.<br>
 Durch die enge Zusammenarbeit mit Kunden, Mitarbeitern und Partnern streben wir die höchstmögliche Spitzenqualität an. Immer wieder in einer offenen und respektvollen Atmosphäre.<br>
