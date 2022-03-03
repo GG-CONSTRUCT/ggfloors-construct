@@ -411,7 +411,6 @@ main {
   transition: all .1s;
   pointer-events: none;
   opacity: 0;
-  border: 1px solid var(--base-border, #ddd);
   border-top: 2px solid var(--blue, #0e4ed5);
   border-radius: 0 0 8px 8px;
   background-color: var(--base, #fff);
@@ -425,6 +424,8 @@ main {
   top: 0;
   right: 0;
   bottom: 0;
+  border: 1px solid var(--base-border, #ddd);
+  border-top: none;
   border-radius: 0 0 8px 8px;
   box-shadow: 0 5px 10px 0 rgba(0,0,0,.3);
 }
