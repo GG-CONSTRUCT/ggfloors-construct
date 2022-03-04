@@ -1628,8 +1628,7 @@ footer {
 .controlbar {
   min-height: var(--topbar-heigth);
   background-color: var(--blue);
-  margin: 8px 0;
-  padding: 0 var(--padding);
+  padding: 104px calc(var(--padding) / 2) 0;
   border-top: 1px solid var(--base-shadow);
   border-bottom: 1px solid var(--base-shadow);
 }
@@ -1676,7 +1675,7 @@ video {
 }
 
 .controlbar .button-reveal {
-  padding: 4px 16px 4px 8px !important;
+  padding: 4px 16px 4px calc(var(--padding) / 2) !important;
   margin-right: 12px !important;
 }
 
