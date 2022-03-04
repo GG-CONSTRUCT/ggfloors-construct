@@ -153,6 +153,7 @@ html[lang='nl'] .dark .hero {
   position: relative;
   text-align: center;
   color: var(--text, #222);
+  margin-bottom: 24px;
 }
 
 .title::after {

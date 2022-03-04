@@ -855,6 +855,16 @@ main {
   color: var(--text);
 }
 
+@media (max-width: 440px) {
+  .social__item,
+  .to-print,
+  .e-mail {
+    display: block;
+    margin: 0 calc(var(--size, 16px) / 3);
+    color: var(--text);
+  }
+}
+
 .social__link,
 .email__link,
 .print__link {
@@ -1725,4 +1735,34 @@ video {
 .footnote,
 .controlbar form textarea::placeholder {
   color: #eee;
+}
+
+.sidenav {
+  padding: var(--padding);
+}
+
+.sidenav li {
+  height: 42px;
+  margin: calc(var(--margin) / 2) 0 var(--margin);
+  padding-bottom: 2px;
+  border-radius: 4px;
+  border-bottom: 1px dotted gray;
+}
+
+.sidenav a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-radius: 4px;
+  padding: 0 var(--padding);
+  color: var(--blue);
+  font-size: 18px;
+}
+
+.dark .sidenav a {
+  color: var(--blue-light);
+}
+
+.sidenav a:hover {
+  background-color: rgba(50, 115, 245, .12);
 }
