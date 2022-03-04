@@ -860,7 +860,7 @@ main {
   .to-print,
   .e-mail {
     display: block;
-    margin: 0 calc(var(--size, 16px) / 3);
+    margin: 0 calc(var(--size, 16px) / 4);
     color: var(--text);
   }
 }
