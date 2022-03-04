@@ -47,12 +47,20 @@
     <article class="article about-gg">
       <button class="toggleView icon-align-right" onclick="document.querySelector('.about-gg').classList.toggle('no-image')"></button>
       <aside class="article__image about-gg__image">
-        <a href="javascript:void(0)">
+        <a href="#modal-full" uk-toggle>
           <i class="location icon-location-pin"></i>
         </a>
+        <div id="modal-full" class="uk-modal-full" uk-modal>
+          <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close style="background-color: #4442;"></button>
+            <div class="uk-grid-collapse uk-flex-middle" uk-grid uk-height-viewport style="background-color: var(--base);">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1646423902437!6m8!1m7!1syvZ3lEXvEF6RPf-yHMTVFw!2m2!1d50.87310857608302!2d4.716817701189446!3f349.8542026642117!4f4.195449793693129!5f0.7820865974627469" style="border:0; width: 100%; min-height: 80vh; background-color: var(--base);" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
       </aside>
       <section class="section about-gg__content">
-        <h3 class="title">GG Floors &C onstruct bouwt aan een duurzame partnerschip.</h3>
+        <h3 class="title">GG Floors & Construct bouwt aan een duurzame partnerschip.</h3>
         <p class="paragraph about-gg__copy">
   Al meer dan 15 jaar ervaring in <a href="vloerder.html">vloerbekledingen</a>, maar ook daken hebben voor ons geen geheimen meer.
   Onze specialiteit blijft nog steeds allerhande vloeren, harde als zachte. Van grote renovaties tot kleinere herstellingen alsook volledige <a href="nieuwbouw.html">nieuwbouw</a> woningen.<br>

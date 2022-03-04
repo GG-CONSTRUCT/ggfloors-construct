@@ -450,7 +450,7 @@ html[lang='nl'] .dark .hero {
     width: 100%;
   }
   .article > aside {
-    min-height: 400px;
+    min-height: 300px;
   }
   .article__image {
     margin-right: 0;

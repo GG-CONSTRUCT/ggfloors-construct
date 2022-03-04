@@ -1675,7 +1675,7 @@ video {
   clear: right;
 }
 
-.button-reveal {
+.controlbar .button-reveal {
   padding: 4px 16px 4px 8px !important;
   margin-right: 12px !important;
 }
