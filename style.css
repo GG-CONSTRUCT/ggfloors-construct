@@ -33,6 +33,7 @@ body {
   max-width: var(--max, 1980px);
   margin: 0 auto;
   background-color: var(--base, #fff);
+  overflow-x: hidden;
 }
 
 header {
