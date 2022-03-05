@@ -327,6 +327,7 @@ html[lang='nl'] .dark .hero {
 }
 
 .article {
+  max-width: 100%;
   position: relative;
   display: flex;
   margin: 32px auto;
@@ -337,6 +338,7 @@ html[lang='nl'] .dark .hero {
 .article > aside,
 .article > section {
   width: 48%;
+  max-width: 100%;
 }
 
 .article__image {
