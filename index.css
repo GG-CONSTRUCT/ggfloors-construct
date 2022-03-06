@@ -482,8 +482,8 @@ html[lang='nl'] .dark .hero {
 
 .no-image .paragraph {
   display: table;
-  margin: auto var(--margin);
-  padding: var(--size) 0;
+  margin: auto 0;
+  padding: var(--size);
   flex: 2;
 }
 

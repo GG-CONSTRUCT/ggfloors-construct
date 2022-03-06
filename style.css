@@ -28,8 +28,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   position: relative;
-  width: calc(100% - .01px);
-  min-width: calc(var(--min, 320px) - .01px);
+  min-width: var(--min, 320px);
   max-width: var(--max, 1980px);
   margin: 0 auto;
   background-color: var(--base, #fff);
@@ -712,7 +711,7 @@ main {
   position: relative;
   display: none;
   border-bottom: 1px solid var(--blue, #0e4ed5);
-  background-color: var(--beige, #eeece2);
+  background-color: var(--beige, #F2F0E8);
 }
 
 .search input:checked~.search__modal {
@@ -919,7 +918,7 @@ footer {
   display: flex;
   padding: calc(var(--padding, 16px) * 2) calc(var(--padding, 16px) * 1.5) calc(var(--size, 16px) / 2);
   border-top: 4px solid var(--blue, #0e4ed5);
-  background-color: var(--beige, #eeece2);
+  background-color: var(--beige, #F2F0E8);
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -930,7 +929,7 @@ footer {
   width: 280px;
   margin-right: calc(var(--size, 16px) * 3);
   margin-bottom: var(--size, 16px);
-  padding: calc(var(--size, 16px) / 2) var(--padding, 16px);
+  padding: calc(var(--size, 16px) / 2) calc(var(--padding, 16px) / 2);
 }
 
 .flex-wrapper {
@@ -1671,7 +1670,7 @@ video {
 }
 
 .toggle-button {
-  font-size: 18px;
+  font-size: 16px;
   float: right;
   cursor: pointer;
   opacity: .7;
@@ -1751,14 +1750,13 @@ video {
   margin: calc(var(--margin) / 2) 0 var(--margin);
   padding-bottom: 2px;
   border-bottom: 1px dotted gray;
-  border-radius: 4px;
 }
 
 .sidenav a {
   font-size: 18px;
   display: flex;
   height: 100%;
-  padding: 0 var(--padding);
+  padding: 0 calc(var(--padding, 16px) / 2);
   color: var(--blue);
   border-radius: 4px;
   align-items: center;
