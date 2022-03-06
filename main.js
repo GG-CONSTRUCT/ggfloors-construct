@@ -237,13 +237,6 @@ const getSticky = () => {
       heroSubtitle.style.transform = 'translateY(0) scale(1)';
     }
   }
-  if (!heroSubtitle) {
-    if (window.pageYOffset > 180) {
-      get('.heading h1').style.transform = 'scale(0.9)';
-    } else {
-      get('.heading h1').style.transform = 'scale(1)';
-    }
-  }
 }
 
 window.onscroll = () => getSticky();
