@@ -155,8 +155,8 @@ Vue.component('search', {
 Vue.component('terms', {
   template: `
     <section class="terms-conditions">
-    <a href="#bottom" class="close icon-close" onclick="this.parentNode.style.display = 'none'" title="close"></a>
-    <h4 lang="nl">Algemene draagwijdte der voorwaarden<br>
+    <a href="#top" class="close icon-close" onclick="this.parentNode.style.display = 'none'" title="close"></a>
+    <h4 lang="nl"><b class="title title_left">Algemene draagwijdte der voorwaarden</b><br><br>
       1. Deze voorwaarden bevatten en beheersen de volledige overeenkomst tussen de klant en GG FLOORS & CONSTRUCT BV (hierna: de firma), met betrekking tot het geheel van de aan of door ons gevraagde en toevertrouwde werken. Deze voorwaarden worden geacht onherroepelijk aanvaard te zijn bij de ondertekening of bevestiging op welke wijze dan ook door de klant van de bestelbon, van de offerte of van de overeenkomst, ongeacht welkdanige eerdere correspondentie en ongeacht enige andere voorwaarden of enige documenten of formulieren van welke aard ook vanwege de klant. De klant bevestigt uitdrukkelijk voroafgaandelijk de ondertekening of aanvaarding in kennis te zijn gesteld van onderhavige voorwaarden. 
       Elke afwijking aan onderhavige voorwaarden dient verplichtend schriftelijk te gebeuren.
       <br>2. Bij bouw, vernieuwbouw en alle andere opdrachten waarbij administratieve vergunningen te pas komen, draagt de firma geen enkele verantwoordelijkheid wat de administratieve vergunningen betreft. Eventuele daaruit voortvloeiende schade en boetes vallen integraal ten laste van de klant.

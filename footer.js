@@ -121,7 +121,7 @@ Vue.component('basement', {
             </a>
           </li>
           <li class="legal__item" onclick="document.querySelector('.terms-conditions').style.display = 'block'">
-            <a class="legal__link terms" uk-scroll href="#top">Algemene Voorwaarden</a>
+            <a class="legal__link terms" href="#top">Algemene Voorwaarden</a>
           </li>
           <li class="legal__item">
             <a class="legal__link" id="themeToggle" href="#bottom" onclick="document.body.classList.toggle('dark'); 

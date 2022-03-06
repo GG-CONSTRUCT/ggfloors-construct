@@ -169,13 +169,15 @@ html[lang='nl'] .dark .hero {
   background-color: var(--blue, #0e4ed5);
 }
 
-.article .title {
+.article .title,
+.title_left {
   font-size: 28px;
   margin-bottom: 32px;
   text-align: left;
 }
 
-.article .title::after {
+.article .title::after,
+.title_left::after {
   height: 3px;
   margin: 0;
 }
