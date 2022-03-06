@@ -285,6 +285,7 @@ main {
   border-bottom: 1px solid var(--base-border, #eee);
   background-color: var(--base, #fff);
   justify-content: space-between;
+  z-index: 9;
 }
 
 .logo {
