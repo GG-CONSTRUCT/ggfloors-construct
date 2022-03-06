@@ -507,7 +507,7 @@ main {
   position: relative;
   z-index: 1;
   top: calc(var(--topbar-heigth, 40px) / -1 - 4px);
-  left: calc(100% - (var(--padding, 16px) * 4 + 52px + 42px + 37px));
+  left: calc(100% - (var(--padding, 16px) * 4 + 52px + 42px + 32px));
   display: block;
   width: 33px;
   height: 4px;
@@ -952,6 +952,9 @@ footer {
   .flex-wrapper {
     width: 100%;
     flex-wrap: nowrap;
+  }
+  .flex-wrapper >*:nth-child(2) {
+    margin-right: 8px;
   }
 }
 
@@ -1426,6 +1429,13 @@ footer {
   }
   #mobileMenu input, #mobileMenu span, .btn-call, .btn-search, .search input[type='checkbox'] {
     --padding: 12px;
+  }
+}
+
+@media (min-width: 1600px) {
+  :root {
+    --margin: 32px;
+    --padding: 32px;
   }
 }
 

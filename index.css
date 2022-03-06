@@ -364,7 +364,7 @@ html[lang='nl'] .dark .hero {
 .section {
   display: table;
   max-width: 100%;
-  margin: auto;
+  margin: 0 auto;
   padding: var(--padding, 16px);
   border-bottom: 2px solid var(--base-border, #ddd);
 }
