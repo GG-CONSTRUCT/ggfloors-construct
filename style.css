@@ -1425,7 +1425,7 @@ footer {
     --margin: 8px;
   }
   #mobileMenu input, #mobileMenu span, .btn-call, .btn-search, .search input[type='checkbox'] {
-    --padding: 8px;
+    --padding: 12px;
   }
 }
 
