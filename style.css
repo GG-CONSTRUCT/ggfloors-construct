@@ -1423,7 +1423,6 @@ footer {
 
 @media (max-width: 860px) {
    :root {
-    --padding: 8px;
     --margin: 8px;
   }
 }

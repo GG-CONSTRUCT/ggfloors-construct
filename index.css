@@ -331,13 +331,13 @@ html[lang='nl'] .dark .hero {
   display: flex;
   max-width: 100%;
   margin: 32px auto;
-  padding: 0 var(--padding, 16px) var(--padding, 16px) 0;
   background: linear-gradient(var(--beige, #eeece2), var(--base, #fff));
 }
 
 .article>aside,
 .article>section {
-  width: 48%;
+  flex: 1;
+  flex-basis: 500px;
   max-width: 100%;
 }
 
@@ -365,7 +365,7 @@ html[lang='nl'] .dark .hero {
   display: table;
   max-width: 100%;
   margin: auto;
-  padding: var(--padding);
+  padding: var(--padding, 16px);
   border-bottom: 2px solid var(--base-border, #ddd);
 }
 
@@ -446,7 +446,6 @@ html[lang='nl'] .dark .hero {
 
 @media (max-width: 1000px) {
   .article {
-    padding: var(--padding, 16px);
     flex-wrap: wrap;
   }
   .article>aside,
@@ -564,7 +563,6 @@ html[lang='nl'] .dark .hero {
 
 .about-flooring {
   flex-direction: row-reverse;
-  padding: 0 0 var(--padding, 16px) var(--padding, 16px);
   flex-wrap: wrap;
 }
 
@@ -575,14 +573,6 @@ html[lang='nl'] .dark .hero {
 .about-flooring .uk-slideshow-items img {
   object-fit: cover;
   object-position: center;
-}
-
-.about-flooring__content {
-  display: flex;
-  flex-direction: column;
-  margin-right: calc(var(--margin, 16px) * 2);
-  padding-top: var(--padding, 16px);
-  justify-content: center;
 }
 
 .about-flooring .title {
@@ -596,9 +586,6 @@ html[lang='nl'] .dark .hero {
 }
 
 @media (max-width: 1000px) {
-  .about-flooring {
-    padding: var(--padding, 16px);
-  }
   .about-flooring__content {
     padding: var(--padding, 16px);
   }
