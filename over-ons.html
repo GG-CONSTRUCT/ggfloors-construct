@@ -78,16 +78,26 @@
           <input type="checkbox">
           <button class="share__button icon-share"></button>
           <ul class="share__list">
-            <li><a class="icon-facebook" href=""></a></li>
-            <li><a class="icon-twitter" href=""></a></li>
-            <li><a class="icon-linkedin" href=""></a></li>
+            <li><a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://ggfloors-construct.be/over-ons.html"></a></li>
+            <li><a class="icon-twitter" href="http://twitter.com/share?text=Over Ons&url=https://ggfloors-construct.be/over-ons.html"></a></li>
+            <li><a class="icon-linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https://ggfloors-construct.be/over-ons.html"></a></li>
           </ul>
         </div>
       </div>
     </div>
-    <article class="article">
-      <aside class="article__image">
-        <img src="images/scaffolding-workers.jpg" alt="">
+    <article class="article over-ons">
+      <aside class="article__image over-ons__image">
+        <a href="#modal-full" uk-toggle>
+          <i class="location icon-location-pin"></i>
+        </a>
+        <div id="modal-full" class="uk-modal-full" uk-modal>
+          <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close style="background-color: #4442;"></button>
+            <div class="uk-grid-collapse uk-flex-middle" uk-grid uk-height-viewport style="background-color: var(--base);">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1646679912566!6m8!1m7!1svl_1HprByXL-DTE2aggZqQ!2m2!1d50.86368023607778!2d4.517374556021659!3f290.5865820359485!4f4.131785449622754!5f0.7820865974627469" style="border:0; width: 100%; min-height: 80vh; background-color: var(--base);" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
       </aside>
       <section class="section about-gg__content">
         <h2><b>GG Floors & Construct</b> bouwt aan een duurzame partnerschip.</h2>

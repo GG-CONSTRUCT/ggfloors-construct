@@ -343,6 +343,12 @@ html[lang='nl'] .dark .hero {
   object-position: center;
 }
 
+.over-ons__image {
+  padding: 8px;
+  background-color: #5078cd;
+  background-image: url(images/scaffolding-workers.jpg);
+}
+
 .about-gg__image {
   padding: 8px;
   background-color: #5078cd;
@@ -450,6 +456,7 @@ html[lang='nl'] .dark .hero {
   }
   .article__image {
     margin-right: 0;
+    min-height: 500px !important;
   }
   .paragraph {
     margin-top: 16px;
@@ -685,6 +692,10 @@ html[lang='nl'] .dark .hero {
   font-style: normal;
   margin-left: 16px;
   content: 'Tiensesteenweg 59, 3010 Leuven, Belgia';
+}
+
+.over-ons .location:hover::after {
+  content: 'Bosdellestraat - 1933 Sterrebeek, Belgia';
 }
 
 .parallax {
