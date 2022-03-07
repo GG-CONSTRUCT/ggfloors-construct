@@ -1790,6 +1790,7 @@ video {
 
 .uk-card {
   background-color: var(--beige);
+  height: 580px;
 }
 
 .uk-card-body h3 {
