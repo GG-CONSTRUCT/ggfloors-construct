@@ -1787,3 +1787,11 @@ video {
 .sidenav a:hover {
   background-color: rgba(50, 115, 245, .12);
 }
+
+.uk-card {
+  background-color: var(--beige);
+}
+
+.uk-card-body h3 {
+  color: var(--text) !important;
+}
