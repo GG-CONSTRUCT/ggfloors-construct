@@ -1790,9 +1790,28 @@ video {
 
 .uk-card {
   background-color: var(--beige);
-  height: 580px;
+  min-height: 600px;
+  border: 1px solid var(--base);
+  border-radius: 6px;
+}
+
+.uk-card:hover {
+  border: 1px solid var(--base-shadow);
+}
+
+.uk-card:hover img {
+  transform: scale(1.1);
 }
 
 .uk-card-body h3 {
   color: var(--text) !important;
+}
+
+.uk-card img {
+  border-radius: 6px 6px 0 0;
+  transition: 2s transform;
+}
+
+.uk-card-media-top {
+  overflow: hidden;
 }
