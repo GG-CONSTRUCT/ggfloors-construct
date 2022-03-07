@@ -1302,7 +1302,7 @@ footer {
   right: var(--margin, 16px);
   left: var(--margin, 16px);
   display: none;
-  padding: calc(var(--padding, 16px) * 2);
+  padding: var(--padding, 16px);
   border: 1px solid #ccc;
   border-bottom: 2px solid var(--blue, #0e4ed5);
   border-radius: 24px;
@@ -1604,7 +1604,7 @@ footer {
   border-radius: 50%;
 }
 
-.share__list li {
+.share__list li {ш
   position: 0;
   display: flex;
   width: 28px;
