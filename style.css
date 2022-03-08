@@ -1828,3 +1828,41 @@ video {
 .uk-card-body p {
   font-size: 14px;
 }
+
+.backlink {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(180deg);
+}
+
+
+.backlink img {
+  width: 14px;
+  transition: .3s ease-in-out;
+}
+
+.backlink span {
+  transition: .1s ease-in;
+}
+
+.backlink:focus img {
+    transform: translateX(24px);
+    opacity: 0;
+  }
+
+  .backlink:focus span {
+    transform: translateX(8px);
+  }
+
+@media (max-width: 500px) {
+  .backlink:hover img {
+    transform: translateX(24px);
+    opacity: 0;
+  }
+
+  .backlink:hover span {
+    transform: translateX(8px);
+  }
+}
