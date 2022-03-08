@@ -1555,7 +1555,7 @@ footer {
 @media (min-height: 1000px) {
   .heading {
     position: sticky;
-    top: 36px;
+    top: 64px;
   }
 }
 
