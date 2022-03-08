@@ -1555,7 +1555,7 @@ footer {
 @media (min-height: 1000px) {
   .heading {
     position: sticky;
-    top: 30px;
+    top: 36px;
   }
 }
 
@@ -1790,7 +1790,7 @@ video {
 
 .uk-card {
   background-color: var(--beige);
-  min-height: 600px;
+  min-height: 480px;
   border: 1px solid var(--base);
   border-radius: 6px;
 }
@@ -1813,5 +1813,18 @@ video {
 }
 
 .uk-card-media-top {
+  border-radius: 6px 6px 0 0;
   overflow: hidden;
+}
+
+.uk-card-body {
+  padding: var(--padding) calc(var(--padding) * 1.5);
+}
+
+.uk-card-body > * {
+  margin-bottom: 8px;
+}
+
+.uk-card-body p {
+  font-size: 14px;
 }
