@@ -39,6 +39,11 @@
   </header>
   <main>
     <div class="controlbar">
+      <a href="javascript:history.back()" class="button button-reveal backlink">
+        <span>
+          <img src="icons/more.svg" alt="meer">
+        </span>
+      </a>
       <a href="#top" class="button button-reveal" uk-toggle="target: +">
         <span>GRATIS OFFERTE AANVRAGEN</span>
       </a>
@@ -58,6 +63,13 @@
         <p class="footnote">* = Invoer verplicht</p>
         <button class="uk-button-default button button-reveal">VERZENDEN</button>
       </form>
+      <a href="#top" class="uk-button-default button button-reveal" uk-toggle="target: +" hidden>
+        <span>ZET JE VIDEO AAN</span>
+      </a>
+      <video src="video/intro.mp4" controls playsinline hidden uk-video></video>
+      <a href="#gallery" uk-scroll class="button button-reveal" hidden>
+        <span>GALERIE</span>
+      </a>
     </div>
     <div class="heading">
       <div class="titlebar">
