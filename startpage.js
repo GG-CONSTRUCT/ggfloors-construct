@@ -4,8 +4,8 @@ const translateStartPage = (lang) => {
   getAll('.paragraph')[0].innerHTML = aboutCompany[lang];
   getAll('.paragraph')[1].textContent = socialMediaInvite[lang];
   getTextContentIn(getAll('.about-gg .list__link'), activities, lang);
-  get('.about-gg .list__link').textContent += ` (${floor[lang].slice(0, 7).join(', ').toLowerCase()}, ... )`;
-  getTitleAttr(getAll('.flooring-activities__link'), floor[lang].slice(0, 7));
+  get('.about-gg .list__link').textContent += ` (${floorTitle[lang].slice(0, 7).join(', ').toLowerCase()}, ... )`;
+  getTitleAttr(getAll('.flooring-activities__link'), floorTitle[lang].slice(0, 7));
   get('.about-gg .list')
   .lastElementChild.querySelector('a')
   .textContent = `${more[lang]} ...`;

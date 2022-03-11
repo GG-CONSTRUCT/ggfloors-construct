@@ -12,7 +12,7 @@ const activities = {
   de: ['Etage', 'Malerei', 'Gyproc-Arbeiten', 'Verputzen', 'Terrassen und Einfahrten', 'Dachwerk', 'Crepi', 'Renovierung', 'Neubau', 'Alle Dateien...',],
 };
 
-const floor = {
+const floorTitle = {
   nl:['Natuursteen', 'Keramiek', 'Mozaïek', 'Exclusieve tegels', 'Parket', 'Laminaat', 'Linoleum', 'Vinyl', 'Tapijt', 'PVC', 'LVT', 'Rubber', 'Egaliseren', ], 
   en:['Natural stone', 'Ceramics', 'Mosaic', 'Exclusive tiles', 'Parquet', 'Laminate', 'Linoleum', 'Vinyl', 'Carpet', 'PVC', 'LVT', 'Rubber ', 'Equalize', ], 
   fr:['Pierre naturelle', 'Céramique', 'Mosaïque', 'Carreaux exclusifs', 'Parquet', 'Laminé', 'Linoléum', 'Vinyle', 'Moquette', 'PVC', 'LVT', ' Caoutchouc ', 'Égaliser', ],
@@ -186,4 +186,31 @@ const boxBtn = {
   en: 'Company details',
   fr: 'Coordonnées de l\'entreprise',
   de: 'Firmendaten',
+}
+
+const vloerder = {
+  nl: `GG Floors&Construct is gestart in de bouwsector met het plaatsen van allerhanden vloerafwerking.
+Zachte of harde vloeren, hetm aakt weinig uit we plaatsen het allemaal.<br>
+Door onze jarenlange expertise in vloeren hebben we ook contacten met de betere materiaal leverancier.<br>
+Zo geniet u van een snelle en vlotte plaatsing en dit volgens u wensen. Oppervlakte afwerking kent voor ons geen geheimen meer, de verschillende manieren van opbouwen is voor ons dagdagelijkse bezigheid.
+Door deze ervaring komt u in uw renovatie project ook niet voor verrassingen te staan.<br>
+Voor een nieuwe vloer moet u bij GG-Floors&Construct zijn. Wij plaatsten alle soorten duurzame en decoratieve tegels voor vloeren en wanden, zowel voor leefruimtes als voor keukens, badkamers en bergruimtes, waaronder:`,
+    en: `GG Floors&Construct started in the construction sector by installing all kinds of floor finishes.
+Soft or hard floors, it doesn't matter we install it all.<br>
+Thanks to our many years of expertise in floors, we also have contacts with the better material supplier.<br>
+This way you can enjoy a quick and smooth installation according to your wishes. Surface finishing has no more secrets for us, the different ways of building up are part of our daily activity.
+Thanks to this experience, you will not be faced with surprises in your renovation project.<br>
+You should contact GG-Floors&Construct for a new floor. We installed all types of durable and decorative tiles for floors and walls, for living areas as well as for kitchens, bathrooms and storage areas, including:`,
+    fr: `GG Floors&Construct a commencé dans le secteur de la construction en installant toutes sortes de revêtements de sol.
+Sols souples ou durs, peu importe nous installons tout.<br>
+Grâce à nos nombreuses années d'expertise dans les sols, nous avons également des contacts avec le meilleur fournisseur de matériaux.<br>
+De cette façon, vous pouvez profiter d'une installation rapide et fluide selon vos souhaits. La finition de surface n'a plus de secrets pour nous, les différentes manières de reconstituer font partie de notre activité quotidienne.
+Grâce à cette expérience, vous n'aurez pas de surprises dans votre projet de rénovation.<br>
+Vous devez contacter GG-Floors&Construct pour un nouveau sol. Nous avons installé tous types de carreaux durables et décoratifs pour sols et murs, pour les espaces de vie ainsi que pour les cuisines, les salles de bain et les espaces de rangement, notamment :`,
+    de: `GG Floors&Construct begann im Bausektor mit der Installation aller Arten von Bodenbelägen.
+Weich- oder Hartböden, egal, wir verlegen alles.<br>
+Dank unserer langjährigen Bodenkompetenz haben wir auch Kontakte zum besseren Materiallieferanten.<br>
+So genießen Sie eine schnelle und reibungslose Installation ganz nach Ihren Wünschen. Die Oberflächenveredelung ist für uns kein Geheimnis mehr, die unterschiedlichen Aufbauarten gehören zu unserem täglichen Handeln.
+Dank dieser Erfahrung werden Sie bei Ihrem Renovierungsprojekt keine Überraschungen erleben.<br>
+Für einen neuen Boden sollten Sie sich an GG-Floors&Construct wenden. Wir verlegen alle Arten von dauerhaften und dekorativen Fliesen für Böden und Wände, für Wohnräume sowie für Küchen, Bäder und Lagerbereiche, darunter:`,
 }

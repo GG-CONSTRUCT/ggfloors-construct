@@ -81,9 +81,9 @@ const getMobileMenu = (lang) => {
 const getSearchList = (lang) => {
   const searchList = get('.search ul');
   clearNode(searchList);
-  let searchItems = [...floor[lang], ...activities[lang]];
+  let searchItems = [...floorTitle[lang], ...activities[lang]];
   searchItems.pop();
-  let searchLinks = [...floor.nl, ...activities.nl];
+  let searchLinks = [...floorTitle.nl, ...activities.nl];
   searchLinks.pop();
   let searchInput = get('#search');
   let searchTitle = get('.search label');
