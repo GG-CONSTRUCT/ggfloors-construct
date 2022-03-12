@@ -1569,8 +1569,13 @@ footer {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   margin-right: 24px;
-  transition: .5s all;
   color: var(--text);
+}
+
+@media (min-width: 1400px) {
+  .titlebar h1 {
+    font-size: 42px;
+  }
 }
 
 .share {

@@ -402,7 +402,7 @@ html[lang='nl'] .dark .hero {
 }
 
 .list li {
-  max-width: 100%;
+  max-width: 96%;
   margin-top: 4px;
   padding: 2px 16px;
   transition: .2s transform;
