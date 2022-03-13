@@ -97,9 +97,9 @@
         </a>
         <div id="modal-full" class="uk-modal-full" uk-modal>
           <div class="uk-modal-dialog">
-            <button class="uk-modal-close-full uk-close-large" type="button" uk-close style="background-color: #4442;"></button>
-            <div class="uk-grid-collapse uk-flex-middle" uk-grid uk-height-viewport style="background-color: var(--base);">
-                <iframe src="https://www.google.com/maps/embed?pb=!4v1646679912566!6m8!1m7!1svl_1HprByXL-DTE2aggZqQ!2m2!1d50.86368023607778!2d4.517374556021659!3f290.5865820359485!4f4.131785449622754!5f0.7820865974627469" style="border:0; width: 100%; min-height: 80vh; background-color: var(--base);" allowfullscreen loading="lazy"></iframe>
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-flex-middle" uk-grid uk-height-viewport>
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1646679912566!6m8!1m7!1svl_1HprByXL-DTE2aggZqQ!2m2!1d50.86368023607778!2d4.517374556021659!3f290.5865820359485!4f4.131785449622754!5f0.7820865974627469" allowfullscreen loading="lazy"></iframe>
             </div>
           </div>
         </div>
@@ -155,7 +155,7 @@
     </article>
     <section class="section" id="gallery">
       <h2 class="title">Galerie</h2>
-      <button class="toggle-button icon-grid" onclick="
+      <button class="toggle-button icon-grid uk-hidden@s" onclick="
       document.querySelector('.grid').classList.toggle('uk-child-width-1-2');
       document.querySelector('.grid').classList.toggle('uk-child-width-1-1');
       "></button>
@@ -221,7 +221,7 @@
           </a>
         </div>
       </div>
-      <div style="max-width: 800px" class="social social_size_m">
+      <div class="social social_size_m">
         <p class="to-print"></p>
         <p class="e-mail"></p>
         <ul class="social__list"></ul>

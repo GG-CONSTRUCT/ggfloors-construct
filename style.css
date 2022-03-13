@@ -843,6 +843,10 @@ h1, h2, h3 {
   --size: 21px;
 }
 
+#gallery .social_size_m {
+  max-width: 800px;
+}
+
 .social_size_l {
   --size: 64px;
 }
@@ -1609,8 +1613,8 @@ footer {
   border-radius: 50%;
 }
 
-.share__list li {ш
-  position: 0;
+.share__list li {
+  position: relative;
   display: flex;
   width: 28px;
   height: 28px;
@@ -1870,4 +1874,33 @@ video {
   .backlink:hover span {
     transform: translateX(8px);
   }
+}
+
+.map {
+  background-color: var(--base);
+}
+
+.map iframe {
+  width: 100%;
+  min-height: 80vh;
+  border:0;
+  background-color: var(--base);
+}
+
+.uk-modal-full button {
+  background-color: #4442;
+}
+
+.icons-block {
+  display: flex;
+}
+
+.icons-block i {
+  margin-right: 16px;
+  padding: 8px 24px;
+  background: #4443;
+}
+
+.grid {
+  padding: var(--padding);
 }

@@ -188,6 +188,10 @@ const boxBtn = {
   de: 'Firmendaten',
 }
 
+const headingLink = {
+  nl: ['']
+}
+
 const vloerder = {
   nl: `GG Floors&Construct is gestart in de bouwsector met het plaatsen van allerhanden vloerafwerking.
 Zachte of harde vloeren, hetm aakt weinig uit we plaatsen het allemaal.<br>
