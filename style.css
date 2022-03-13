@@ -1719,7 +1719,7 @@ video {
   padding: 4px 16px 4px calc(var(--padding) / 2) !important;
 }
 
-.controlbar form {
+.controlbar form{
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1728,7 +1728,15 @@ video {
   padding: calc(var(--padding, 16px) / 2);
 }
 
-.controlbar form button {
+.contact-formular {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+}
+
+.controlbar form button,
+.contact-formular button {
   display: flex;
   width: 120px;
   margin: 20px 0;
@@ -1737,7 +1745,8 @@ video {
   align-items: center;
 }
 
-.controlbar form label {
+.controlbar form label,
+.contact-formular label {
   font-weight: 600;
   display: flex;
   flex-direction: column;
@@ -1748,8 +1757,14 @@ video {
   justify-content: space-around;
 }
 
+.contact-formular label {
+  color: var(--text);
+}
+
 .controlbar form input,
-.controlbar form textarea {
+.controlbar form textarea,
+.contact-formular input,
+.contact-formular textarea {
   font-size: 16px;
   width: 100%;
   padding: 5px;
@@ -1759,8 +1774,14 @@ video {
   background-color: transparent;
 }
 
-.controlbar form input {
+.controlbar form input,
+.contact-formular input {
   height: 36px;
+}
+
+.contact-formular input,
+.contact-formular textarea {
+  color: var(--text);
 }
 
 .footnote,
@@ -1768,19 +1789,24 @@ video {
   color: #eee;
 }
 
+.contact-formular .footnote,
+.contact-formular textarea::placeholder {
+  color: var(--text);
+}
+
 .sidenav {
   padding: var(--padding);
 }
 
 .sidenav li {
-  height: 42px;
-  margin: calc(var(--margin) / 2) 0 var(--margin);
-  padding-bottom: 2px;
+  height: 48px;
+  margin: 4px 0;
+  padding-bottom: 4px;
   border-bottom: 1px dotted gray;
 }
 
 .sidenav a {
-  font-size: 18px;
+  font-size: 16px;
   display: flex;
   height: 100%;
   padding: 0 calc(var(--padding, 16px) / 2);
@@ -1795,6 +1821,10 @@ video {
 
 .sidenav a:hover {
   background-color: rgba(50, 115, 245, .12);
+}
+
+.active {
+  background-color: rgba(50, 115, 245, .24);
 }
 
 .uk-card {
@@ -1903,4 +1933,46 @@ video {
 
 .grid {
   padding: var(--padding);
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-wrap > * {
+  margin: 32px calc(82px + var(--margin));
+}
+
+.flex-wrap > div {
+  width: 100%;
+  max-width: 500px;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-wrap .sidenav {
+  width: 100%;
+  max-width: 320px;
+}
+
+@media (max-width: 769px) {
+  .flex-wrap {
+    justify-content: center;
+  }
+  .flex-wrap > * {
+    margin: 0;
+    padding: 16px var(--padding);
+  }
+  .flex-wrap .sidenav {
+    max-width: 500px;
+  }
+}
+
+.sidenav .title i {
+  color: var(--blue);
+  margin-left: 8px;
+  font-size: 21px;
 }
