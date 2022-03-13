@@ -1719,7 +1719,7 @@ video {
   padding: 4px 16px 4px calc(var(--padding) / 2) !important;
 }
 
-.controlbar form{
+.controlbar form {
   display: flex;
   flex-direction: column;
   width: 100%;
