@@ -218,3 +218,22 @@ So genießen Sie eine schnelle und reibungslose Installation ganz nach Ihren Wü
 Dank dieser Erfahrung werden Sie bei Ihrem Renovierungsprojekt keine Überraschungen erleben.<br>
 Für einen neuen Boden sollten Sie sich an GG-Floors&Construct wenden. Wir verlegen alle Arten von dauerhaften und dekorativen Fliesen für Böden und Wände, für Wohnräume sowie für Küchen, Bäder und Lagerbereiche, darunter:`,
 }
+
+const schilderwerken = {
+  nl: `GG Floors&Construct heeft door zijn jarenlange ervaring een reputatie opgebouwd van een zeer betrouwbare en zeer solide onderneming. Hierbij staat vakmanschap, kwaliteit en service steeds centraal. Door het snel en accuraat inspelen op specifieke wensen van de opdrachtgevers staat GG Floors&Construct garant voor een perfect eindresultaat.<br>
+GG Floors&Construct staat reeds jaren garant voor alle schilderwerken voor verschillende grotere klasse 8 firma’s. Deze gebruiken wij dan ook graag als referentie voor ons vakmanschap.<br>
+GG Floors&Construct speelt dan ook in op de specifieke wensen vanuit de opdrachtgevers, die bij voorkeur werken met één en dezelfde partij, die verantwoordelijk is voor verschillende werkzaamheden binnen een project.<br>
+Geen enkele muur zal er nog opgeschilderd uitzien.`,
+  en: `Thanks to its many years of experience, GG Floors&Construct has built up a reputation as a very reliable and very solid company. Craftsmanship, quality and service are always central here. By responding quickly and accurately to specific wishes of the clients, GG Floors&Construct guarantees a perfect end result.<br>
+GG Floors&Construct has been guaranteeing all painting work for several larger class 8 companies for years. We therefore like to use this as a reference for our craftsmanship.<br>
+GG Floors&Construct therefore responds to the specific wishes of the clients, who preferably work with one and the same party, which is responsible for different activities within a project.<br>
+Not a single wall will look painted again.`,
+  fr: `Troch syn jierrenlange ûnderfining hat GG Floors&Construct in reputaasje opboud as in tige betrouber en tige solide bedriuw. Ambacht, kwaliteit en service steane dêr altyd sintraal yn. Troch fluch en sekuer te reagearjen op de spesifike winsken fan de kliïnten garandearret GG Floors&Construct in perfekt einresultaat.<br>
+GG Floors&Construct garandearret al jierren alle skilderwurk foar ferskate gruttere klasse 8 bedriuwen. Wy brûke dit dêrom graach as referinsje foar ús fakmanskip.<br>
+GG Floors&Construct spilet dêrom yn op de spesifike winsken fan de opdrachtjouwers, dy't it leafst mei ien en deselde partij wurkje, dy't ferantwurdlik is foar ferskate aktiviteiten binnen in projekt.<br>
+Gjin inkele muorre sil sjen skildere wer.`,
+  de: `Dank seiner langjährigen Erfahrung hat sich GG Floors&Construct einen Ruf als sehr zuverlässiges und sehr solides Unternehmen aufgebaut. Handwerk, Qualität und Service stehen dabei immer im Mittelpunkt. Durch schnelles und genaues Reagieren auf die spezifischen Wünsche der Kunden garantiert GG Floors&Construct ein perfektes Endergebnis.<br>
+GG Floors&Construct garantiert seit Jahren alle Malerarbeiten für mehrere größere Klasse-8-Unternehmen. Wir verwenden dies daher gerne als Referenz für unsere Handwerkskunst.<br>
+GG Floors&Construct geht daher auf die spezifischen Wünsche der Kunden ein, die vorzugsweise mit ein und derselben Partei zusammenarbeiten, die für verschiedene Aktivitäten innerhalb eines Projekts verantwortlich ist.<br>
+Keine einzige Wand wird wieder gestrichen aussehen.`,
+}
