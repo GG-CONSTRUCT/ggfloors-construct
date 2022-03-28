@@ -195,6 +195,13 @@ const headingLink = {
   de: ['kostenloses Angebot anfordern', 'Video einschalten', 'Galerie'],
 }
 
+const submitApp = {
+ nl: 'dien uw aanvraag in', 
+ en: 'submit your application', 
+ fr: 'soumettez votre candidature', 
+ de: 'senden Sie Ihre Bewerbung',
+}
+
 const vloerder = {
   nl: `GG Floors&Construct is gestart in de bouwsector met het plaatsen van allerhanden vloerafwerking.
 Zachte of harde vloeren, hetm aakt weinig uit we plaatsen het allemaal.<br>
