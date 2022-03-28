@@ -202,6 +202,13 @@ const submitApp = {
  de: 'senden Sie Ihre Bewerbung',
 }
 
+const alsoSeeTitle = {
+  nl: 'Zie ook',
+  en: 'Also see',
+  fr: 'Regarde aussi',
+  de: 'Siehe auch',
+}
+
 const vloerder = {
   nl: `GG Floors&Construct is gestart in de bouwsector met het plaatsen van allerhanden vloerafwerking.
 Zachte of harde vloeren, hetm aakt weinig uit we plaatsen het allemaal.<br>
