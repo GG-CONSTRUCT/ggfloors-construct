@@ -189,7 +189,10 @@ const boxBtn = {
 }
 
 const headingLink = {
-  nl: ['']
+  nl: ['gratis offerte aanvragen', 'zet je video aan', 'galerie'],
+  en: ['request a free quote', 'turn on video', 'gallery'],
+  fr: ['freegje in offerte oan', 'ynskeakelje fideo', 'galery'],
+  de: ['kostenloses Angebot anfordern', 'Video einschalten', 'Galerie'],
 }
 
 const vloerder = {
