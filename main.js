@@ -1,3 +1,10 @@
+// color theme mode
+let isDark = false;
+let now = new Date().getHours();
+if (now > 7 && now < 20) {
+  document.body.classList.remove('dark');
+} 
+
 const companyName = 'GG Floors & Construct';
 
 const clearNode = (node) => {
@@ -303,13 +310,6 @@ email.createLink(mail);
 
 const print = new Link('print', 'javascript:window.print()');
 print.createLink(toPrint);
-
-// color theme mode
-let isDark = false;
-let now = new Date().getHours();
-if (now > 7 && now < 20) {
-  document.body.classList.remove('dark');
-} 
 
 // switch language
 for (const option of getAll('.option')) {
