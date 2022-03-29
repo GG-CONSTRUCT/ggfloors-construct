@@ -189,7 +189,24 @@ const boxBtn = {
 }
 
 const headingLink = {
-  nl: ['']
+  nl: ['gratis offerte aanvragen', 'zet je video aan', 'galerie'],
+  en: ['request a free quote', 'turn on video', 'gallery'],
+  fr: ['freegje in offerte oan', 'ynskeakelje fideo', 'galery'],
+  de: ['kostenloses Angebot anfordern', 'Video einschalten', 'Galerie'],
+}
+
+const submitApp = {
+ nl: 'dien uw aanvraag in', 
+ en: 'submit your application', 
+ fr: 'soumettez votre candidature', 
+ de: 'senden Sie Ihre Bewerbung',
+}
+
+const alsoSeeTitle = {
+  nl: 'Zie ook',
+  en: 'Also see',
+  fr: 'Regarde aussi',
+  de: 'Siehe auch',
 }
 
 const vloerder = {
@@ -217,4 +234,53 @@ Dank unserer langjährigen Bodenkompetenz haben wir auch Kontakte zum besseren M
 So genießen Sie eine schnelle und reibungslose Installation ganz nach Ihren Wünschen. Die Oberflächenveredelung ist für uns kein Geheimnis mehr, die unterschiedlichen Aufbauarten gehören zu unserem täglichen Handeln.
 Dank dieser Erfahrung werden Sie bei Ihrem Renovierungsprojekt keine Überraschungen erleben.<br>
 Für einen neuen Boden sollten Sie sich an GG-Floors&Construct wenden. Wir verlegen alle Arten von dauerhaften und dekorativen Fliesen für Böden und Wände, für Wohnräume sowie für Küchen, Bäder und Lagerbereiche, darunter:`,
+}
+
+const schilderwerken = {
+  nl: `GG Floors&Construct heeft door zijn jarenlange ervaring een reputatie opgebouwd van een zeer betrouwbare en zeer solide onderneming. Hierbij staat vakmanschap, kwaliteit en service steeds centraal. Door het snel en accuraat inspelen op specifieke wensen van de opdrachtgevers staat GG Floors&Construct garant voor een perfect eindresultaat.<br>
+GG Floors&Construct staat reeds jaren garant voor alle schilderwerken voor verschillende grotere klasse 8 firma’s. Deze gebruiken wij dan ook graag als referentie voor ons vakmanschap.<br>
+GG Floors&Construct speelt dan ook in op de specifieke wensen vanuit de opdrachtgevers, die bij voorkeur werken met één en dezelfde partij, die verantwoordelijk is voor verschillende werkzaamheden binnen een project.<br>
+Geen enkele muur zal er nog opgeschilderd uitzien.`,
+  en: `Thanks to its many years of experience, GG Floors&Construct has built up a reputation as a very reliable and very solid company. Craftsmanship, quality and service are always central here. By responding quickly and accurately to specific wishes of the clients, GG Floors&Construct guarantees a perfect end result.<br>
+GG Floors&Construct has been guaranteeing all painting work for several larger class 8 companies for years. We therefore like to use this as a reference for our craftsmanship.<br>
+GG Floors&Construct therefore responds to the specific wishes of the clients, who preferably work with one and the same party, which is responsible for different activities within a project.<br>
+Not a single wall will look painted again.`,
+  fr: `Troch syn jierrenlange ûnderfining hat GG Floors&Construct in reputaasje opboud as in tige betrouber en tige solide bedriuw. Ambacht, kwaliteit en service steane dêr altyd sintraal yn. Troch fluch en sekuer te reagearjen op de spesifike winsken fan de kliïnten garandearret GG Floors&Construct in perfekt einresultaat.<br>
+GG Floors&Construct garandearret al jierren alle skilderwurk foar ferskate gruttere klasse 8 bedriuwen. Wy brûke dit dêrom graach as referinsje foar ús fakmanskip.<br>
+GG Floors&Construct spilet dêrom yn op de spesifike winsken fan de opdrachtjouwers, dy't it leafst mei ien en deselde partij wurkje, dy't ferantwurdlik is foar ferskate aktiviteiten binnen in projekt.<br>
+Gjin inkele muorre sil sjen skildere wer.`,
+  de: `Dank seiner langjährigen Erfahrung hat sich GG Floors&Construct einen Ruf als sehr zuverlässiges und sehr solides Unternehmen aufgebaut. Handwerk, Qualität und Service stehen dabei immer im Mittelpunkt. Durch schnelles und genaues Reagieren auf die spezifischen Wünsche der Kunden garantiert GG Floors&Construct ein perfektes Endergebnis.<br>
+GG Floors&Construct garantiert seit Jahren alle Malerarbeiten für mehrere größere Klasse-8-Unternehmen. Wir verwenden dies daher gerne als Referenz für unsere Handwerkskunst.<br>
+GG Floors&Construct geht daher auf die spezifischen Wünsche der Kunden ein, die vorzugsweise mit ein und derselben Partei zusammenarbeiten, die für verschiedene Aktivitäten innerhalb eines Projekts verantwortlich ist.<br>
+Keine einzige Wand wird wieder gestrichen aussehen.`,
+}
+
+const gyprocwerken = {
+  nl: `Naast standaard scheidings- en voorzetwanden kan u bij ons terecht voor de plaatsing van gespecialiseerde oplossingen. Zo plaatsen we wanden met een specifiek brandwerend, geluidswerend, vochtwerend en schimmelwerend effect. We beschikken ook over een compleet scala aan milieuvriendelijke gipsplaten, ideaal dus voor groene bouwprojecten. Gyproc is een materiaal dat zowel geschikt is voor nieuwbouw- als renovatieprojecten. Dit komt omdat gyproc op verschillende manieren kan aangewend worden. U kan er gemakkelijk de binnenkant van uw woning opnieuw mee indelen of bepaalde ruimtes renoveren. Bovendien bestaat er ook speciale gyproc voor vochtige ruimtes zoals badkamers, douches, … Hierdoor is gyproc de afwerking bij uitstek voor badkamer- en keukenrenovaties. Zowel de totale inrichting van diverse ruimtes en zolders, de plaatsing van valse plafonds alsook kleinere werken zoals de afwerking rond een inbouwtoilet kan u door ons laten uitvoeren. Wie gyprocwerken laat uitvoeren door GG Floors&Construct is verzekerd van een mooi en meteen schilderklaar resultaat, omdat we ook zorgen voor de volledige afwerking. Verder kan u eveneens op ons vakmanschap vertrouwen voor het plaatsen van binnendeuren. Wij kijken er nauw op toe dat alles tot in de kleinste details wordt afgewerkt. Kwaliteit en een goede service voor onze klanten staan dan ook voorop.`,
+  en: `In addition to standard partitions and retaining walls, you can contact us for the installation of specialized solutions. For example, we install walls with a specific fire-resistant, sound-resistant, moisture-resistant and mold-resistant effect. We also have a full range of eco-friendly drywall, making them ideal for green building projects. Gyproc is a material that is suitable for both new construction and renovation projects. This is because gyproc can be used in different ways. You can easily rearrange the inside of your home or renovate certain areas. In addition, there is also special gyproc for damp areas such as bathrooms, showers, etc. This makes gyproc the ideal finish for bathroom and kitchen renovations. You can have us carry out the total layout of various rooms and attics, the placement of false ceilings as well as smaller works such as the finishing around a built-in toilet. Anyone who has gyproc work carried out by GG Floors&Construct is assured of a beautiful and immediately ready-to-paint result, because we also take care of the complete finish. You can also rely on our expertise for installing interior doors. We watch closely that everything is finished down to the smallest detail. Quality and good service for our customers are therefore paramount.`,
+  fr: `Njonken standert skieden en stipe muorren kinne jo kontakt mei ús opnimme foar it ynstallearjen fan spesjalisearre oplossingen. Bygelyks, wy ynstallearje muorren mei in spesifike fjoer-resistant, lûd-resistant, focht-resistant en skimmel-resistant effekt. Wy hawwe ek in folslein oanbod fan miljeufreonlike drywall, wêrtroch't se ideaal binne foar griene bouprojekten. Gyproc is in materiaal dat geskikt is foar sawol nijbou as renovaasjeprojekten. Dit is om't gyproc op ferskate manieren brûkt wurde kin. Jo kinne de binnenkant fan jo hûs maklik opnij regelje of bepaalde gebieten renovearje. Dêrneist is der ek spesjale gyproc foar fochtige gebieten lykas badkeamers, dûsen, ensfh Dit makket gyproc de ideale finish foar badkeamer en keuken ferbouwing. Jo kinne ús de totale yndieling fan ferskate keamers en souders, it pleatsen fan falske plafonds en lytsere wurken lykas de ôfwurking om in ynboude húske litte. Elkenien dy't gyproc wurk troch GG Floors&Construct útfiere lit, is fersekere fan in moai en daliks ferve-resultaat, want wy soargje ek foar de folsleine finish. Jo kinne ek fertrouwe op ús ekspertize foar it ynstallearjen fan binnendoarren. Wy sjogge goed dat alles ôfmakke is oant it lytste detail. Kwaliteit en goede service foar ús klanten steane dêrom foarop.`,
+  de: `Zusätzlich zu Standardtrennwänden und Stützwänden können Sie uns für die Installation von Sonderlösungen kontaktieren. So bauen wir beispielsweise Wände mit spezifischer feuerfester, schalldämmender, feuchtigkeitsbeständiger und schimmelresistenter Wirkung ein. Wir haben auch ein komplettes Sortiment an umweltfreundlichen Trockenbauwänden, die sich ideal für umweltfreundliche Bauprojekte eignen. Gyproc ist ein Material, das sowohl für Neubau- als auch für Renovierungsprojekte geeignet ist. Dies liegt daran, dass gyproc auf verschiedene Arten verwendet werden kann. Sie können das Innere Ihres Hauses leicht umgestalten oder bestimmte Bereiche renovieren. Darüber hinaus gibt es auch spezielles Gyproc für Feuchträume wie Badezimmer, Duschen etc. Damit ist Gyproc der ideale Abschluss für Bad- und Küchenrenovierungen. Sie können uns die Gesamteinrichtung verschiedener Räume und Dachböden, das Anbringen von Zwischendecken sowie kleinere Arbeiten wie den Abschluss einer eingebauten Toilette von uns ausführen lassen. Wer Gyproc-Arbeiten von GG Floors&Construct durchführen lässt, kann sich auf ein schönes und sofort streichfertiges Ergebnis verlassen, denn wir kümmern uns auch um das komplette Finish. Auch beim Einbau von Innentüren können Sie sich auf unsere Kompetenz verlassen. Wir achten genau darauf, dass alles bis ins kleinste Detail fertig ist. Qualität und guter Service für unsere Kunden stehen daher an erster Stelle.`,
+}
+
+const pleisterwerken = {
+  nl: `Bouwen of verbouwen een renovatie binnenkort? Onze stukadoors staan klaar voor jullie project.<br>
+Wij zorgen ervoor dat je binnenmuren en plafonds netjes afgewerkt zijn met binnenpleister. En de eerste stap richting een afgewerkt interieur. Daardoor lijkt je woning meteen een pak groter.<br> 
+Wij spuiten binnenpleisterwerk op alle mogelijke ondergronden, snelbouwsteen, beton en voor een perfecte hechting word de te bepleisteren ondergrond behandeld met een hechtmiddel.<br> 
+Zuiver werken daar hechten wij belang aan. Zeker bij renovatie werken letten wij aandachtig op! Voor proper en correct afgewerkte pleisterwerken in je huis, dan dien je bij GG-Floors&Construct te zijn.<br> 
+In kleine ruimten, gebeurt het bepleisteren met de hand. In grote ruimten kan het ook machinaal gedaan worden. Afhankelijk van de grote van de werf en ruimten, wordt er bepaald welke techniek gebruikt wordt. Een ervaren en goede plakker beheerst de kennis van beide technieken.`,
+  en: `Building or renovating a renovation soon? Our plasterers are ready for your project.<br>
+We ensure that your interior walls and ceilings are neatly finished with interior plaster. And the first step towards a finished interior. This immediately makes your home seem a lot bigger.<br>
+We spray indoor plaster on all possible surfaces, fast building stone, concrete and for a perfect adhesion, the surface to be plastered is treated with an adhesive.<br>
+We attach great importance to clean working. We pay close attention, especially when it comes to renovation work! GG-Floors&Construct is the place to be for clean and correctly finished plasterwork in your home.<br>
+In small spaces, plastering is done by hand. It can also be done mechanically in large spaces. Depending on the size of the yard and spaces, it is determined which technique is used. An experienced and good plasterer masters the knowledge of both techniques.`,
+  fr: `In ferbouwing bouwe of renovearje gau? Us stukadoors binne klear foar jo projekt.<br>
+Wy soargje derfoar dat jo binnenmuorren en plafonds kreas ôfmakke wurde mei binnenpleister. En de earste stap nei in klear ynterieur. Dit makket jo hûs daliks in stik grutter.<br>
+Wy spuite binnenpleister op alle mooglike oerflakken, snelboustien, beton en foar in perfekte adhesion wurdt it te pleisterjen oerflak behannele mei in lijm.<br>
+Wy hechtsje grut belang oan skjin wurk. Wy jouwe spesjaal omtinken foar ferbouwingswurk! GG-Floors&Construct is it plak om te wêzen foar skjin en goed ôfmakke gipswurk yn jo hûs.<br>
+Yn lytse romten wurdt gips mei de hân dien. It kin ek meganysk dien wurde yn grutte romten. Ofhinklik fan de grutte fan de hôf en romten wurdt bepaald hokker technyk brûkt wurdt. In betûfte en goede stukadoor behearsket de kennis fan beide techniken.`,
+  de:  `Bauen oder renovieren Sie bald eine Renovierung? Unsere Stuckateure sind bereit für Ihr Projekt.<br>
+Wir sorgen für den sauberen Abschluss Ihrer Innenwände und Decken mit Innenputz. Und der erste Schritt zum fertigen Interieur. Dadurch wirkt Ihr Zuhause gleich viel größer.<br>
+Wir sprühen Innenputz auf alle möglichen Oberflächen, Schnellbausteine, Beton und für eine perfekte Haftung wird die zu verputzende Oberfläche mit einem Kleber behandelt.<br>
+Wir legen großen Wert auf sauberes Arbeiten. Besonderes Augenmerk legen wir auf Renovierungsarbeiten! GG-Floors&Construct ist der richtige Ort für saubere und korrekt ausgeführte Stuckarbeiten in Ihrem Zuhause.<br>
+In kleinen Räumen wird von Hand verputzt. In großen Räumen kann dies auch mechanisch erfolgen. Je nach Größe des Hofes und der Flächen wird festgelegt, welche Technik zum Einsatz kommt. Ein erfahrener und guter Stuckateur beherrscht die Kenntnisse beider Techniken.`,
 }
