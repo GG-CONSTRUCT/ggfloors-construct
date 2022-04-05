@@ -201,7 +201,7 @@ const formFields = {
   en: ['name', 'phone', 'e-mail', 'message', 'your message', 'entry required', 'send'],
   fr : ['nom', 'téléphone', 'email', 'message', 'votre message', 'saisie requise', 'envoyer'],
   de: ['Name', 'Telefon', 'E-Mail', 'Nachricht', 'Ihre Nachricht', 'Eingabe erforderlich', 'Senden'],
-{
+}
 
 const submitApp = {
  nl: 'dien uw aanvraag in', 
