@@ -146,6 +146,7 @@ const aboutFlooring = {
   fr: `Lorsque vous choisissez <b>GG Floors & Construct</b>, vous choisissez la qualité, un excellent savoir-faire et une finition bien entretenue. Après tout, GG Floors & Construct est spécialisé dans tous les travaux de sol et sait parfaitement comment carreler tous vos sols et murs de manière lisse, professionnelle et parfaite. Choisissez les carreaux, les couleurs et la finition et GG Floors & Construct réalisera la ou les pièces de vos rêves. Nous avons installé tous les types de carreaux durables et décoratifs pour les sols et les murs, pour les espaces de vie ainsi que pour les cuisines, les salles de bains et les espaces de stockage, y compris : <a href="pierre naturelle.html">Pierre naturelle</a>, <a href="ceramic.html ">Céramique</a>, <a href="mosaic.html">Mosaïque</a>, <a href="exclusive-tiles">Exclusive-tiles</a>, <a href="parquet.html" >Parquet</a>, <a href="laminate.html">Stratifié</a>, <a href="linoleum.html">Linoléum</a>, … Pas de prise de sol aucun secret pour nous.`,
   de: `Wenn Sie sich für <b>GG Floors & Construct</b> entscheiden, entscheiden Sie sich für Qualität, hervorragende Handwerkskunst und eine gepflegte Oberfläche. Schließlich ist GG Floors & Construct auf alle Bodenarbeiten spezialisiert und weiß perfekt, wie Sie alle Ihre Böden und Wände glatt, professionell und perfekt verfliesen. Wählen Sie die Fliesen, Farben und das Finish und GG Floors & Construct realisiert die Räume Ihrer Träume. Wir haben alle Arten von langlebigen und dekorativen Fliesen für Böden und Wände, für Wohnräume sowie für Küchen, Bäder und Lagerbereiche verlegt, darunter: <a href="Naturstein.html">Naturstein</a>, <a href="ceramic.html ">Keramik</a>, <a href="mosaic.html">Mosaik</a>, <a href="exclusive-tiles">Exklusiv-Fliesen</a>, <a href="parquet.html" >Parkett</a>, <a href="laminate.html">Laminat</a>, <a href="linoleum.html">Linoleum</a>, … Keine Bodenhaftung keine Geheimnisse für uns.`,
 }
+
 const flooringOfferTitle = {
   nl: 'vloerbedekking leggen',
   en: 'laying floor covering',
@@ -194,6 +195,13 @@ const headingLink = {
   fr: ['freegje in offerte oan', 'ynskeakelje fideo', 'galery'],
   de: ['kostenloses Angebot anfordern', 'Video einschalten', 'Galerie'],
 }
+
+const formFields = {
+  nl: ['naam', 'telefoon', 'e-mail', 'bericht', 'je berichtje', 'invoer verplicht', 'verzenden'],
+  en: ['name', 'phone', 'e-mail', 'message', 'your message', 'entry required', 'send'],
+  fr : ['nom', 'téléphone', 'email', 'message', 'votre message', 'saisie requise', 'envoyer'],
+  de: ['Name', 'Telefon', 'E-Mail', 'Nachricht', 'Ihre Nachricht', 'Eingabe erforderlich', 'Senden'],
+{
 
 const submitApp = {
  nl: 'dien uw aanvraag in', 
