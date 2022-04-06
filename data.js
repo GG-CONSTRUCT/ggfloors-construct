@@ -197,10 +197,31 @@ const headingLink = {
 }
 
 const formFields = {
-  nl: ['naam', 'telefoon', 'e-mail', 'bericht', 'je berichtje', 'invoer verplicht', 'verzenden'],
-  en: ['name', 'phone', 'e-mail', 'message', 'your message', 'entry required', 'send'],
-  fr: ['nom', 'téléphone', 'email', 'message', 'votre message', 'saisie requise', 'envoyer'],
-  de: ['Name', 'Telefon', 'E-Mail', 'Nachricht', 'Ihre Nachricht', 'Eingabe erforderlich', 'Senden'],
+  nl: ['naam', 'telefoon', 'e-mail', 'bericht',],
+  en: ['name', 'phone', 'e-mail', 'message',],
+  fr: ['nom', 'téléphone', 'email', 'message', ],
+  de: ['Name', 'Telefon', 'E-Mail', 'Nachricht',],
+}
+
+const formNote = {
+  nl: 'invoer verplicht',
+  en: 'entry required',
+  fr: 'saisie requise',
+  de: 'Eingabe erforderlich'
+}
+
+const formTextareaPlaceholder = {
+  nl: 'je berichtje',
+  en: 'your message',
+  fr: 'votre message',
+  de: 'Ihre Nachricht'
+}
+
+const formSubmit = {
+  nl: 'verzenden',
+  en: 'send',
+  fr: 'envoyer',
+  de: 'Senden'
 }
 
 const submitApp = {
