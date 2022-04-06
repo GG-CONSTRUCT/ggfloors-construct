@@ -1728,6 +1728,10 @@ video {
   padding: calc(var(--padding, 16px) / 2);
 }
 
+.controlbar form label span {
+  text-transform: capitalize;
+}
+
 .contact-formular {
   display: flex;
   flex-direction: column;

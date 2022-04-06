@@ -194,6 +194,11 @@ const getControlBarLinks = (lang) => {
   getTextContentIn(items, headingLink, lang);
 }
 
+const getFormLabels = (lang) => {
+  let items = getAll('.controlbar form > label span');
+  getTextContentIn(items, formLabels, lang);
+}
+
 const html = get('html');
 html.setAttribute('lang', localStorage
 .getItem('current lang') ? localStorage
@@ -329,6 +334,7 @@ for (const option of getAll('.option')) {
       getMobileMenu(this.textContent.toLowerCase());
       getSearchList(this.textContent.toLowerCase());
       getControlBarLinks(this.textContent.toLowerCase());
+      getFormLabels(this.textContent.toLowerCase());
       (typeof getPageContent !== 'undefined') ? getPageContent(this.textContent.toLowerCase()) : '';
       this.closest('.dropdown').querySelector('.dropdown__title').textContent = this.textContent;
     }

@@ -196,7 +196,7 @@ const headingLink = {
   de: ['KOSTENLOSES ANGEBOT ANFORDERN', 'VIDEO EINSCHALTEN', 'GALERIE'],
 }
 
-const formFields = {
+const formLabels = {
   nl: ['naam', 'telefoon', 'e-mail', 'bericht',],
   en: ['name', 'phone', 'e-mail', 'message',],
   fr: ['nom', 'téléphone', 'email', 'message', ],
