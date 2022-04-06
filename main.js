@@ -189,6 +189,11 @@ const getPartners = () => {
   }
 }
 
+const getControlBarLinks = (lang) => {
+  let items = getAll('.controlbar > a span');
+  getTextContentIn(items, headingLink, lang);
+}
+
 const html = get('html');
 html.setAttribute('lang', localStorage
 .getItem('current lang') ? localStorage
@@ -205,6 +210,7 @@ for (const option of getAll('.option')) {
 
 if (lang !== 'NL') getTopNav(lang.toLowerCase());
 if (lang !== 'NL') getFootNav(lang.toLowerCase());
+if (lang !== 'NL') getControlBarLinks(lang.toLowerCase());
 
 const getNav = (lang) => {
   getTopNav(lang.toLowerCase());
@@ -322,6 +328,7 @@ for (const option of getAll('.option')) {
       getNav(this.textContent.toLowerCase());
       getMobileMenu(this.textContent.toLowerCase());
       getSearchList(this.textContent.toLowerCase());
+      getControlBarLinks(this.textContent.toLowerCase());
       (typeof getPageContent !== 'undefined') ? getPageContent(this.textContent.toLowerCase()) : '';
       this.closest('.dropdown').querySelector('.dropdown__title').textContent = this.textContent;
     }

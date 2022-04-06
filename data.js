@@ -190,16 +190,16 @@ const boxBtn = {
 }
 
 const headingLink = {
-  nl: ['gratis offerte aanvragen', 'zet je video aan', 'galerie'],
-  en: ['request a free quote', 'turn on video', 'gallery'],
-  fr: ['freegje in offerte oan', 'ynskeakelje fideo', 'galery'],
-  de: ['kostenloses Angebot anfordern', 'Video einschalten', 'Galerie'],
+  nl: ['GRATIS OFFERTE AANVRAGEN', 'ZET JE VIDEO AAN', 'GALERIE'],
+  en: ['REQUEST A FREE QUOTE', 'TURN ON VIDEO', 'GALLERY'],
+  fr: ['FREEGJE IN OFFERTE OAN', 'YNSKEAKELJE FIDEO', 'GALERY'],
+  de: ['KOSTENLOSES ANGEBOT ANFORDERN', 'VIDEO EINSCHALTEN', 'GALERIE'],
 }
 
 const formFields = {
   nl: ['naam', 'telefoon', 'e-mail', 'bericht', 'je berichtje', 'invoer verplicht', 'verzenden'],
   en: ['name', 'phone', 'e-mail', 'message', 'your message', 'entry required', 'send'],
-  fr : ['nom', 'téléphone', 'email', 'message', 'votre message', 'saisie requise', 'envoyer'],
+  fr: ['nom', 'téléphone', 'email', 'message', 'votre message', 'saisie requise', 'envoyer'],
   de: ['Name', 'Telefon', 'E-Mail', 'Nachricht', 'Ihre Nachricht', 'Eingabe erforderlich', 'Senden'],
 }
 
