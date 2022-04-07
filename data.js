@@ -197,16 +197,16 @@ const headingLink = {
 }
 
 const formLabels = {
-  nl: ['naam', 'telefoon', 'e-mail', 'bericht',],
-  en: ['name', 'phone', 'e-mail', 'message',],
-  fr: ['nom', 'téléphone', 'email', 'message', ],
+  nl: ['Naam', 'Telefoon', 'E-mail', 'Bericht',],
+  en: ['Name', 'Phone', 'E-mail', 'Message',],
+  fr: ['Nom', 'Téléphone', 'Email', 'Message', ],
   de: ['Name', 'Telefon', 'E-Mail', 'Nachricht',],
 }
 
 const formNote = {
-  nl: 'invoer verplicht',
-  en: 'entry required',
-  fr: 'saisie requise',
+  nl: 'Invoer verplicht',
+  en: 'Entry required',
+  fr: 'Saisie requise',
   de: 'Eingabe erforderlich'
 }
 
@@ -218,9 +218,9 @@ const formTextareaPlaceholder = {
 }
 
 const formSubmit = {
-  nl: 'verzenden',
-  en: 'send',
-  fr: 'envoyer',
+  nl: 'Verzenden',
+  en: 'Send',
+  fr: 'Envoyer',
   de: 'Senden'
 }
 

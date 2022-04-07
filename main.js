@@ -203,8 +203,18 @@ const getForm = (lang) => {
     const textarea = get('.controlbar textarea');
     textarea.placeholder = formTextareaPlaceholder[lang];
   }
+  const getFormNote = () => {
+    const footnote = get('.footnote');
+   footnote.textContent = `* = ${formNote[lang]}`;
+  }
+  const getFormButton = () => {
+    const formBtn = get('.controlbar form button');
+   formBtn.textContent = formSubmit[lang].toUpperCase();
+  }
   getLabels();
   getTextareaPlaceholder();
+  getFormNote();
+  getFormButton();
 }
 
 const html = get('html');
