@@ -194,9 +194,17 @@ const getControlBarLinks = (lang) => {
   getTextContentIn(items, headingLink, lang);
 }
 
-const getFormLabels = (lang) => {
-  let items = getAll('.controlbar form > label span');
-  getTextContentIn(items, formLabels, lang);
+const getForm = (lang) => {
+  const getLabels = () => {
+    let labels = getAll('.controlbar form > label span');
+    getTextContentIn(labels, formLabels, lang);
+  }
+  const getTextareaPlaceholder = () => {
+    const textarea = get('.controlbar textarea');
+    textarea.placeholder = formTextareaPlaceholder[lang];
+  }
+  getLabels();
+  getTextareaPlaceholder();
 }
 
 const html = get('html');
@@ -216,6 +224,7 @@ for (const option of getAll('.option')) {
 if (lang !== 'NL') getTopNav(lang.toLowerCase());
 if (lang !== 'NL') getFootNav(lang.toLowerCase());
 if (lang !== 'NL') getControlBarLinks(lang.toLowerCase());
+if (lang !== 'NL') getForm(lang.toLowerCase());
 
 const getNav = (lang) => {
   getTopNav(lang.toLowerCase());
@@ -334,7 +343,7 @@ for (const option of getAll('.option')) {
       getMobileMenu(this.textContent.toLowerCase());
       getSearchList(this.textContent.toLowerCase());
       getControlBarLinks(this.textContent.toLowerCase());
-      getFormLabels(this.textContent.toLowerCase());
+      getForm(this.textContent.toLowerCase());
       (typeof getPageContent !== 'undefined') ? getPageContent(this.textContent.toLowerCase()) : '';
       this.closest('.dropdown').querySelector('.dropdown__title').textContent = this.textContent;
     }

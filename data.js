@@ -211,9 +211,9 @@ const formNote = {
 }
 
 const formTextareaPlaceholder = {
-  nl: 'je berichtje',
-  en: 'your message',
-  fr: 'votre message',
+  nl: 'Je berichtje',
+  en: 'Your message',
+  fr: 'Votre message',
   de: 'Ihre Nachricht'
 }
 
