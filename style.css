@@ -1788,7 +1788,7 @@ video {
   color: var(--text);
 }
 
-.footnote,
+.controlbar form .footnote,
 .controlbar form textarea::placeholder {
   color: #eee;
 }

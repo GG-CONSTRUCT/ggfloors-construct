@@ -196,11 +196,11 @@ const getControlBarLinks = (lang) => {
 
 const getForm = (lang) => {
   const getLabels = () => {
-    let labels = getAll('.controlbar form > label span');
+    let labels = getAll('.contact-formular > label span');
     getTextContentIn(labels, formLabels, lang);
   }
   const getTextareaPlaceholder = () => {
-    const textarea = get('.controlbar textarea');
+    const textarea = get('.contact-formular textarea');
     textarea.placeholder = formTextareaPlaceholder[lang];
   }
   const getFormNote = () => {
@@ -208,7 +208,7 @@ const getForm = (lang) => {
    footnote.textContent = `* = ${formNote[lang]}`;
   }
   const getFormButton = () => {
-    const formBtn = get('.controlbar form button');
+    const formBtn = get('.contact-formular button');
    formBtn.textContent = formSubmit[lang].toUpperCase();
   }
   getLabels();
