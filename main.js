@@ -198,6 +198,10 @@ const getForm = (lang) => {
   const getLabels = () => {
     let labels = getAll('.contact-formular > label span');
     getTextContentIn(labels, formLabels, lang);
+    for (let i = 0; i < labels.length; i++) {
+      labels[i].textContent += ':'
+      if (i % 2 === 0) labels[i].textContent += ' *';
+    }
   }
   const getTextareaPlaceholder = () => {
     const textarea = get('.contact-formular textarea');
@@ -233,8 +237,10 @@ for (const option of getAll('.option')) {
 
 if (lang !== 'NL') getTopNav(lang.toLowerCase());
 if (lang !== 'NL') getFootNav(lang.toLowerCase());
-if (lang !== 'NL') getControlBarLinks(lang.toLowerCase());
-if (lang !== 'NL') getForm(lang.toLowerCase());
+if(get('.controlbar')) {
+  if (lang !== 'NL') getControlBarLinks(lang.toLowerCase());
+  if (lang !== 'NL') getForm(lang.toLowerCase());
+}
 
 const getNav = (lang) => {
   getTopNav(lang.toLowerCase());
@@ -352,8 +358,8 @@ for (const option of getAll('.option')) {
       getNav(this.textContent.toLowerCase());
       getMobileMenu(this.textContent.toLowerCase());
       getSearchList(this.textContent.toLowerCase());
-      getControlBarLinks(this.textContent.toLowerCase());
-      getForm(this.textContent.toLowerCase());
+      (typeof getPageContent === 'undefined') ? getControlBarLinks(this.textContent.toLowerCase()) : '';
+      (typeof getPageContent === 'undefined') ? getForm(this.textContent.toLowerCase()) : '';
       (typeof getPageContent !== 'undefined') ? getPageContent(this.textContent.toLowerCase()) : '';
       this.closest('.dropdown').querySelector('.dropdown__title').textContent = this.textContent;
     }

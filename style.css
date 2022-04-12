@@ -1719,6 +1719,14 @@ video {
   padding: 4px 16px 4px calc(var(--padding) / 2) !important;
 }
 
+.controlbar .button-reveal[aria-expanded='true']::after {
+  content: '\00a0 \00a0 \2715';
+}
+
+.controlbar .button-reveal[aria-expanded='true']:hover::after {
+  font-weight: bold;
+}
+
 .controlbar form {
   display: flex;
   flex-direction: column;
