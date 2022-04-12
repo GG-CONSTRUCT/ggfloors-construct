@@ -322,8 +322,8 @@ h1, h2, h3 {
 }
 
 .logo__title {
-  font-family: 'Staatliches', sans-serif;
-  font-size: 13px;
+ /* font-family: 'Staatliches', sans-serif;*/
+  font-size: 12px;
   margin-bottom: 2px;
   color: #777;
 }
@@ -1461,9 +1461,9 @@ footer {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .logo__title {
-    font-size: 11px;
+    font-size: 9px;
     white-space: nowrap;
   }
 }
