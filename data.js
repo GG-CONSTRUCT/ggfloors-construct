@@ -196,6 +196,14 @@ const headingLink = {
   de: ['KOSTENLOSES ANGEBOT ANFORDERN', 'VIDEO EINSCHALTEN', 'GALERIE'],
 }
 
+const galleryTitle ={
+  nl: 'Galerie',
+  en: 'Gallery',
+  fr: 'Galery',
+  de: 'Galerie',
+
+}
+
 const formLabels = {
   nl: ['Naam', 'Telefoon', 'E-mail', 'Bericht',],
   en: ['Name', 'Phone', 'E-mail', 'Message',],
