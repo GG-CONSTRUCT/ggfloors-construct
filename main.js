@@ -225,6 +225,10 @@ const getGalleryTitle = (lang) => {
   get('#gallery .title').textContent = galleryTitle[lang];
 }
 
+const getAlsoSeeTitle = (lang) => {
+  get('.sidenav .title').textContent = alsoSeeTitle[lang];
+}
+
 const html = get('html');
 html.setAttribute('lang', localStorage
 .getItem('current lang') ? localStorage
@@ -247,6 +251,9 @@ if (get('.controlbar')) {
 }
 if (get('#gallery .title')) {
   getGalleryTitle(lang.toLowerCase())
+}
+if (get('.sidenav .title')) {
+  getAlsoSeeTitle(lang.toLowerCase())
 }
 
 const getNav = (lang) => {
@@ -368,6 +375,7 @@ for (const option of getAll('.option')) {
       (typeof getPageContent === 'undefined') ? getControlBarLinks(this.textContent.toLowerCase()) : '';
       (typeof getPageContent === 'undefined') ? getForm(this.textContent.toLowerCase()) : '';
       (get('#gallery .title')) ? getGalleryTitle(this.textContent.toLowerCase()) : '';
+      (get('.sidenav .title')) ? getAlsoSeeTitle(this.textContent.toLowerCase()) : '';
       (typeof getPageContent !== 'undefined') ? getPageContent(this.textContent.toLowerCase()) : '';
       this.closest('.dropdown').querySelector('.dropdown__title').textContent = this.textContent;
     }
