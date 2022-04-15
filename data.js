@@ -246,6 +246,13 @@ const alsoSeeTitle = {
   de: 'Siehe auch',
 }
 
+const contactSidenavTitle = {
+  nl: 'Contacteer ons',
+  en: 'Contact us',
+  fr: 'Contactez-nous',
+  de: 'Kontaktiere uns',
+}
+
 const vloerder = {
   nl: `GG Floors&Construct is gestart in de bouwsector met het plaatsen van allerhanden vloerafwerking.
 Zachte of harde vloeren, hetm aakt weinig uit we plaatsen het allemaal.<br>

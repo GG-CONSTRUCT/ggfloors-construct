@@ -54,6 +54,11 @@ const getTopNav = (lang) => {
   getTextContentIn(contactLink, contact, lang);
 }
 
+const getContactSidenavLink = (lang) => {
+  let contactSidenavLink = getAll('.sidenav_contact a');
+  getTextContentIn(contactSidenavLink, contact, lang);
+}
+
 const getFootNav = (lang) => {
   const footNavList = getAll('.footnav ul');
   const legalLink = getAll('.legal__link');
@@ -229,6 +234,14 @@ const getAlsoSeeTitle = (lang) => {
   get('.sidenav .title').textContent = alsoSeeTitle[lang];
 }
 
+const getContactSidenavTitle = (lang) => {
+  let title = get('.sidenav_contact .title');
+  title.textContent = contactSidenavTitle[lang];
+  let icon = document.createElement('i');
+  icon.classList.add('icon-link');
+  title.appendChild(icon);
+}
+
 const html = get('html');
 html.setAttribute('lang', localStorage
 .getItem('current lang') ? localStorage
@@ -254,6 +267,10 @@ if (get('#gallery .title')) {
 }
 if (get('.sidenav .title')) {
   getAlsoSeeTitle(lang.toLowerCase())
+}
+if (get('.sidenav_contact .title')) {
+  getContactSidenavTitle(lang.toLowerCase());
+  getContactSidenavLink(lang.toLowerCase());
 }
 
 const getNav = (lang) => {
@@ -376,6 +393,8 @@ for (const option of getAll('.option')) {
       (typeof getPageContent === 'undefined') ? getForm(this.textContent.toLowerCase()) : '';
       (get('#gallery .title')) ? getGalleryTitle(this.textContent.toLowerCase()) : '';
       (get('.sidenav .title')) ? getAlsoSeeTitle(this.textContent.toLowerCase()) : '';
+      (get('.sidenav_contact .title')) ? getContactSidenavTitle(this.textContent.toLowerCase()) : '';
+      (getAll('.sidenav_contact a')) ? getContactSidenavLink(this.textContent.toLowerCase()) : '';
       (typeof getPageContent !== 'undefined') ? getPageContent(this.textContent.toLowerCase()) : '';
       this.closest('.dropdown').querySelector('.dropdown__title').textContent = this.textContent;
     }

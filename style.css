@@ -1445,8 +1445,8 @@ footer {
 
 @media (min-width: 1600px) {
   :root {
-    --margin: 32px;
-    --padding: 32px;
+    --margin: 24px;
+    --padding: 24px;
   }
 }
 
@@ -1981,6 +1981,11 @@ video {
   .flex-wrap .sidenav {
     max-width: 500px;
   }
+}
+
+.sidenav .title {
+  display: inline-flex;
+  align-items: center;
 }
 
 .sidenav .title i {
