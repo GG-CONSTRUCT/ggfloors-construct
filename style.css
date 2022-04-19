@@ -1983,9 +1983,13 @@ video {
   }
 }
 
-.sidenav_contact .title {
+.sidenav .title, .sidenav_contact .title {
   display: inline-flex;
   align-items: center;
+}
+
+.sidenav .title:after {
+  margin: 0;
 }
 
 .sidenav .title i, .sidenav_contact .title i {
