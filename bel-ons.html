@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <title>Contact | GG FLOORS & CONSTRUCT</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/uikit.css">
+  <script src="js/uikit.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="glyphter-font/css/gg-font.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body class="dark">
+  <header id="header">
+    <topbar></topbar>
+    <navbar></navbar>
+    <mobile-menu></mobile-menu>
+    <search></search>
+    <terms></terms>
+  </header>
+  <main>
+    <div class="controlbar">
+      <a hidden href="javascript:history.back()" class="button button-reveal backlink">
+        <img src="icons/more.svg" alt="meer">
+      </a>
+      <a hidden href="#top" class="button button-reveal" uk-toggle="target: +">
+        <span>GRATIS OFFERTE AANVRAGEN</span>
+      </a>
+      <form hidden>
+        <label for="name">
+          <span>Naam:</span><input type="text" id="name" name="name" required>
+        </label>
+        <label for="phone">
+          <span>Phone:</span><input type="tel" id="phone" name="phone">
+        </label>
+        <label for="mail">
+          <span>E-mail:</span><input type="email" id="mail" name="mail" required>
+        </label>
+        <label for="message">
+          <span>Bericht:</span><textarea id="message" class="message" placeholder="Je berichtje" rows="10" cols="40"></textarea>
+        </label>
+        <p class="footnote">* = Invoer verplicht</p>
+        <button class="uk-button-default button button-reveal">VERZENDEN</button>
+      </form>
+      <a hidden href="#top" class="uk-button-default button button-reveal" uk-toggle="target: +" hidden>
+        <span>ZET JE VIDEO AAN</span>
+      </a>
+      <video src="video/intro.mp4" controls playsinline hidden uk-video></video>
+      <a hidden href="#gallery" uk-scroll class="button button-reveal">
+        <span>GALERIE</span>
+      </a>
+    </div>
+    <div class="heading">
+      <ul class="uk-breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="uk-disabled"><a href="#">Bel ons</a></li>
+        <li><span></span></li>
+      </ul>
+      <div class="titlebar">
+        <h1>Contact</h1>
+      </div>
+    </div>
+    <div class="flex-wrap space-between">
+      <div>
+        <h3>Contactgegevens</h3>
+        <h4><b>Contactcenter</b></h4>
+      <br>
+      <div class="social social_size_s">
+        <p class="e-mail"></p>
+        <ul class="social__list"></ul>
+      </div>
+      </div>
+      <nav class="sidenav_contact">
+        <h2 class="title title_left">Contacteer ons <i class="icon-link"></i></h2>
+        <br>
+        <ul>
+          <li>
+            <a href="contactformulier.html">Contactformulier</a>
+          </li>
+          <li>
+            <a class="active" href="#" uk-disabled>Bel ons</a>
+          </li>
+          <li>
+            <a href="bedrijfsgegevens.html">Bedrijfsgegevens</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </main>
+  <footer id="footer">
+    <footnav></footnav>
+    <basement></basement>
+    <widget></widget>
+  </footer>
+  <script src="header.js"></script>
+  <script src="footer.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

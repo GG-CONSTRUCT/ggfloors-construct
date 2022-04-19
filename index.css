@@ -433,7 +433,8 @@ html[lang='nl'] .dark .hero {
 }
 
 .section .social,
-.contact-formular ~ .social {
+.contact-formular ~ .social, 
+h4 ~ .social {
   display: flex;
   margin: 0 auto var(--margin, 16px);
   width: 100%;
@@ -449,12 +450,14 @@ html[lang='nl'] .dark .hero {
 }
 
 .section .social__link,
-.contact-formular ~ .social .social__link {
+.contact-formular ~ .social .social__link, 
+h4 ~ .social .social__link {
   color: var(--text, #222);
 }
 
 .section .social__link:hover,
-.contact-formular ~ .social .social__link:hover {
+.contact-formular ~ .social .social__link:hover,
+h4 ~ .social .social__link:hover {
   color: #fff;
 }
 

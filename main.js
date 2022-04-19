@@ -215,10 +215,12 @@ const getForm = (lang) => {
     const formBtn = get('.contact-formular button');
    formBtn.textContent = formSubmit[lang].toUpperCase();
   }
-  getLabels();
-  getTextareaPlaceholder();
-  getFormNote();
-  getFormButton();
+  if (get('.contact-formular')) {
+    getLabels();
+    getTextareaPlaceholder();
+    getFormNote();
+    getFormButton();
+  }
 }
 
 const getGalleryTitle = (lang) => {
@@ -414,7 +416,7 @@ for (const option of getAll('.option')) {
       (get('.sidenav_contact .title')) ? getContactSidenavTitle(this.textContent.toLowerCase()) : '';
       (getAll('.sidenav_contact a')) ? getContactSidenavLink(this.textContent.toLowerCase()) : '';
       (typeof getPageContent !== 'undefined') ? getPageContent(this.textContent.toLowerCase()) : '';
-      shuffleSidenavItems(this.textContent.toLowerCase());
+      (get('.sidenav .title')) ? shuffleSidenavItems(this.textContent.toLowerCase()) : '';
       this.closest('.dropdown').querySelector('.dropdown__title').textContent = this.textContent;
     }
   })
