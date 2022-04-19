@@ -1806,18 +1806,18 @@ video {
   color: var(--text);
 }
 
-.sidenav {
+.sidenav, .sidenav_contact {
   padding: var(--padding);
 }
 
-.sidenav li {
+.sidenav li, .sidenav_contact li {
   height: 48px;
   margin: 4px 0;
   padding-bottom: 4px;
   border-bottom: 1px dotted gray;
 }
 
-.sidenav a {
+.sidenav a, .sidenav_contact a {
   font-size: 16px;
   display: flex;
   height: 100%;
@@ -1827,11 +1827,11 @@ video {
   align-items: center;
 }
 
-.dark .sidenav a {
+.dark .sidenav a, .dark .sidenav_contact a {
   color: var(--blue-light);
 }
 
-.sidenav a:hover {
+.sidenav a:hover, .sidenav_contact a:hover {
   background-color: rgba(50, 115, 245, .12);
 }
 
@@ -1983,13 +1983,14 @@ video {
   }
 }
 
-.sidenav .title {
+.sidenav_contact .title {
   display: inline-flex;
   align-items: center;
 }
 
-.sidenav .title i {
+.sidenav .title i, .sidenav_contact .title i {
+  display: block;
   color: var(--blue);
-  margin-left: 8px;
+  margin-left: 16px;
   font-size: 21px;
 }
