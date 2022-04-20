@@ -246,14 +246,13 @@ const shuffleSidenavItems = (lang) => {
   let shuffled = unshuffled
   .map(value => ({ value, sort: Math.random() }))
   .sort((a, b) => a.sort - b.sort)
-  .map(({ value }) => value)
-  console.log(shuffled);
+  .map(({ value }) => value);
   getTextContentIn(link, shuffled);
-  link[link.length - 1].textContent = '...';
-  link[link.length - 1].href = 'activiteiten.html';
   for (let i = 0; i < link.length - 1; i++) {
     link[i].href = createLink(activities.nl[activities[lang].indexOf(link[i].textContent)], '.html');
   }
+  link[link.length - 1].textContent = '...';
+  link[link.length - 1].href = 'activiteiten.html';
 }
 
 const getContactSidenavLink = (lang) => {
@@ -412,11 +411,13 @@ for (const option of getAll('.option')) {
       (typeof getPageContent === 'undefined') ? getControlBarLinks(this.textContent.toLowerCase()) : '';
       (typeof getPageContent === 'undefined') ? getForm(this.textContent.toLowerCase()) : '';
       (get('#gallery .title')) ? getGalleryTitle(this.textContent.toLowerCase()) : '';
-      (get('.sidenav .title')) ? getAlsoSeeTitle(this.textContent.toLowerCase()) : '';
+      if (get('.sidenav .title')) { 
+        getAlsoSeeTitle(this.textContent.toLowerCase()); 
+        shuffleSidenavItems(this.textContent.toLowerCase());
+      }
       (get('.sidenav_contact .title')) ? getContactSidenavTitle(this.textContent.toLowerCase()) : '';
       (getAll('.sidenav_contact a')) ? getContactSidenavLink(this.textContent.toLowerCase()) : '';
       (typeof getPageContent !== 'undefined') ? getPageContent(this.textContent.toLowerCase()) : '';
-      (get('.sidenav .title')) ? shuffleSidenavItems(this.textContent.toLowerCase()) : '';
       this.closest('.dropdown').querySelector('.dropdown__title').textContent = this.textContent;
     }
   })
