@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <title>Activiteiten | GG FLOORS & CONSTRUCT</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/uikit.css">
+  <script src="js/uikit.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="glyphter-font/css/gg-font.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body class="dark">
+  <header id="header">
+    <topbar></topbar>
+    <navbar></navbar>
+    <mobile-menu></mobile-menu>
+    <search></search>
+    <terms></terms>
+  </header>
+  <main>
+    <div class="controlbar">
+      <a href="javascript:history.back()" class="button button-reveal backlink">
+        <img src="icons/more.svg" alt="meer">
+      </a>
+      <a href="#top" class="button button-reveal" uk-toggle="target: +">
+        <span>GRATIS OFFERTE AANVRAGEN</span>
+      </a>
+      <form class="contact-formular" hidden>
+        <label for="name">
+          <span>Naam:</span><input type="text" id="name" name="name" required>
+        </label>
+        <label for="phone">
+          <span>Phone:</span><input type="tel" id="phone" name="phone">
+        </label>
+        <label for="mail">
+          <span>E-mail:</span><input type="email" id="mail" name="mail" required>
+        </label>
+        <label for="message">
+          <span>Bericht:</span><textarea id="message" class="message" placeholder="Je berichtje" rows="10" cols="40"></textarea>
+        </label>
+        <p class="footnote">* = Invoer verplicht</p>
+        <button class="uk-button-default button button-reveal">VERZENDEN</button>
+      </form>
+      <a href="#top" class="uk-button-default button button-reveal" uk-toggle="target: +" hidden>
+        <span>ZET JE VIDEO AAN</span>
+      </a>
+      <video src="video/intro.mp4" controls playsinline hidden uk-video></video>
+      <a href="#gallery" uk-scroll class="button button-reveal" hidden>
+        <span>GALERIE</span>
+      </a>
+    </div>
+    <div class="heading">
+      <div class="titlebar">
+        <h1>Activiteiten</h1>
+      </div>
+    </div>
+    <div class="grid uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-child-width-1-5@xl" uk-grid>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="images/vloerder.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title">Vloerder</h3>
+            <p>Wanneer u kiest voor GG Floors&Construct, dan kiest u voor kwaliteit, prima vakmanschap en een mooi verzorgde afwerking. GG Floors&Construct is immers gespecialiseerd in alle vloerwerken en weet perfe ...</p>
+            <a href="vloerder.html" class="button button-reveal">
+              <span>Meer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="images/schilderwerken.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title">Schilderwerken</h3>
+            <p>GG Floors&Construct heeft door zijn jarenlange ervaring een reputatie opgebouwd van een zeer betrouwbare en zeer solide onderneming. Hierbij staat vakmanschap, kwaliteit en service steeds centraal. Do ...</p>
+            <a href="schilderwerken.html" class="button button-reveal">
+              <span>Meer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="images/gyprocwerken.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title">Gyprocwerken</h3>
+            <p>Naast standaard scheidings- en voorzetwanden kan u bij ons terecht voor de plaatsing van gespecialiseerde oplossingen. Zo plaatsen we wanden met een specifiek brandwerend, geluidswerend, vochtwerend e ...
+            </p>
+            <a href="gyprocwerken.html" class="button button-reveal">
+              <span>Meer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="images/pleisterwerken.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title">Pleisterwerken</h3>
+            <p>Bouwen of verbouwen een renovatie binnenkort? Onze stukadoors staan klaar voor jullie project. Wij zorgen ervoor dat je binnenmuren en plafonds netjes afgewerkt zijn met binnenpleister. En de eerste s ...</p>
+            <a href="pleisterwerken.html" class="button button-reveal">
+              <span>Meer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="images/terrassen-en-opritten.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title">Terrassen en opritten</h3>
+            <p>GG Floors&Construct verzorgt alle klinkerwerken en tegelwerken, van terrassen tot tuinpaden en van opritten tot trappen en parkings. Dit kan in natuursteen, kasseien, kleiklinkers, betonklinkers...</p>
+            <a href="terrassen-en-opritten.html" class="button button-reveal">
+              <span>Meer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="images/dakwerken.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title">Dakwerken</h3>
+            <p>GG Floors&Construct, een uiterst gedreven team voor uw dakrenovatie. Of het nu gaat om het repareren van uw schouw en dakgoten of een renovatie van uw volledige dak u kan bij ons steeds terecht v ...</p>
+            <a href="dakwerken.html" class="button button-reveal">
+              <span>Meer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="images/crepi.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title">Crepi</h3>
+            <p>Soms is uw woning aan een verjongingskuur toe. Met een gevelrenovatie bereikt u verbluffende resultaten GG Floors&Construct renoveert voor u de gevel van uw woning tot in de puntjes. Gaande van zandst ...</p>
+            <a href="crepi.html" class="button button-reveal">
+              <span>Meer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="images/renovatie.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title">Renovatie</h3>
+            <p>Je huis van A tot Z renoveren: de ideale opdracht voor GG Floors&Construct.Heb je een huis gekocht dat volledig gerenoveerd moet worden? Of Is het na al die jaren tijd geworden om je woning grondig on ...</p>
+            <a href="renovatie.html" class="button button-reveal">
+              <span>Meer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <img src="images/nieuwbouw.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title">Nieuwbouw</h3>
+            <p>Bij het realiseren van een nieuwbouw woning is een goed en betrouwbaar bouwbedrijf onmisbaar. GG-Floors&Construct helpt u graag met het bouwen van uw droomhuis. Wij hebben veel ervaring met het uitvoe ...</p>
+            <a href="nieuwbouw.html" class="button button-reveal">
+              <span>Meer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="footer">
+    <footnav></footnav>
+    <basement></basement>
+    <widget></widget>
+  </footer>
+  <script src="header.js"></script>
+  <script src="footer.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

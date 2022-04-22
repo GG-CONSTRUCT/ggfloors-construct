@@ -1,0 +1,28 @@
+:root {
+  --blue: #0e4ed5;
+  --blue-dark: #0e1896;
+  --blue-light: #91d4f9;
+  --beige: #F2F0E8;
+  --base: #fff;
+  --base-shadow: #eee;
+  --base-border: #ddd;
+  --text: #3D3D3D;
+  --arrow: #bbb;
+  --btn-shadow: #aaa;
+  --btn-shadow_hover: #bbb;
+  --topnav-link: #0e4ed5;
+}
+
+.dark {
+  --blue: #0051a3;
+  --blue-light: #1DA1F2;
+  --beige: #111;
+  --base: #14171A;
+  --base-shadow: #222;
+  --base-border: #333;
+  --text: #fff;
+  --arrow: #444;
+  --btn-shadow: #111;
+  --btn-shadow_hover: #000;
+  --topnav-link: #fff;
+}
