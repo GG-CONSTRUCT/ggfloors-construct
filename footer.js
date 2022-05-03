@@ -124,7 +124,7 @@ Vue.component('basement', {
             <a class="legal__link terms" href="#top">Algemene Voorwaarden</a>
           </li>
           <li class="legal__item">
-            <a class="legal__link" id="themeToggle" href="#bottom" onclick="document.body.classList.toggle('dark'); 
+            <a class="legal__link" id="themeToggle" href="#bottom" onclick="document.querySelector('html').classList.toggle('dark'); 
             isDark = (!isDark) ? true : false;">
             Thema veranderen
             </a>

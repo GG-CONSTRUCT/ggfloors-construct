@@ -1,10 +1,3 @@
-// color theme mode
-let isDark = false;
-let now = new Date().getHours();
-if (now > 7 && now < 20) {
-  document.body.classList.remove('dark');
-} 
-
 const companyName = 'GG Floors & Construct';
 
 const clearNode = (node) => {

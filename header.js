@@ -10,7 +10,7 @@ Vue.component('topbar', {
     &nbsp;&nbsp;<b>|</b>&nbsp;&nbsp;
     <a class="topbar__link" href="contactformulier.html">Contact</a>
     &nbsp;&nbsp;&nbsp;
-    <a style="color: #fff; display: flex; align-items: center;" id="themToggle" href="#top" onclick="document.body.classList.toggle('dark'); 
+    <a style="color: #fff; display: flex; align-items: center;" id="themToggle" href="#top" onclick="document.querySelector('html').classList.toggle('dark'); 
       isDark = (!isDark) ? true : false;">
       <img width="14" height="14" src="icons/black-and-white.svg">
     </a>
