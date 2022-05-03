@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
             loader = $('#loader');
 
         $.ajax({
-            url: 'handler.php',
+            url: '../handler.php',
             type: 'POST',
             data: form.serialize(),
             beforeSend: function() {
