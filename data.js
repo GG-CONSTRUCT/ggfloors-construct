@@ -126,6 +126,8 @@ Durch die enge Zusammenarbeit mit Kunden, Mitarbeitern und Partnern streben wir 
 Unser größtes Kapital sind unsere Handwerker, deren Sicherheit und Wohlbefinden hat für GG Floors & Construct oberste Priorität, denn nur so können Sie vor Ort Top-Qualität liefern. Haben Sie Bau- oder Renovierungspläne:`,
 }
 
+const overons = aboutCompany;
+
 const socialMediaInvite = {
   nl: 'We doen het samen met u. Volg ons ook op de social media voor de verschillende realisaties:',
   en: 'We do it together with you. Follow us on social media for the different realizations:',
@@ -233,10 +235,10 @@ const formSubmit = {
 }
 
 const submitApp = {
- nl: 'dien uw aanvraag in', 
- en: 'submit your application', 
- fr: 'soumettez votre candidature', 
- de: 'senden Sie Ihre Bewerbung',
+ nl: 'Dien uw aanvraag in', 
+ en: 'Submit your application', 
+ fr: 'Soumettez votre candidature', 
+ de: 'Senden Sie Ihre Bewerbung',
 }
 
 const alsoSeeTitle = {

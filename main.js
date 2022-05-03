@@ -396,6 +396,43 @@ email.createLink(mail);
 const print = new Link('print', 'javascript:window.print()');
 print.createLink(toPrint);
 
+const getPageName = () => window.location.pathname.slice(window.location.pathname.lastIndexOf('/') + 1).replace('.html', '');
+const pageTitle = (lang) => {
+  if (getPageName() !== 'index' && getPageName() !== 'home') {
+    let arrNL = [...navigation.nl, ...activities.nl, ...floorTitle.nl, ...contact.nl];
+    let arr = [...navigation[lang], ...activities[lang], ...floorTitle[lang], ...contact[lang]];
+    let title = getPageName().replace('-', ' ');
+    let titleTransform = title[0].toUpperCase() + title.slice(1);
+    let titleForCurrentLang = arr[arrNL.indexOf(titleTransform)];
+    get('h1').textContent = titleForCurrentLang;
+    if (getPageName() !== 'contactformulier' && getPageName() !== 'activiteiten') {
+      (title == 'over ons') ? get('h2').textContent = aboutTitle[lang] : (get('h2 b')) ? get('h2 b').textContent = titleForCurrentLang : '';
+      for (let img of getAll('#gallery .grid img')) {
+        img.alt = titleForCurrentLang;
+      }
+      for (let achor of getAll('#gallery .grid a')) {
+        achor.dataset.caption = titleForCurrentLang;
+      }
+      let pageName = getPageName().replace('-', '');
+      get('.paragraph').innerHTML = eval(pageName)[lang];
+      get('.submit-app').textContent = submitApp[lang].toUpperCase();
+      if (title == 'over ons') {
+        getAll('.paragraph')[1].textContent = socialMediaInvite[lang];
+        getTextContentIn(getAll('.about-gg__activities .list__link'), activities, lang);
+        get('.about-gg__activities .list__link').textContent += ` (${floorTitle[lang].slice(0, 7).join(', ').toLowerCase()}, ... )`;
+        getTitleAttr(getAll('.flooring-activities__link'), floorTitle[lang].slice(0, 7));
+      }
+      if (title == 'vloerder') {
+        getTextContentIn(getAll('.about-gg__activities .list__link'), floorTitle, lang);
+        get('.about-gg__activities')
+        .lastElementChild.querySelector('a')
+        .textContent = `${more[lang]} ...`;
+      }
+    }
+  }
+}
+pageTitle(lang.toLowerCase());
+
 // switch language
 for (const option of getAll('.option')) {
   option.addEventListener('click', function () {
@@ -417,6 +454,7 @@ for (const option of getAll('.option')) {
       (get('.sidenav_contact .title')) ? getContactSidenavTitle(this.textContent.toLowerCase()) : '';
       (getAll('.sidenav_contact a')) ? getContactSidenavLink(this.textContent.toLowerCase()) : '';
       (typeof getPageContent !== 'undefined') ? getPageContent(this.textContent.toLowerCase()) : '';
+      pageTitle(this.textContent.toLowerCase());
       this.closest('.dropdown').querySelector('.dropdown__title').textContent = this.textContent;
     }
   })
