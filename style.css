@@ -1697,6 +1697,8 @@ video {
 
 #gallery .uk-flex {
   max-height: 180px;
+  object-fit: cover;
+  object-position: center;
   overflow: hidden;
 }
 

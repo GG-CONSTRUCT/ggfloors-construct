@@ -385,6 +385,12 @@ html[lang='nl'] .dark .hero {
   background-image: url(images/dakwerken.jpg);
 }
 
+.crepi__image {
+  padding: 8px;
+  background-color: #5078cd;
+  background-image: url(images/crepi.jpg);
+}
+
 .section {
   display: table;
   max-width: 100%;
