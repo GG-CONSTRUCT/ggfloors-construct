@@ -159,7 +159,7 @@ Vue.component('widget', {
       <div class="widget__body">
         <ul class="widget__items">
           <li class="widget__item">
-            <a class="widget__link icon-mobile" href="contact.html" title="contact"></a>
+            <a class="widget__link icon-mobile" href="bel-ons.html" title="contact"></a>
           </li>
           <li class="widget__item">
             <a class="widget__link icon-email" href="mailto:ggfloorsconstruct@gmail.com" title="e-mail"></a>

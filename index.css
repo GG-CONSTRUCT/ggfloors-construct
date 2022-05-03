@@ -409,6 +409,12 @@ html[lang='nl'] .dark .hero {
   background-image: url(images/natuursteen.jpg);
 }
 
+.keramiek__image {
+  padding: 8px;
+  background-color: #ddd;
+  background-image: url(images/keramiek.jpg);
+}
+
 .section {
   display: table;
   max-width: 100%;

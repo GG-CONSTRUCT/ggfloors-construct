@@ -8,7 +8,7 @@ Vue.component('topbar', {
       </ul>
     </div>
     &nbsp;&nbsp;<b>|</b>&nbsp;&nbsp;
-    <a class="topbar__link" href="contact.html">Contact</a>
+    <a class="topbar__link" href="contactformulier.html">Contact</a>
     &nbsp;&nbsp;&nbsp;
     <a style="color: #fff; display: flex; align-items: center;" id="themToggle" href="#top" onclick="document.body.classList.toggle('dark'); 
       isDark = (!isDark) ? true : false;">
