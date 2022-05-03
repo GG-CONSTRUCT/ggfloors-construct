@@ -401,7 +401,7 @@ const pageTitle = (lang) => {
   if (getPageName() !== 'index' && getPageName() !== 'home') {
     let arrNL = [...navigation.nl, ...activities.nl, ...floorTitle.nl, ...contact.nl];
     let arr = [...navigation[lang], ...activities[lang], ...floorTitle[lang], ...contact[lang]];
-    let title = getPageName().replace('-', ' ');
+    let title = getPageName().replace(/-/g, ' ');
     let titleTransform = title[0].toUpperCase() + title.slice(1);
     let titleForCurrentLang = arr[arrNL.indexOf(titleTransform)];
     get('h1').textContent = titleForCurrentLang;
@@ -413,7 +413,7 @@ const pageTitle = (lang) => {
       for (let achor of getAll('#gallery .grid a')) {
         achor.dataset.caption = titleForCurrentLang;
       }
-      let pageName = getPageName().replace('-', '');
+      let pageName = getPageName().replace(/-/g, '');
       get('.paragraph').innerHTML = eval(pageName)[lang];
       get('.submit-app').textContent = submitApp[lang].toUpperCase();
       if (title == 'over ons') {

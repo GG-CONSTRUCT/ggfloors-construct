@@ -1695,6 +1695,11 @@ video {
   opacity: .9;
 }
 
+#gallery .uk-flex {
+  max-height: 180px;
+  overflow: hidden;
+}
+
 .toggle-button {
   font-size: 16px;
   float: right;

@@ -373,6 +373,12 @@ html[lang='nl'] .dark .hero {
   background-image: url(images/pleisterwerken.jpg);
 }
 
+.terrassen-en-opritten__image {
+  padding: 8px;
+  background-color: #5078cd;
+  background-image: url(images/terrassen-en-opritten.jpg);
+}
+
 .section {
   display: table;
   max-width: 100%;

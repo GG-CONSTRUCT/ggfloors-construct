@@ -46,20 +46,6 @@
         <span>GRATIS OFFERTE AANVRAGEN</span>
       </a>
       <form hidden>
-        <label for="name">
-          <span>Naam:</span><input type="text" id="name" name="name" required>
-        </label>
-        <label for="phone">
-          <span>Phone:</span><input type="tel" id="phone" name="phone">
-        </label>
-        <label for="mail">
-          <span>E-mail:</span><input type="email" id="mail" name="mail" required>
-        </label>
-        <label for="message">
-          <span>Bericht:</span><textarea id="message" class="message" placeholder="Je berichtje" rows="10" cols="40"></textarea>
-        </label>
-        <p class="footnote">* = Invoer verplicht</p>
-        <button class="uk-button-default button button-reveal">VERZENDEN</button>
       </form>
       <a hidden href="#top" class="uk-button-default button button-reveal" uk-toggle="target: +" hidden>
         <span>ZET JE VIDEO AAN</span>
@@ -82,23 +68,27 @@
     </div>
     <div class="flex-wrap space-between">
       <div>
-        <form class="contact-formular">
-        <label for="name">
-          <span>Naam:</span><input type="text" id="name" name="name" required>
-        </label>
-        <label for="phone">
-          <span>Phone:</span><input type="tel" id="phone" name="phone">
-        </label>
-        <label for="mail">
-          <span>E-mail:</span><input type="email" id="mail" name="mail" required>
-        </label>
-        <label for="message">
-          <span>Bericht:</span><textarea id="message" class="message" placeholder="Je berichtje" rows="10" cols="40"></textarea>
-        </label>
-        <p class="footnote">* = Invoer verplicht</p>
-        <button class="uk-button-default button button-reveal">VERZENDEN</button>
-      </form>
-      <br>
+        <form class="contact-formular" id="contactForm" action="handler.php" method="post">
+          <label for="name">
+            <span>Naam:</span><input type="text" id="name" name="name" required>
+          </label>
+          <label for="phone">
+            <span>Phone:</span><input type="tel" id="phone" name="phone">
+          </label>
+          <label for="mail">
+            <span>E-mail:</span><input type="email" id="email" name="email" required>
+          </label>
+          <label for="message">
+            <span>Bericht:</span><textarea id="message" class="message" name="message" placeholder="Je berichtje" rows="10" cols="40"></textarea>
+          </label>
+          <p class="footnote">* = Invoer verplicht</p>
+          <button id="button" type="submit" class="uk-button-default button button-reveal">VERZENDEN</button>
+          <div class="result">
+            <span id="answer"></span>
+            <span id="loader" style="display:none"><img src="images/loader.gif" alt=""></span>
+          </div>
+        </form>
+        <br>
       <div class="social social_size_s">
         <p class="e-mail"></p>
         <ul class="social__list"></ul>
@@ -130,5 +120,8 @@
   <script src="footer.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/ajax.js"></script>
 </body>
 </html>
