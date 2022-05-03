@@ -403,6 +403,12 @@ html[lang='nl'] .dark .hero {
   background-image: url(images/nieuwbouw.jpg);
 }
 
+.natuursteen__image {
+  padding: 8px;
+  background-color: #5078cd;
+  background-image: url(images/natuursteen.jpg);
+}
+
 .section {
   display: table;
   max-width: 100%;
