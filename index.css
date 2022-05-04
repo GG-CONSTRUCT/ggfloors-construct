@@ -59,7 +59,7 @@ html[lang='fr'] .hero {
   }
 }
 
-html[lang='nl'] .dark .hero {
+html[lang='nl'].dark .hero {
   background-image: url(images/background.svg);
 }
 
