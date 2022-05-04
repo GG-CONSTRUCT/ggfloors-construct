@@ -142,6 +142,9 @@ Vue.component('basement', {
           <li class="legal__item">
             <a href="https://www.vanderstraeten.be/home">vanderstraeten.be</a>
           </li>
+          <li class="legal__item">
+            <a href="#bottom" onclick="localStorage.clear()">Clear</a>
+          </li>
         </ul>
       </div>
       <div class="social social_size_s">
