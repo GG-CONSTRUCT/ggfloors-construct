@@ -415,6 +415,12 @@ html[lang='nl'].dark .hero {
   background-image: url(images/keramiek.jpg);
 }
 
+.mozaiek__image {
+  padding: 8px;
+  background-color: #ddd;
+  background-image: url(images/mozaiek.jpg);
+}
+
 .section {
   display: table;
   max-width: 100%;

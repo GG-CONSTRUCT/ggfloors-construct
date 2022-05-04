@@ -395,6 +395,8 @@ const pageTitle = (lang) => {
     let arrNL = [...navigation.nl, ...activities.nl, ...floorTitle.nl, ...contact.nl];
     let arr = [...navigation[lang], ...activities[lang], ...floorTitle[lang], ...contact[lang]];
     let title = getPageName().replace(/-/g, ' ');
+    title = (title === 'mozaiek') ? title.replace('i', 'ï') : title;
+    console.log(title);
     let titleTransform = title[0].toUpperCase() + title.slice(1);
     let titleForCurrentLang = arr[arrNL.indexOf(titleTransform)];
     get('h1').textContent = titleForCurrentLang;
