@@ -396,7 +396,6 @@ const pageTitle = (lang) => {
     let arr = [...navigation[lang], ...activities[lang], ...floorTitle[lang], ...contact[lang]];
     let title = getPageName().replace(/-/g, ' ');
     title = (title === 'mozaiek') ? title.replace('i', 'ï') : title;
-    console.log(title);
     let titleTransform = title[0].toUpperCase() + title.slice(1);
     let titleForCurrentLang = arr[arrNL.indexOf(titleTransform)];
     get('h1').textContent = titleForCurrentLang;
@@ -423,6 +422,9 @@ const pageTitle = (lang) => {
         .lastElementChild.querySelector('a')
         .textContent = `${more[lang]} ...`;
       }
+    }
+    if (title == 'activiteiten') {
+      getTextContentIn(getAll('.uk-card-title'), activities, lang);
     }
   }
 }
