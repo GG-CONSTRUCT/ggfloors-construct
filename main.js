@@ -424,7 +424,11 @@ const pageTitle = (lang) => {
       }
     }
     if (title == 'activiteiten') {
-      getTextContentIn(getAll('.uk-card-title'), activities, lang);
+      let cardTitles = getAll('.uk-card-title');
+      getTextContentIn(cardTitles, activities, lang);
+      for (let cardTitle of cardTitles) {
+        cardTitle.nextElementSibling.innerHTML = eval(cardTitle.title.replace(/ /g, ''))[lang].substring(0, 200) + '...';
+      }
     }
   }
 }
