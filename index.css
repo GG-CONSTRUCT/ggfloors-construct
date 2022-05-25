@@ -1087,3 +1087,7 @@ h4 ~ .social .social__link:hover {
 .about-flooring aside:hover li::after {
   opacity: .9;
 }
+
+.referenties {
+  flex-direction: row-reverse !important;
+}
