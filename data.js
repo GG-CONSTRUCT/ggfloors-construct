@@ -404,6 +404,13 @@ const parket = {
 const belons = {
   nl: [`Met al uw vragen kunt u bij ons terecht.`, `Maandag t / m vrijdag: 7.00 uur tot 21.00 uur.`, `Ook via het <a href="contactformulier.html">contactformulier</a> staan wij overal voor u klaar.`],
   en: [`You can contact us with all your questions.`, `Monday to Friday: 7:00 AM to 9:00 PM.`, `Also via <a href="contactformulier.html">contact form</a> we are there for you everywhere.`],
-  fr: [`Vous pouvez nous contacter pour toutes vos questions.`, `Du lundi au vendredi: de 7h00 à 21h00.`, `Egalement via <a href=" formulaire de contact .html">formulaire de contact</a> nous sommes là pour vous partout.`],
-  de: [`Du kannst uns mit all deinen Fragen kontaktieren.`, `Montag bis Freitag: 7:00 bis 21:00.`, `Auch per <a href=" Kontaktformular .html">Kontaktformular</a> wir sind überall für Sie da.`],
+  fr: [`Vous pouvez nous contacter pour toutes vos questions.`, `Du lundi au vendredi: de 7h00 à 21h00.`, `Egalement via <a href="contactformulier.html">formulaire de contact</a> nous sommes là pour vous partout.`],
+  de: [`Du kannst uns mit all deinen Fragen kontaktieren.`, `Montag bis Freitag: 7:00 bis 21:00.`, `Auch per <a href="contactformulier.html">Kontaktformular</a> wir sind überall für Sie da.`],
+}
+
+const bedrijfsgegevens = {
+  nl: [`Adres:`, `Bank:`],
+  en: [`Address:`, `Bank:`],
+  fr: [`Adresse:`, `Banque:`],
+  de: [`Adresse:`, `Bank:`],
 }
