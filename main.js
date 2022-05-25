@@ -10,6 +10,12 @@ const getTextContentIn = (items, data, lang) => {
   }
 }
 
+const getInnerHtmlIn = (items, data, lang) => {
+  for (let i in items) {
+    items[i].innerHTML = (lang) ? data[lang][i] : data[i];
+  }
+}
+
 const getTextContentOf = (items, data, lang) => {
   for (let item of items) {
     item.textContent = (lang) ? data[lang] : data;
@@ -408,8 +414,9 @@ const pageTitle = (lang) => {
         achor.dataset.caption = titleForCurrentLang;
       }
       let pageName = getPageName().replace(/-/g, '');
-      get('.paragraph').innerHTML = eval(pageName)[lang];
-      get('.submit-app').textContent = submitApp[lang].toUpperCase();
+      if (get('.paragraph')) get('.paragraph').innerHTML = eval(pageName)[lang];
+      if (get('.list_contact')) getInnerHtmlIn(getAll('.list__item_data'), eval(pageName), lang);
+      if (get('.submit-app')) get('.submit-app').textContent = submitApp[lang].toUpperCase();
       if (title == 'over ons') {
         getAll('.paragraph')[1].textContent = socialMediaInvite[lang];
         getTextContentIn(getAll('.about-gg__activities .list__link'), activities, lang);

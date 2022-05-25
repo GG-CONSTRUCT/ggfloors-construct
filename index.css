@@ -469,11 +469,18 @@ html[lang='nl'].dark .hero {
   list-style-image: url(icons/next.svg);
 }
 
+.list_contact {
+  margin-left: calc(var(--margin) / 2);
+  padding-right: 0;
+  list-style-image: url(icons/next.svg);
+}
+
 .dark .list {
   list-style-image: url(icons/next-dark.svg);
 }
 
 .list li {
+  color: var(--text);
   max-width: 96%;
   margin-top: 4px;
   padding: 2px 16px;
@@ -496,6 +503,21 @@ html[lang='nl'].dark .hero {
   transform: translateX(8px);
   border-radius: 2px;
   background-color: var(--base-shadow);
+}
+
+.list_contact li:hover {
+  cursor: default;
+  transform: translateX(0);
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.list_contact li a {
+  text-transform: none;
+}
+
+.list_contact li:hover a {
+  text-decoration: underline;
 }
 
 .section .social,
