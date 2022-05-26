@@ -405,7 +405,6 @@ const pageTitle = (lang) => {
     let titleTransform = title[0].toUpperCase() + title.slice(1);
     let titleForCurrentLang = arr[arrNL.indexOf(titleTransform)];
     get('h1').textContent = titleForCurrentLang;
-    if (getPageName() == 'nieuws') get('.hero__copy').textContent = eval(pageName)[lang];
     if (getPageName() !== 'contactformulier' && getPageName() !== 'activiteiten') {
       (title == 'over ons') ? get('h2').textContent = aboutTitle[lang] : (get('h2 b')) ? get('h2 b').textContent = titleForCurrentLang : '';
       for (let img of getAll('#gallery .grid img')) {
@@ -415,6 +414,7 @@ const pageTitle = (lang) => {
         achor.dataset.caption = titleForCurrentLang;
       }
       let pageName = getPageName().replace(/-/g, '');
+      if (getPageName() == 'nieuws') get('.hero__copy').textContent = eval(pageName)[lang];
       if (get('.paragraph')) get('.paragraph').innerHTML = eval(pageName)[lang];
       if (get('.list_contact')) getInnerHtmlIn(getAll('.list__item_data'), eval(pageName), lang);
       if (get('.submit-app')) get('.submit-app').textContent = submitApp[lang].toUpperCase();
