@@ -405,7 +405,7 @@ const pageTitle = (lang) => {
     let titleTransform = title[0].toUpperCase() + title.slice(1);
     let titleForCurrentLang = arr[arrNL.indexOf(titleTransform)];
     get('h1').textContent = titleForCurrentLang;
-    if (pageName == 'nieuws') get('.hero__copy').textContent = eval(pageName)[lang];
+    if (getPageName() == 'nieuws') get('.hero__copy').textContent = eval(pageName)[lang];
     if (getPageName() !== 'contactformulier' && getPageName() !== 'activiteiten') {
       (title == 'over ons') ? get('h2').textContent = aboutTitle[lang] : (get('h2 b')) ? get('h2 b').textContent = titleForCurrentLang : '';
       for (let img of getAll('#gallery .grid img')) {
