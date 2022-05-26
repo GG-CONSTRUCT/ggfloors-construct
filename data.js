@@ -422,7 +422,7 @@ const referenties = {
   de: `Chez <b>GG-Floors&Construct</b>, nous transformons nos travailleurs en experts. Nous transformons les talents bruts en professionnels. Grâce à une éducation et une formation permanentes, ils sont à la pointe des techniques et des matériaux les plus récents. Chacun d'eux est spécialisé dans son domaine et nous employons donc de nombreux ouvriers, afin que leurs connaissances et compétences aboutissent in fine à de belles réalisations dans des disciplines très diverses. Nous sommes fiers d'eux. Et ce qu'ils ont déposé. À maintes reprises. N'hésitez pas à jeter un œil…`,
 }
 
-const nieuw = {
+const nieuws = {
   nl: 'Binnen een bouwproject willen we net zo veel en zo helder mogelijk communiceren met de klant. Dat principe hanteren we ook in onze algemene communicatie. Groot nieuws over een bouwproject? Een volgende stap in ons groeiproces? Of simpelweg een sluitingsperiode met de feestdagen? Je leest het hier. Volg de laatste nieuwtjes van GG-Floors&Construct',
   en: '',
   fr: '',
