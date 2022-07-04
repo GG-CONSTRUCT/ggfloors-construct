@@ -452,7 +452,7 @@ const referenties = {
 
 const nieuws = {
   nl: 'Binnen een bouwproject willen we net zo veel en zo helder mogelijk communiceren met de klant. Dat principe hanteren we ook in onze algemene communicatie. Groot nieuws over een bouwproject? Een volgende stap in ons groeiproces? Of simpelweg een sluitingsperiode met de feestdagen? Je leest het hier. Volg de laatste nieuwtjes van GG-Floors&Construct',
-  en: '',
-  fr: '',
-  de: '',
+  en: 'Within a construction project we want to communicate as much and as clearly as possible with the customer. We also apply this principle in our general communication. Big news about a construction project? A next step in our growth process? Or simply a closing period with the holidays? You read it here. Follow the latest news from GG-Floors&Construct',
+  fr: 'Dans le cadre d\'un projet de construction, nous souhaitons communiquer le plus clairement possible avec le client. Nous appliquons également ce principe dans notre communication générale. Grande nouvelle sur un projet de construction? Une prochaine étape dans notre processus de croissance ? Ou simplement une période de fermeture avec les vacances ? Vous l\'avez lu ici. Suivez les dernières actualités de GG-Floors&Construct',
+  de: 'Innerhalb eines Bauvorhabens wollen wir so viel und so klar wie möglich mit dem Kunden kommunizieren. Dieses Prinzip wenden wir auch in unserer allgemeinen Kommunikation an. Große Neuigkeiten zu einem Bauprojekt? Ein nächster Schritt in unserem Wachstumsprozess? Oder einfach eine Schließungszeit mit den Feiertagen? Sie lesen es hier. Verfolgen Sie die neuesten Nachrichten von GG-Floors&Construct',
 }
