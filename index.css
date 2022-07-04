@@ -433,6 +433,12 @@ html[lang='nl'].dark .hero {
   background-image: url(images/parket.jpg);
 }
 
+.linoleum__image {
+  padding: 8px;
+  background-color: #ddd;
+  background-image: url(images/linoleum.jpg);
+}
+
 .section {
   display: table;
   max-width: 100%;
