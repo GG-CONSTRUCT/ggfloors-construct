@@ -451,6 +451,12 @@ html[lang='nl'].dark .hero {
   background-image: url(images/vinyl.jpg);
 }
 
+.tapijt__image {
+  padding: 8px;
+  background-color: #ddd;
+  background-image: url(images/tapijt.jpg);
+}
+
 .section {
   display: table;
   max-width: 100%;
