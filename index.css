@@ -433,6 +433,12 @@ html[lang='nl'].dark .hero {
   background-image: url(images/parket.jpg);
 }
 
+.laminaat__image {
+  padding: 8px;
+  background-color: #ddd;
+  background-image: url(images/laminaat.jpg);
+}
+
 .linoleum__image {
   padding: 8px;
   background-color: #ddd;
