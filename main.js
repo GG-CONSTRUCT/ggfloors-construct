@@ -403,7 +403,8 @@ const pageTitle = (lang) => {
     let title = getPageName().replace(/-/g, ' ');
     title = (title === 'mozaiek') ? title.replace('i', 'ï') : title;
     let titleTransform = title[0].toUpperCase() + title.slice(1);
-    let titleForCurrentLang = arr[arrNL.indexOf(titleTransform)];
+    console.log(titleTransform);
+    let titleForCurrentLang = arr[arrNL.findIndex(item => titleTransform.toLowerCase() === item.toLowerCase())];
     get('h1').textContent = titleForCurrentLang;
     if (getPageName() !== 'contactformulier' && getPageName() !== 'activiteiten') {
       (title == 'over ons') ? get('h2').textContent = aboutTitle[lang] : (get('h2 b')) ? get('h2 b').textContent = titleForCurrentLang : '';
