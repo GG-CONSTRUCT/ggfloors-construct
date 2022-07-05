@@ -404,9 +404,10 @@ const pageTitle = (lang) => {
     title = (title === 'mozaiek') ? title.replace('i', 'ï') : title;
     let titleTransform = title[0].toUpperCase() + title.slice(1);
     console.log(titleTransform);
+    if (titleTransform == 'Vloerbekleding') titleTransform = 'Vloerder';
     let titleForCurrentLang = arr[arrNL.findIndex(item => titleTransform.toLowerCase() === item.toLowerCase())];
     get('h1').textContent = titleForCurrentLang;
-    if (getPageName() !== 'contactformulier' && getPageName() !== 'activiteiten') {
+    if (getPageName() !== 'contactformulier' && getPageName() !== 'activiteiten' && getPageName() !== 'vloerbekleding') {
       (title == 'over ons') ? get('h2').textContent = aboutTitle[lang] : (get('h2 b')) ? get('h2 b').textContent = titleForCurrentLang : '';
       for (let img of getAll('#gallery .grid img')) {
         img.alt = titleForCurrentLang;
@@ -437,6 +438,13 @@ const pageTitle = (lang) => {
       getTextContentIn(cardTitles, activities, lang);
       for (let cardTitle of cardTitles) {
         cardTitle.nextElementSibling.innerHTML = eval(cardTitle.title.replace(/ /g, ''))[lang].substring(0, 200) + '...';
+      }
+    }
+    if (title == 'vloerbekleding') {
+      let cardTitles = getAll('.uk-card-title');
+      getTextContentIn(cardTitles, floorTitle, lang);
+      for (let cardTitle of cardTitles) {
+        cardTitle.nextElementSibling.innerHTML = eval(cardTitle.title.replace(/ /g, ''))[lang].substring(0, 160) + '...';
       }
     }
   }
