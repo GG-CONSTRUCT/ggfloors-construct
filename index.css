@@ -469,6 +469,12 @@ html[lang='nl'].dark .hero {
   background-image: url(images/lvt.jpg);
 }
 
+.rubber__image {
+  padding: 8px;
+  background-color: #ddd;
+  background-image: url(images/rubber.jpg);
+}
+
 .section {
   display: table;
   max-width: 100%;
