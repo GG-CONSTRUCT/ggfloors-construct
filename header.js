@@ -92,7 +92,7 @@ Vue.component('navbar', {
           <a class="topnav__link" href="vacatures.html">Vacatures</a>
         </li>
         <li class="topnav__item hasChild">
-          <a class="topnav__link" href="contact.html">Contact</a>
+          <a class="topnav__link" href="bel-ons.html">Contact</a>
           <span class="arrow"></span>
           <ul class="subnav contact">
             <li class="subnav__item">
