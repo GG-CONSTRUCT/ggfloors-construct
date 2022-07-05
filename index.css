@@ -1139,3 +1139,11 @@ h4 ~ .social .social__link:hover {
 .referenties {
   flex-direction: row-reverse !important;
 }
+
+.uk-card-media-top {
+  height: 240px;
+}
+
+.uk-card-media-top img {
+  min-height: 240px;
+}
