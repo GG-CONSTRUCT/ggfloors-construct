@@ -397,7 +397,7 @@ print.createLink(toPrint);
 
 const getPageName = () => window.location.pathname.slice(window.location.pathname.lastIndexOf('/') + 1).replace('.html', '');
 const pageTitle = (lang) => {
-  if (getPageName() !== 'index' && getPageName() !== 'home') {
+  if (getPageName() !== 'index' && getPageName() !== 'home' && getPageName() !== '') {
     let arrNL = [...navigation.nl, ...activities.nl, ...floorTitle.nl, ...contact.nl];
     let arr = [...navigation[lang], ...activities[lang], ...floorTitle[lang], ...contact[lang]];
     let title = getPageName().replace(/-/g, ' ');
