@@ -6,7 +6,7 @@ const navigation  = {
 };
 
 const activities = {
-  nl: ['Vloerder', 'Schilderwerken', 'Gyprocwerken', 'Pleisterwerken', 'Terrassen en opritten', 'Dakwerken', 'Crepi', 'Renovatie', 'Nieuwbouw', 'Alle dossiers...',],
+  nl: ['Vloerder', 'Schilderwerken', 'Gyprocwerken', 'Pleisterwerken', 'Terrassen en opritten', 'Dakwerken', 'Crepi', 'Renovatie', 'Nieuwbouw', 'Alle dossiers',],
   en: ['Flooring', 'Painting', 'Gyproc works', 'Plastering', 'Terraces and driveways', 'Roofing works', 'Facades', 'Renovation', 'New construction', 'All...',],
   fr: ['Revêtement de sol', 'Peintures', 'Travaux de gyprok', 'Plâtrage', 'Terrasses et allées', 'Travaux de toiture', 'Façades', 'Rénovation', 'Nouvelle construction', 'Tous les fichiers...',],
   de: ['Etage', 'Malerei', 'Gyproc-Arbeiten', 'Verputzen', 'Terrassen und Einfahrten', 'Dachwerk', 'Crepi', 'Renovierung', 'Neubau', 'Alle Dateien...',],

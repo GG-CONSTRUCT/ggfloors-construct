@@ -433,7 +433,7 @@ const pageTitle = (lang) => {
         .textContent = `${more[lang]} ...`;
       }
     }
-    if (title == 'activiteiten') {
+    if (title == 'activiteiten' || title == 'alle-dossiers') {
       let cardTitles = getAll('.uk-card-title');
       getTextContentIn(cardTitles, activities, lang);
       for (let cardTitle of cardTitles) {
