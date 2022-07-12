@@ -98,7 +98,10 @@
       </div>
     </div>
     <article class="article referenties">
-      <aside class="article__image over-ons__image">
+      <aside class="article__image referenties">
+        <img src="images/referenties.jpg" alt="referenties">
+        <img src="images/referenties-venster.jpg" alt="venster">
+        <img class="uk-visible@xl" src="images/referenties-schilderwerken.jpg" alt="childerwerken">
       </aside>
       <section class="section">
         <h2><strong>GG Referenties</strong></h2>
@@ -109,7 +112,7 @@
         </div>
       </section>
     </article>
-    <div id="app" class="container-fluid" @keydown.left = "(id > 1) ? id-- : id = variants.length" @keydown.right = "(id < variants.length) ? id++ : id = 1" @mouseover="curtainVisible = true">
+    <div id="app" hidden class="container-fluid" @keydown.left = "(id > 1) ? id-- : id = variants.length" @keydown.right = "(id < variants.length) ? id++ : id = 1" @mouseover="curtainVisible = true">
         <h2 class="title app-title">{{title}}</h2>
         <br>
         <div class="row app-row">
@@ -161,7 +164,7 @@
         </div>
       </div>
       </div><br><br>
-      <div id="terras" class="container-fluid" @keydown.left = "(id > 1) ? id-- : id = variants.length" @keydown.right = "(id < variants.length) ? id++ : id = 1">
+      <div id="terras" hidden class="container-fluid" @keydown.left = "(id > 1) ? id-- : id = variants.length" @keydown.right = "(id < variants.length) ? id++ : id = 1">
         <h2 class="app-title title">{{title}}</h2>
         <br>
         <div class="row app-row">
@@ -210,7 +213,7 @@
         </div>
       </div>
       </div><br><br>
-      <div id="zink" class="container-fluid" @keydown.left = "(id > 1) ? id-- : id = variants.length" @keydown.right = "(id < variants.length) ? id++ : id = 1">
+      <div id="zink" hidden class="container-fluid" @keydown.left = "(id > 1) ? id-- : id = variants.length" @keydown.right = "(id < variants.length) ? id++ : id = 1">
         <h2 class="app-title title">{{title}}</h2>
         <br>
         <div class="row app-row">
@@ -293,7 +296,8 @@
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/ajax.js"></script>
   <script>
-    new Vue({
+    window.addEventListener('load', () => {
+      new Vue({
       el: '#app',
       data: {
         title: "Uniek werk! - restauratie",
@@ -535,6 +539,14 @@
         },
       },
       })
+      get('#app').removeAttribute('hidden');
+      setTimeout(() => {
+        get('#terras').removeAttribute('hidden');
+      }, 500)
+      setTimeout(() => {
+        get('#zink').removeAttribute('hidden');
+      }, 900)
+    })
     </script>
   </script>
 </body>

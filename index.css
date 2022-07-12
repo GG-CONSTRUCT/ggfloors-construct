@@ -481,6 +481,17 @@ html[lang='nl'].dark .hero {
   background-image: url(images/egaliseren.jpg);
 }
 
+.article__image.referenties {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article__image.referenties * {
+  width: auto;
+  min-width: 33%;
+}
+
 .section {
   display: table;
   max-width: 100%;
