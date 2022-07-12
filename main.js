@@ -43,11 +43,12 @@ const getTopNav = (lang) => {
   const activitiesLink = getAll('.activities .subnav__link');
   const contactLink = getAll('.contact .subnav__link');
   const partnersTitle = get('.partners .dropdown__title');
-  const topbarLink = get('.topbar__link');
+  const topbarLink = getAll('.topbar__link');
   const logo = get('.logo');
   logo.title = `${companyName.toUpperCase()} | ${homePage[lang]}`;
   partnersTitle.textContent = partnersTitleContent[lang];
-  topbarLink.textContent = contactLinkContent[lang];
+  topbarLink[0].textContent = contactLinkContent[lang];
+  topbarLink[1].textContent = legals[lang][4];
   getTextContentIn(topNavLink, navigation, lang);
   getTextContentIn(activitiesLink, activities, lang);
   getTextContentIn(contactLink, contact, lang);

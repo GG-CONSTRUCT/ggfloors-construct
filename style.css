@@ -1450,10 +1450,13 @@ footer {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .topbar .social {
     display: none;
   }
+}
+
+@media (max-width: 500px) {
   .footnav ul,
   .footnav ul:nth-last-child(1) {
     width: 100%;

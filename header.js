@@ -7,12 +7,12 @@ Vue.component('topbar', {
       <ul class="dropdown__list">
       </ul>
     </div>
-    &nbsp;&nbsp;<b>|</b>&nbsp;&nbsp;
-    <a class="topbar__link" href="contactformulier.html">Contact</a>
-    &nbsp;&nbsp;&nbsp;
-    <a style="color: #fff; display: flex; align-items: center;" id="themToggle" href="#" onclick="document.querySelector('html').classList.toggle('dark'); 
+    <span class="uk-visible@s">&nbsp;&nbsp;<b>&#10072;</b>&nbsp;&nbsp;</span>
+    <a class="topbar__link topbar__link_theme uk-visible@s" href="contactformulier.html">Contact</a>
+    <span>&nbsp;&nbsp;<b>&#10072;</b>&nbsp;&nbsp;</span>
+    <a class="topbar__link" href="#" onclick="document.querySelector('html').classList.toggle('dark'); 
       saveColorTheme()">
-      <img width="14" height="14" src="icons/black-and-white.svg">
+    Thema veranderen
     </a>
     <div class="social social_size_s">
       <ul class="social__list"></ul>

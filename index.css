@@ -5,7 +5,6 @@
   min-height: 600px;
   transition: .2s background-image;
   background-color: #5078cd;
-  background-image: url(images/background.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -59,9 +58,9 @@ html[lang='fr'] .hero {
   }
 }
 
-html[lang='nl'].dark .hero {
+/*html[lang='nl'].dark .hero {
   background-image: url(images/background.svg);
-}
+}*/
 
 .hero__heading {
   font-family: 'Raleway', sans-serif;
