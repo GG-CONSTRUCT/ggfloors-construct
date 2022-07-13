@@ -254,6 +254,13 @@ h1, h2, h3 {
   color: #fff;
 }
 
+@media (max-width: 500px) {
+  .topbar__link, .dropdown__title {
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+}
+
 .topbar__link:hover {
   color: #ddd;
 }
