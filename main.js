@@ -307,9 +307,9 @@ const getSticky = () => {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add('sticky');
     mobileMenu.style.position = 'fixed';
-    mobileMenu.style.top = '65px';
+    mobileMenu.style.top = '64px';
     search.style.position = 'fixed';
-    search.style.top = '65px';
+    search.style.top = '64px';
   } else {
     navbar.classList.remove('sticky');
     mobileMenu.style.position = 'relative';
