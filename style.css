@@ -1527,7 +1527,7 @@ footer {
 }
 
 @media print {
-  *,
+  /**,
   *:before,
   *:after,
   *:first-letter,
@@ -1540,14 +1540,14 @@ footer {
     box-shadow: none !important;
     text-shadow: none !important;
     page-break-inside: avoid;
-  }
+  }*/
   @page {
     margin: 1cm;
   }
   body>*:not(main) {
     display: none !important;
   }
-  main>*:not(article) {
+  /*main>*:not(article) {
     display: none !important;
   }
   article>*:not(section) {
@@ -1555,7 +1555,7 @@ footer {
   }
   article>*:not(.about-flooring aside) {
     display: none !important;
-  }
+  }*/
 }
 
 .heading {
@@ -2507,6 +2507,7 @@ html[lang='fr'] .hero {
 .article__image.referenties * {
   width: auto;
   min-width: 33%;
+  max-height: 400px;
 }
 
 .section {
@@ -2566,6 +2567,8 @@ html[lang='fr'] .hero {
 }
 
 .list li a {
+  display: inline-block;
+  width: 100%;
   text-transform: capitalize;
   color: var(--blue, #0e4ed5);
 }
@@ -2594,6 +2597,7 @@ html[lang='fr'] .hero {
 }
 
 .list_contact li a {
+  width: 100%;
   text-transform: none;
 }
 

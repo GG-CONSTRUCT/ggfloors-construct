@@ -404,7 +404,6 @@ const pageTitle = (lang) => {
     let title = getPageName().replace(/-/g, ' ');
     title = (title === 'mozaiek') ? title.replace('i', 'ï') : title;
     let titleTransform = title[0].toUpperCase() + title.slice(1);
-    console.log(titleTransform);
     if (titleTransform == 'Vloerbekleding') titleTransform = 'Vloerder';
     let titleForCurrentLang = arr[arrNL.findIndex(item => titleTransform.toLowerCase() === item.toLowerCase())];
     get('h1').textContent = titleForCurrentLang;
