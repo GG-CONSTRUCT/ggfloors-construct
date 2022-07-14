@@ -2584,6 +2584,13 @@ html[lang='fr'] .hero {
   background-color: var(--base-shadow);
 }
 
+.list li:hover a {
+  width: calc(100% + 40px);
+  margin-left: -40px;
+  padding-left: 40px;
+}
+
+
 .list_contact li:hover {
   cursor: default;
   transform: translateX(0);
