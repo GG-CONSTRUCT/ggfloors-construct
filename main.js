@@ -416,6 +416,7 @@ const pageTitle = (lang) => {
         achor.dataset.caption = titleForCurrentLang;
       }
       let pageName = getPageName().replace(/-/g, '');
+       (title == 'bel ons' || title == 'bedrijfsgegevens') ? get('h2').textContent = ' ' + eval(pageName + 'Title')[lang] : '';
       if (getPageName() == 'nieuws') get('.hero__copy').textContent = eval(pageName)[lang];
       if (get('.paragraph')) get('.paragraph').innerHTML = eval(pageName)[lang];
       if (get('.list_contact')) getInnerHtmlIn(getAll('.list__item_data'), eval(pageName), lang);

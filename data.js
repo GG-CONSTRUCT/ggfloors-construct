@@ -456,11 +456,25 @@ const egaliseren = {
   de: `Das Nivellieren eines Bodens ist eine präzise Arbeit. Wenn du es falsch machst, hast du am Ende eine holprige Landschaft, mit der du eigentlich nichts mehr anfangen kannst. Als Anfänger ist es besser, etwas DIY-Erfahrung zu sammeln, bevor Sie mit dem Nivellieren eines Bodens beginnen. sDas Nivellieren eines Bodens ist ein etwas vernachlässigtes Kind, wenn es darum geht, einen neuen Boden zu verlegen. Das ist seltsam, denn das Nivellieren eines Bodens ist fast der wichtigste Teil beim Verlegen von Böden in jeder Praxis ... Was bedeutet das eigentlich? Wann soll das sein? Welche Vor- und Nachteile hat das Nivellieren des Bodens? Und kann ich einen Boden selbst nivellieren oder muss ich ihn extern vergeben?`,
 }
 
+const belonsTitle = {
+  nl: 'Contactcenter',
+  en: 'Contact Center',
+  fr: 'Détails du contact',
+  de: 'Kontaktcenter',
+}
+
 const belons = {
   nl: [`Met al uw vragen kunt u bij ons terecht.`, `Maandag t / m vrijdag: 7.00 uur tot 21.00 uur.`, `Ook via het <a href="contactformulier.html">contactformulier</a> staan wij overal voor u klaar.`],
   en: [`You can contact us with all your questions.`, `Monday to Friday: 7:00 AM to 9:00 PM.`, `Also via <a href="contactformulier.html">contact form</a> we are there for you everywhere.`],
   fr: [`Vous pouvez nous contacter pour toutes vos questions.`, `Du lundi au vendredi: de 7h00 à 21h00.`, `Egalement via <a href="contactformulier.html">formulaire de contact</a> nous sommes là pour vous partout.`],
   de: [`Du kannst uns mit all deinen Fragen kontaktieren.`, `Montag bis Freitag: 7:00 bis 21:00.`, `Auch per <a href="contactformulier.html">Kontaktformular</a> wir sind überall für Sie da.`],
+}
+
+const bedrijfsgegevensTitle = {
+  nl: 'Gegevens',
+  en: 'Data',
+  fr: 'Termine',
+  de: 'Rendez-vous'
 }
 
 const bedrijfsgegevens = {
