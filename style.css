@@ -2556,6 +2556,7 @@ html[lang='fr'] .hero {
   list-style-image: url(icons/next-dark.svg);
 }
 
+
 .list li {
   color: var(--text);
   max-width: 96%;
@@ -2590,7 +2591,6 @@ html[lang='fr'] .hero {
   padding-left: 40px;
 }
 
-
 .list_contact li:hover {
   cursor: default;
   transform: translateX(0);
@@ -2604,12 +2604,16 @@ html[lang='fr'] .hero {
 }
 
 .list_contact li a {
-  width: 100%;
   text-transform: none;
 }
 
 .list_contact li:hover a {
   text-decoration: underline;
+}
+
+.list_contact li a {
+  width: auto;
+  display: inline;
 }
 
 .section .social,
