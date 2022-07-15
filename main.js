@@ -244,7 +244,7 @@ const getContactSidenavTitle = (lang) => {
 
 const shuffleSidenavItems = (lang) => {
   let unshuffled = activities[lang].slice(0, activities[lang].length - 1);
-  let link = getAll('.sidenav a')
+  let link = getAll('.sidenav a');
   let shuffled = unshuffled
   .map(value => ({ value, sort: Math.random() }))
   .sort((a, b) => a.sort - b.sort)
