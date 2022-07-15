@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <title>Vloerbekleding | GG FLOORS & CONSTRUCT</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <script src="theme.js"></script>
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/uikit.css">
+  <script src="js/uikit.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="glyphter-font/css/gg-font.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+  <header id="header">
+    <topbar></topbar>
+    <navbar></navbar>
+    <mobile-menu></mobile-menu>
+    <search></search>
+    <terms></terms>
+  </header>
+  <main>
+    <div class="controlbar">
+      <a href="javascript:history.back()" class="button button-reveal backlink">
+        <img src="icons/more.svg" alt="meer">
+      </a>
+      <a href="#" class="button button-reveal" uk-toggle="target: +">
+        <span>GRATIS OFFERTE AANVRAGEN</span>
+      </a>
+      <form class="contact-formular" id="contactForm" action="handler.php" method="post" hidden>
+        <label for="name">
+          <span>Naam:</span><input type="text" id="name" name="name" required>
+        </label>
+        <label for="phone">
+          <span>Phone:</span><input type="tel" id="phone" name="phone">
+        </label>
+        <label for="mail">
+          <span>E-mail:</span><input type="email" id="email" name="email" required>
+        </label>
+        <label for="message">
+          <span>Bericht:</span><textarea id="message" class="message" name="message" placeholder="Je berichtje" rows="10" cols="40"></textarea>
+        </label>
+        <p class="footnote">* = Invoer verplicht</p>
+        <button id="button" type="submit" class="uk-button-default button button-reveal">VERZENDEN</button>
+        <div class="result">
+          <span id="answer"></span>
+          <span id="loader" style="display:none"><img src="images/loader.gif" alt=""></span>
+        </div>
+      </form>
+      <a href="#" class="uk-button-default button button-reveal" uk-toggle="target: +" hidden>
+        <span>ZET JE VIDEO AAN</span>
+      </a>
+      <video src="video/intro.mp4" controls playsinline hidden uk-video></video>
+      <a href="#gallery" uk-scroll class="button button-reveal" hidden>
+        <span>GALERIE</span>
+      </a>
+    </div>
+    <div class="heading">
+      <div class="titlebar">
+        <h1>Vloerbekleding</h1>
+      </div>
+    </div>
+    <div class="grid uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-child-width-1-5@xl" uk-grid>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <a href="natuursteen.html">
+              <img src="images/natuursteen.jpg" alt="">
+            </a>
+          </div>
+          <div class="uk-card-body">
+            <h3 title="natuursteen" class="uk-card-title">Natuursteen</h3>
+            <p>Natuursteen is in de bouwkunde en civiele techniek een gesteente, dat in de natuur wordt aangetroffen en dat na een eventuele bewerking, geschikt is als bouwmateriaal. Natuursteen treft men aan in vel ...</p>
+            <a href="natuursteen.html" class="button button-reveal">
+              <span>Meer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <a href="keramiek.html">
+              <img src="images/keramiek.jpg" alt="">
+            </a>
+          </div>
+          <div class="uk-card-body">
+            <h3 title="keramiek" class="uk-card-title">Keramiek</h3>
+            <p>Keramiek is een materiaal dat noch een metaal noch een polymeer is. Voorbeelden van keramieken zijn bijvoorbeeld aardewerk, steengoed en porselein, maar daarnaast valt ook te denken aan glas, diamante ...</p>
+            <a href="keramiek.html" class="button button-reveal">
+              <span>Meer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <a href="mozaiek.html">
+              <img src="images/mozaiek.jpg" alt="">
+            </a>
+          </div>
+          <div class="uk-card-body">
+            <h3 title="mozaiek" class="uk-card-title">Mozaiek</h3>
+            <p>Mozaïek is een kunstvorm waarbij een grote afbeelding wordt vervaardigd uit een groot aantal kleine gekleurde steentjes (tesserae), die in een vloer of wand worden gemetseld. Met glas is het mogelijk ...</p>
+            <a href="mozaiek.html" class="button button-reveal">
+              <span>Meer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <a href="exclusieve-tegels.html">
+              <img src="images/exclusieve-tegels.jpg" alt="">
+            </a>
+          </div>
+          <div class="uk-card-body">
+            <h3 title="exclusievetegels" class="uk-card-title">Exclusieve tegels</h3>
+            <p>Exclusieve tegels alle stijlen tegels van o.a. BottegaNove, Siminetti en Mutina. Tegels met structuren, een bepaalde finish of in een specifieke kleur. Naast de invulling van tegels in de badkamer, ve ...</p>
+            <a href="exclusieve-tegels.html" class="button button-reveal">
+              <span>Meer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <a href="parket.html">
+              <img src="images/parket.jpg" alt="">
+            </a>
+          </div>
+          <div class="uk-card-body">
+            <h3 title="parket" class="uk-card-title">Parket</h3>
+            <p>Massief parket bestaat uit houten planken die na het leggen geschuurd en daarna gelakt of geolied moeten worden. Massief parket is officieel minimaal 6 mm dik; tussen 6 en 10 mm worden de planken, in ...</p>
+            <a href="parket.html" class="button button-reveal">
+              <span>Meer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <a href="laminaat.html">
+              <img src="images/laminaat.jpg" alt="">
+            </a>
+          </div>
+          <div class="uk-card-body">
+            <h3 title="laminaat" class="uk-card-title">Laminaat</h3>
+            <p>Laminaat. Het uitzicht van laminaat wordt bepaald door de tekening die als decorlaag gebruikt wordt. Toch is het oppervlak van laminaat bijna niet te onderscheiden van echt parket. Bovendien is lamina ...</p>
+            <a href="parket.html" class="button button-reveal">
+              <span>Meer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <a href="linoleum.html">
+              <img src="images/linoleum.jpg" alt="">
+            </a>
+          </div>
+          <div class="uk-card-body">
+            <h3 title="linoleum" class="uk-card-title">Linoleum</h3>
+            <p>Linoleum is een slijtvaste vloerbedekking van enkele millimeters dik. Het is een natuurproduct met een grote indrukvastheid. De naam komt van de Latijnse woorden Linum (vlas) en Oleum (olie), en het v ...</p>
+            <a href="linoleum.html" class="button button-reveal">
+              <span>Meer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <a href="vinyl.html">
+              <img src="images/vinyl.jpg" alt="">
+            </a>
+          </div>
+          <div class="uk-card-body">
+            <h3 title="vinyl" class="uk-card-title">Vinyl</h3>
+            <p>Vinyl is een algemene benaming voor een (soepel en veerkrachtige) kunststof vloerbedekking van hard materiaal. In de volksmond is het soms beter gekend als Novilon. Soms wordt vinyl verward met linole ...</p>
+            <a href="vinyl.html" class="button button-reveal">
+              <span>Meer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <a href="tapijt.html">
+              <img src="images/tapijt.jpg" alt="">
+            </a>
+          </div>
+          <div class="uk-card-body">
+            <h3 title="tapijt" class="uk-card-title">Tapijt</h3>
+            <p>Tapijten komen in vele vormen voor. Tapijt is verkrijgbaar in rollen, stroken en tegelvormen. Ook wordt er vaak gesproken over perzische of oosterse tapijten, maar wat wil dat nu allemaal zeggen? Wij ...</p>
+            <a href="tapijt.html" class="button button-reveal">
+              <span>Meer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <a href="pvc.html">
+              <img src="images/pvc.jpg" alt="">
+            </a>
+          </div>
+          <div class="uk-card-body">
+            <h3 title="pvc" class="uk-card-title">PVC</h3>
+            <p>Pvc vloeren zijn eigenlijk voornamelijk bekend bij bedrijven. Ze worden in bedrijfspanden veel gebruikt in bijvoorbeeld de kantine en andere bedrijfsruimtes omdat deze vloeren zeer sterk en makkelijk ...</p>
+            <a href="pvc.html" class="button button-reveal">
+              <span>Meer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <a href="lvt.html">
+              <img src="images/lvt.jpg" alt="">
+            </a>
+          </div>
+          <div class="uk-card-body">
+            <h3 title="lvt" class="uk-card-title">LVT</h3>
+            <p>Zijn een ongelooflijk populaire vloeroptie in zowel huishoudelijke als commerciële gebouwen. Het is bekend voor het imiteren van hout en tegels met onberispelijke resultaten. Terwijl LVT op zichzelf e ..</p>
+            <a href="lvt.html" class="button button-reveal">
+              <span>Meer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <a href="rubber.html">
+              <img src="images/rubber.jpg" alt="">
+            </a>
+          </div>
+          <div class="uk-card-body">
+            <h3 title="rubber" class="uk-card-title">Rubber</h3>
+            <p>Krijgen de vloeren in uw bedrijfspand heel wat te verduren op een gemiddelde werkdag? Chemische stoffen of oliën bijvoorbeeld? Vorkheftrucs over uw magazijnvloer? Dan is rubber vloerbedekking precies ...</p>
+            <a href="rubber.html" class="button button-reveal">
+              <span>Meer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default">
+          <div class="uk-card-media-top">
+            <a href="egaliseren.html">
+              <img src="images/egaliseren.jpg" alt="">
+            </a>
+          </div>
+          <div class="uk-card-body">
+            <h3 title="egaliseren" class="uk-card-title">Egaliseren</h3>
+            <p>Een vloer egaliseren is een precies klusje. Doe je het fout, dan eindig je met een hobbellandschap waar je eigenlijk niets meer mee kunt. Als beginner kun je beter eerst wat kluservaring opdoen voorda ...</p>
+            <a href="egaliseren.html" class="button button-reveal">
+              <span>Meer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <footer id="footer">
+    <footnav></footnav>
+    <basement></basement>
+    <widget></widget>
+  </footer>
+  <script src="header.js"></script>
+  <script src="footer.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/ajax.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <title>Contact | GG FLOORS & CONSTRUCT</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="css/uikit.css">
+  <script src="js/uikit.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="glyphter-font/css/gg-font.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+  <header id="header">
+    <topbar></topbar>
+    <navbar></navbar>
+    <mobile-menu></mobile-menu>
+    <search></search>
+    <terms></terms>
+  </header>
+  <main>
+    <div class="controlbar">
+      <a hidden href="javascript:history.back()" class="button button-reveal backlink">
+        <img src="icons/more.svg" alt="meer">
+      </a>
+      <a hidden href="#" class="button button-reveal" uk-toggle="target: +">
+        <span>GRATIS OFFERTE AANVRAGEN</span>
+      </a>
+      <form class="contact-formular" id="contactForm" action="handler.php" method="post" hidden>
+        <label for="name">
+          <span>Naam:</span><input type="text" id="name" name="name" required>
+        </label>
+        <label for="phone">
+          <span>Phone:</span><input type="tel" id="phone" name="phone">
+        </label>
+        <label for="mail">
+          <span>E-mail:</span><input type="email" id="email" name="email" required>
+        </label>
+        <label for="message">
+          <span>Bericht:</span><textarea id="message" class="message" name="message" placeholder="Je berichtje" rows="10" cols="40"></textarea>
+        </label>
+        <p class="footnote">* = Invoer verplicht</p>
+        <button id="button" type="submit" class="uk-button-default button button-reveal">VERZENDEN</button>
+        <div class="result">
+          <span id="answer"></span>
+          <span id="loader" style="display:none"><img src="images/loader.gif" alt=""></span>
+        </div>
+      </form>
+      <a hidden href="#" class="uk-button-default button button-reveal" uk-toggle="target: +" hidden>
+        <span>ZET JE VIDEO AAN</span>
+      </a>
+      <video src="video/intro.mp4" controls playsinline hidden uk-video></video>
+      <a hidden href="#gallery" uk-scroll class="button button-reveal">
+        <span>GALERIE</span>
+      </a>
+    </div>
+    <div class="heading">
+      <ul class="uk-breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li class="uk-disabled"><a href="#">Bel ons</a></li>
+        <li><span></span></li>
+      </ul>
+      <div class="titlebar">
+        <h1>Contact</h1>
+      </div>
+    </div>
+    <div class="flex-wrap space-between">
+      <div>
+        <h2 class="icon-briefcase"> <b>Gevegens</b></h2>
+        <h4 hidden><b>Contactcenter</b></h4><br>
+        <ul class="list list_contact">
+          <li class="list__item">GG FLOORS & CONSTRUCT bv</li>
+          <li class="list__item">BTW: BE 0704678967</li>
+          <li class="list__item">
+            <span class="icon-location-pin">&#160;</span>
+            <span class="list__item_data">Adres:</span>
+            <address><a href="https://www.google.com/maps/place/GGVloerbekleding+bvba/@51.0532724,5.7378526,15z/data=!4m5!3m4!1s0x0:0xa831bc10b126f764!8m2!3d51.0532724!4d5.7378526">
+              Kloosterpark 3,
+              B 3650 Dilsen-Stokkem </a>
+            </address>
+          </li>
+          <li class="list__item">
+            <span class="icon-mobile">&#160;</span>
+            <span>Tel:</span><br>
+            <a href="tel:+32472815575">+32 47 281 55 75</a>
+          </li>
+          <li class="list__item">
+            <span class="icon-email">&#160;</span>
+            <span class="data">E-mail:</span><br>
+            <a href="mailto:ggfloorsconstruct@gmail.com">
+            ggfloorsconstruct@gmail.com
+            </a>
+          </li>
+          <li class="list__item">
+            <span class="icon-wallet">&#160;</span>
+            <span  class="list__item_data">Bank:</span><br>
+            BNP PARIBAS/Fortis<br>
+            BE71 0019 0088 6869
+          </li>
+        </ul>
+        <br>
+        <div class="social social_size_s">
+          <p class="e-mail"></p>
+          <ul class="social__list"></ul>
+        </div>
+      </div>
+      <nav class="sidenav_contact">
+        <h2 class="title title_left">Contacteer ons <i class="icon-link"></i></h2>
+        <br>
+        <ul>
+          <li>
+            <a href="contactformulier.html">Contactformulier</a>
+          </li>
+          <li>
+            <a href="bel-ons.html">Bel ons</a>
+          </li>
+          <li>
+            <a class="active" href="#" uk-disabled>Bedrijfsgegevens</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </main>
+  <footer id="footer">
+    <footnav></footnav>
+    <basement></basement>
+    <widget></widget>
+  </footer>
+  <script src="header.js"></script>
+  <script src="footer.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/ajax.js"></script>
+</body>
+</html>

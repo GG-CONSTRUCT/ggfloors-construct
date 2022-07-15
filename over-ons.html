@@ -22,14 +22,14 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <script src="theme.js"></script>
   <link rel="stylesheet" href="css/uikit.css">
   <script src="js/uikit.min.js"></script>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="glyphter-font/css/gg-font.css">
   <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 </head>
-<body class="dark">
+<body>
   <header id="header">
     <topbar></topbar>
     <navbar></navbar>
@@ -42,10 +42,10 @@
       <a href="javascript:history.back()" class="button button-reveal backlink" hidden>
         <img src="icons/more.svg" alt="meer">
       </a>
-      <a href="#top" class="button button-reveal" uk-toggle="target: +">
+      <a href="#" class="button button-reveal" uk-toggle="target: +">
         <span>GRATIS OFFERTE AANVRAGEN</span>
       </a>
-      <form class="contact-formular" hidden>
+      <form class="contact-formular" id="contactForm" action="handler.php" method="post" hidden>
         <label for="name">
           <span>Naam:</span><input type="text" id="name" name="name" required>
         </label>
@@ -53,15 +53,19 @@
           <span>Phone:</span><input type="tel" id="phone" name="phone">
         </label>
         <label for="mail">
-          <span>E-mail:</span><input type="email" id="mail" name="mail" required>
+          <span>E-mail:</span><input type="email" id="email" name="email" required>
         </label>
         <label for="message">
-          <span>Bericht:</span><textarea id="message" class="message" placeholder="Je berichtje" rows="10" cols="40"></textarea>
+          <span>Bericht:</span><textarea id="message" class="message" name="message" placeholder="Je berichtje" rows="10" cols="40"></textarea>
         </label>
         <p class="footnote">* = Invoer verplicht</p>
-        <button class="uk-button-default button button-reveal">VERZENDEN</button>
+        <button id="button" type="submit" class="uk-button-default button button-reveal">VERZENDEN</button>
+        <div class="result">
+          <span id="answer"></span>
+          <span id="loader" style="display:none"><img src="images/loader.gif" alt=""></span>
+        </div>
       </form>
-      <a href="#top" class="uk-button-default button button-reveal" uk-toggle="target: +">
+      <a href="#" class="uk-button-default button button-reveal" uk-toggle="target: +">
         <span>ZET JE VIDEO AAN</span>
       </a>
       <video src="video/intro.mp4" controls playsinline hidden uk-video></video>
@@ -103,7 +107,7 @@
         </div>
       </aside>
       <section class="section about-gg__content">
-        <h2><b>GG Floors & Construct</b> bouwt aan een duurzame partnerschip.</h2>
+        <h2><strong>GG Floors & Construct</strong> bouwt aan een duurzame partnerschip.</h2>
         <p class="paragraph about-gg__copy">
   Al meer dan <b>15 jaar</b> ervaring in <a href="vloerder.html">vloerbekledingen</a>, maar ook daken hebben voor ons geen geheimen meer.<br>
   Onze specialiteit blijft nog steeds allerhande vloeren, harde als zachte. Van grote renovaties tot kleinere herstellingen alsook volledige <a href="nieuwbouw.html">nieuwbouw</a> woningen.<br>
@@ -139,7 +143,7 @@
             <a class="list__link" href="nieuwbouw.html">Nieuwbouw</a>
           </li>
           <li class="list__item">
-            <a class="list__link" href="">Meer</a>
+            <a class="list__link" href="activiteiten.html">Meer</a>
           </li>
         </ul>
         <p class="paragraph about-gg__copy">We doen het samen met u. Volg ons ook op de social media voor de verschillende realisaties:</p>
@@ -147,7 +151,7 @@
           <ul class="social__list"></ul>
         </div>
         <ul class="list">
-          <li><a href="">DIEN UW AANVRAAG IN</a></li>
+          <li><a class="submit-app" href="contactformulier.html">DIEN UW AANVRAAG IN</a></li>
         </ul>
       </section>
     </article>
@@ -241,7 +245,7 @@
           <a href="terrassen-en-pritten.html">Terrassen En Opritten</a>
         </li>
         <li>
-          <a href="">...</a>
+          <a href="activiteiten.html">...</a>
         </li>
       </ul>
     </nav>
@@ -255,5 +259,8 @@
   <script src="footer.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/ajax.js"></script>
 </body>
 </html>

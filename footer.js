@@ -124,8 +124,8 @@ Vue.component('basement', {
             <a class="legal__link terms" href="#top">Algemene Voorwaarden</a>
           </li>
           <li class="legal__item">
-            <a class="legal__link" id="themeToggle" href="#bottom" onclick="document.body.classList.toggle('dark'); 
-            isDark = (!isDark) ? true : false;">
+            <a class="legal__link" id="themeToggle" href="#bottom" onclick="document.querySelector('html').classList.toggle('dark'); 
+      saveColorTheme()">
             Thema veranderen
             </a>
           </li>
@@ -134,14 +134,14 @@ Vue.component('basement', {
             Ontworpen door GitHub.com
             </a>
           </li>
-          <li class="legal__item">
+          <!-- <li class="legal__item">
             <a class="legal__link" href="#bottom" onclick="document.body.classList.toggle('test')">
             Test
             </a>
           </li>
           <li class="legal__item">
-            <a href="https://www.vanderstraeten.be/home">vanderstraeten.be</a>
-          </li>
+            <a href="#bottom" onclick="localStorage.clear()">Clear</a>
+          </li> -->
         </ul>
       </div>
       <div class="social social_size_s">
@@ -159,7 +159,7 @@ Vue.component('widget', {
       <div class="widget__body">
         <ul class="widget__items">
           <li class="widget__item">
-            <a class="widget__link icon-mobile" href="contact.html" title="contact"></a>
+            <a class="widget__link icon-mobile" href="bel-ons.html" title="contact"></a>
           </li>
           <li class="widget__item">
             <a class="widget__link icon-email" href="mailto:ggfloorsconstruct@gmail.com" title="e-mail"></a>
