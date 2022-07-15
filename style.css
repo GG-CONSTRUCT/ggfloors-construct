@@ -61,7 +61,9 @@ main {
   position: relative;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   color: var(--text);
@@ -225,9 +227,11 @@ h1, h2, h3 {
   10% {
     opacity: .5;
   }
+
   20% {
     opacity: .9;
   }
+
   100% {
     opacity: .4;
   }
@@ -237,6 +241,7 @@ h1, h2, h3 {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(16px);
   }
@@ -247,6 +252,7 @@ h1, h2, h3 {
     transform: translateX(0);
     opacity: .5;
   }
+
   100% {
     transform: translateX(16px);
     opacity: .1;
@@ -260,7 +266,9 @@ h1, h2, h3 {
 }
 
 @media (max-width: 500px) {
-  .topbar__link, .dropdown__title {
+
+  .topbar__link,
+  .dropdown__title {
     font-size: 12px;
     letter-spacing: 0;
   }
@@ -344,6 +352,7 @@ h1, h2, h3 {
   0% {
     transform: rotate(120deg);
   }
+
   100% {
     transform: rotate(0);
   }
@@ -879,6 +888,7 @@ h1, h2, h3 {
 }
 
 @media (max-width: 440px) {
+
   .social__item,
   .to-print,
   .e-mail {
@@ -972,11 +982,13 @@ footer {
   .footnav {
     flex-wrap: wrap;
   }
+
   .flex-wrapper {
     width: 100%;
     flex-wrap: nowrap;
   }
-  .flex-wrapper >*:nth-child(2) {
+
+  .flex-wrapper>*:nth-child(2) {
     margin-right: 8px;
   }
 }
@@ -1369,33 +1381,40 @@ footer {
     animation-timing-function: ease-in;
     opacity: 0;
   }
+
   20% {
     transform: translateX(0);
     animation-timing-function: ease-out;
     opacity: 1;
   }
+
   25% {
     transform: translateX(68px);
     animation-timing-function: ease-in;
   }
+
   50%,
   35%,
   45% {
     transform: translateX(0);
     animation-timing-function: ease-out;
   }
+
   40% {
     transform: translateX(32px);
     animation-timing-function: ease-in;
   }
+
   45% {
     transform: translateX(8px);
     animation-timing-function: ease-in;
   }
+
   85% {
     transform: translateX(0);
     opacity: 1;
   }
+
   100% {
     transform: translateX(4px);
     opacity: 0;
@@ -1424,12 +1443,15 @@ footer {
   .topnav__list {
     display: none;
   }
+
   #mobileMenu {
     display: block;
   }
+
   .btn-call img:last-child {
     display: none;
   }
+
   .btn-call,
   .search__form button {
     width: 52px;
@@ -1437,10 +1459,12 @@ footer {
 }
 
 @media (max-width: 960px) {
+
   .basement,
   .legal__list {
     justify-content: center;
   }
+
   .copyright {
     text-align: center;
   }
@@ -1450,7 +1474,12 @@ footer {
   :root {
     --margin: 8px;
   }
-  #mobileMenu input, #mobileMenu span, .btn-call, .btn-search, .search input[type='checkbox'] {
+
+  #mobileMenu input,
+  #mobileMenu span,
+  .btn-call,
+  .btn-search,
+  .search input[type='checkbox'] {
     --padding: 12px;
   }
 }
@@ -1469,6 +1498,7 @@ footer {
 }
 
 @media (max-width: 500px) {
+
   .footnav ul,
   .footnav ul:nth-last-child(1) {
     width: 100%;
@@ -1532,35 +1562,26 @@ footer {
 }
 
 @media print {
-  /**,
-  *:before,
-  *:after,
-  *:first-letter,
-  p:first-line,
-  div:first-line,
-  blockquote:first-line,
-  li:first-line {
-    color: #000 !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-    page-break-inside: avoid;
-  }*/
   @page {
     margin: 1cm;
   }
-  body>*:not(main) {
+
+  aside,
+  .social {
+    display: none;
+  }
+
+  body>*:not(main, footer) {
     display: none !important;
   }
-  /*main>*:not(article) {
+
+  main>*:not(article) {
     display: none !important;
   }
-  article>*:not(section) {
+
+  footer>*:not(.basement) {
     display: none !important;
   }
-  article>*:not(.about-flooring aside) {
-    display: none !important;
-  }*/
 }
 
 .heading {
@@ -1674,6 +1695,7 @@ footer {
     width: 10px;
     opacity: 0;
   }
+
   100% {
     width: 100%;
     opacity: 1;
@@ -1828,18 +1850,21 @@ video {
   color: var(--text);
 }
 
-.sidenav, .sidenav_contact {
+.sidenav,
+.sidenav_contact {
   padding: var(--padding);
 }
 
-.sidenav li, .sidenav_contact li {
+.sidenav li,
+.sidenav_contact li {
   height: 48px;
   margin: 4px 0;
   padding-bottom: 4px;
   border-bottom: 1px dotted gray;
 }
 
-.sidenav a, .sidenav_contact a {
+.sidenav a,
+.sidenav_contact a {
   font-size: 16px;
   display: flex;
   height: 100%;
@@ -1849,11 +1874,13 @@ video {
   align-items: center;
 }
 
-.dark .sidenav a, .dark .sidenav_contact a {
+.dark .sidenav a,
+.dark .sidenav_contact a {
   color: var(--blue-light);
 }
 
-.sidenav a:hover, .sidenav_contact a:hover {
+.sidenav a:hover,
+.sidenav_contact a:hover {
   background-color: rgba(50, 115, 245, .12);
 }
 
@@ -1894,7 +1921,7 @@ video {
   padding: var(--padding) calc(var(--padding) * 1.5);
 }
 
-.uk-card-body > * {
+.uk-card-body>* {
   margin-bottom: 8px;
 }
 
@@ -1921,13 +1948,13 @@ video {
 }
 
 .backlink:focus img {
-    transform: translateX(24px);
-    opacity: 0;
-  }
+  transform: translateX(24px);
+  opacity: 0;
+}
 
-  .backlink:focus span {
-    transform: translateX(8px);
-  }
+.backlink:focus span {
+  transform: translateX(8px);
+}
 
 @media (max-width: 500px) {
   .backlink:hover img {
@@ -1947,7 +1974,7 @@ video {
 .map iframe {
   width: 100%;
   min-height: 80vh;
-  border:0;
+  border: 0;
   background-color: var(--base);
 }
 
@@ -1974,11 +2001,11 @@ video {
   flex-wrap: wrap;
 }
 
-.flex-wrap > * {
+.flex-wrap>* {
   margin: 32px calc(82px + var(--margin));
 }
 
-.flex-wrap > div {
+.flex-wrap>div {
   width: 100%;
   max-width: 500px;
 }
@@ -1996,16 +2023,19 @@ video {
   .flex-wrap {
     justify-content: center;
   }
-  .flex-wrap > * {
+
+  .flex-wrap>* {
     margin: 0;
     padding: 16px var(--padding);
   }
+
   .flex-wrap .sidenav {
     max-width: 500px;
   }
 }
 
-.sidenav .title, .sidenav_contact .title {
+.sidenav .title,
+.sidenav_contact .title {
   display: inline-flex;
   align-items: center;
 }
@@ -2014,7 +2044,8 @@ video {
   margin: 0;
 }
 
-.sidenav .title i, .sidenav_contact .title i {
+.sidenav .title i,
+.sidenav_contact .title i {
   display: block;
   color: var(--blue);
   margin-left: 16px;
@@ -2070,12 +2101,15 @@ html[lang='fr'] .hero {
   html[lang='nl'] .hero {
     background-image: url('images/hero/01-min.jpg');
   }
+
   html[lang='en'] .hero {
     background-image: url('images/hero/02-min.jpg');
   }
+
   html[lang='de'] .hero {
     background-image: url('images/hero/03-min.jpg');
   }
+
   html[lang='fr'] .hero {
     background-image: url('images/hero/04-min.jpg');
   }
@@ -2144,6 +2178,7 @@ html[lang='fr'] .hero {
 }
 
 @media (max-width: 500px) {
+
   .hero__title,
   .hero__subtitle {
     font-size: 24px;
@@ -2317,6 +2352,7 @@ html[lang='fr'] .hero {
   .cards {
     flex-wrap: nowrap;
   }
+
   .card:last-child {
     display: none;
   }
@@ -2327,10 +2363,12 @@ html[lang='fr'] .hero {
     height: 300px;
     margin: 16px;
   }
+
   .card::before {
     font-size: 24px;
     height: 98px;
   }
+
   .card::after {
     top: 98px;
   }
@@ -2622,8 +2660,8 @@ html[lang='fr'] .hero {
 }
 
 .section .social,
-.contact-formular ~ .social, 
-h4 ~ .social {
+.contact-formular~.social,
+h4~.social {
   display: flex;
   margin: 0 auto var(--margin, 16px);
   width: 100%;
@@ -2639,14 +2677,14 @@ h4 ~ .social {
 }
 
 .section .social__link,
-.contact-formular ~ .social .social__link, 
-h4 ~ .social .social__link {
+.contact-formular~.social .social__link,
+h4~.social .social__link {
   color: var(--text, #222);
 }
 
 .section .social__link:hover,
-.contact-formular ~ .social .social__link:hover,
-h4 ~ .social .social__link:hover {
+.contact-formular~.social .social__link:hover,
+h4~.social .social__link:hover {
   color: #fff;
 }
 
@@ -2654,17 +2692,21 @@ h4 ~ .social .social__link:hover {
   .article {
     flex-wrap: wrap;
   }
+
   .article>aside,
   .article>section {
     width: 100%;
   }
+
   .article>aside {
     min-height: 300px;
   }
+
   .article__image {
     margin-right: 0;
     min-height: 500px !important;
   }
+
   .paragraph {
     margin-top: 16px;
   }
@@ -2736,15 +2778,19 @@ h4 ~ .social .social__link:hover {
   .no-image .section {
     flex-wrap: wrap;
   }
+
   .no-image .paragraph {
     flex: none;
   }
+
   .no-image .list {
     flex: none;
   }
+
   .no-image .section * {
     width: 100%;
   }
+
   .no-image .paragraph {
     width: 95%;
   }
@@ -3195,4 +3241,3 @@ h4 ~ .social .social__link:hover {
 .uk-card-media-top img {
   min-height: 240px;
 }
-
