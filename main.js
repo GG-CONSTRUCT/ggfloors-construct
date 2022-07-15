@@ -405,96 +405,89 @@ const getPageName = () => window.location.pathname
 .replace('.html', '');
 
 
-const pageContent = (lang) => {
+const pageTitle = (lang) => {
   let cardTitle, cardTitles;
   switch (getPageName()) {
-  case 'index':
-    return false
-    break;
-  case 'home':
-    return false
-    break;
-  case 'index':
-    return false
-    break;
-  case '':
-    return false
-    break
-  default:
-    let arrNL = [...navigation.nl, ...activities.nl, ...floorTitle.nl, ...contact.nl];
-    let arr = [...navigation[lang], ...activities[lang], ...floorTitle[lang], ...contact[lang]];
-    let title = getPageName()
-      .replace(/-/g, ' ');
-
-    switch (title) {
-    case 'mozaiek':
-      title.replace('i', 'ï');
-    case 'vloerbekleding':
-      cardTitles = getAll('.uk-card-title');
-      getTextContentIn(cardTitles, floorTitle, lang);
-      for (cardTitle of cardTitles) {
-        cardTitle.nextElementSibling.innerHTML = eval(cardTitle.title.replace(/ /g, ''))[lang].substring(0, 160) + '...';
-      }
+    case 'index':
+      return false
       break;
-
-    case 'vloerder':
-      getTextContentIn(getAll('.about-gg__activities .list__link'), floorTitle, lang);
-      get('.about-gg__activities')
-        .lastElementChild.querySelector('a')
-        .textContent = `${more[lang]} ...`;
+    case 'home': 
+      return false
       break;
-
-    case 'over ons':
-      get('h2')
-        .textContent = aboutTitle[lang]
-      getAll('.paragraph')[1].textContent = socialMediaInvite[lang];
-      getTextContentIn(getAll('.about-gg__activities .list__link'), activities, lang);
-      get('.about-gg__activities .list__link')
-        .textContent += ` (${floorTitle[lang].slice(0, 7).join(', ').toLowerCase()}, ... )`;
-      getTitleAttr(getAll('.flooring-activities__link'), floorTitle[lang].slice(0, 7));
+    case 'index':
+      return false
       break;
-
-    case 'activiteiten' || 'alle dossiers':
-      cardTitles = getAll('.uk-card-title');
-      getTextContentIn(cardTitles, activities, lang);
-      for (cardTitle of cardTitles) {
-        cardTitle.nextElementSibling.innerHTML = eval(cardTitle.title.replace(/ /g, ''))[lang].substring(0, 200) + '...';
-      }
-      break;
-    default:
-      let titleCapitalize = title[0].toUpperCase() + title.slice(1);
-      let titleCurrentLang = arr[arrNL.findIndex(item => titleCapitalize.toLowerCase() === item.toLowerCase())];
-      get('h1')
-        .textContent = titleCurrentLang;
-      switch (getPageName()) {
-      case 'contactformulier':
-        return false;
-        break;
-      case 'vloerbekleding':
-        return false;
-        break;
-      default:
-        for (let img of getAll('#gallery .grid img')) {
-          img.alt = titleCurrentLang;
-        }
-        for (let achor of getAll('#gallery .grid a')) {
-          achor.dataset.caption = titleCurrentLang;
-        }
-        let pageName = getPageName()
-          .replace(/-/g, '');
-        if (getPageName() == 'nieuws') get('.hero__copy')
-          .textContent = eval(pageName)[lang];
-        if (get('.paragraph')) get('.paragraph')
-          .innerHTML = eval(pageName)[lang];
-        if (get('.list_contact')) getInnerHtmlIn(getAll('.list__item_data'), eval(pageName), lang);
-        if (get('.submit-app')) get('.submit-app')
-          .textContent = submitApp[lang].toUpperCase();
-      }
+    case '': 
+      return false
       break
-    }
+    default:
+      let arrNL = [...navigation.nl, ...activities.nl, ...floorTitle.nl, ...contact.nl];
+      let arr = [...navigation[lang], ...activities[lang], ...floorTitle[lang], ...contact[lang]];
+      let title = getPageName().replace(/-/g, ' ');
+
+      switch (title) {
+        case 'mozaiek':
+         title.replace('i', 'ï');
+        case 'vloerbekleding':
+          cardTitles = getAll('.uk-card-title');
+          getTextContentIn(cardTitles, floorTitle, lang);
+          for (cardTitle of cardTitles) {
+            cardTitle.nextElementSibling.innerHTML = eval(cardTitle.title.replace(/ /g, ''))[lang].substring(0, 160) + '...';
+          }
+          break;
+
+        case 'vloerder': 
+          getTextContentIn(getAll('.about-gg__activities .list__link'), floorTitle, lang);
+          get('.about-gg__activities')
+          .lastElementChild.querySelector('a')
+          .textContent = `${more[lang]} ...`;
+          break;
+
+        case 'over ons': 
+          get('h2').textContent = aboutTitle[lang]
+          getAll('.paragraph')[1].textContent = socialMediaInvite[lang];
+          getTextContentIn(getAll('.about-gg__activities .list__link'), activities, lang);
+          get('.about-gg__activities .list__link').textContent += ` (${floorTitle[lang].slice(0, 7).join(', ').toLowerCase()}, ... )`;
+          getTitleAttr(getAll('.flooring-activities__link'), floorTitle[lang].slice(0, 7));
+          break;
+
+        case 'activiteiten' || 'alle dossiers': 
+          cardTitles = getAll('.uk-card-title');
+          getTextContentIn(cardTitles, activities, lang);
+          for (cardTitle of cardTitles) {
+            cardTitle.nextElementSibling.innerHTML = eval(cardTitle.title.replace(/ /g, ''))[lang].substring(0, 200) + '...';
+          }
+          break;
+        default:
+          let titleCapitalize = title[0].toUpperCase() + title.slice(1);
+          let titleCurrentLang = arr[arrNL.findIndex(item => titleCapitalize.toLowerCase() === item.toLowerCase())];
+          get('h1').textContent = titleCurrentLang;
+          switch (getPageName()) {
+            case 'contactformulier': 
+              return false;
+              break;
+            case 'vloerbekleding': 
+              return false;
+              break;
+            default: 
+              for (let img of getAll('#gallery .grid img')) {
+                img.alt = titleCurrentLang;
+              }
+              for (let achor of getAll('#gallery .grid a')) {
+                achor.dataset.caption = titleCurrentLang;
+              }
+              let pageName = getPageName().replace(/-/g, '');
+              if (getPageName() == 'nieuws') get('.hero__copy').textContent = eval(pageName)[lang];
+              if (get('.paragraph')) get('.paragraph').innerHTML = eval(pageName)[lang];
+              if (get('.list_contact')) getInnerHtmlIn(getAll('.list__item_data'), eval(pageName), lang);
+              if (get('.submit-app')) get('.submit-app').textContent = submitApp[lang].toUpperCase();
+            }
+            break
+      }
   }
 }
-pageContent(lang.toLowerCase());
+
+pageTitle(lang.toLowerCase());
 
 // switch language
 for (const option of getAll('.option')) {
@@ -517,7 +510,7 @@ for (const option of getAll('.option')) {
       (get('.sidenav_contact .title')) ? getContactSidenavTitle(this.textContent.toLowerCase()) : '';
       (getAll('.sidenav_contact a')) ? getContactSidenavLink(this.textContent.toLowerCase()) : '';
       (typeof getPageContent !== 'undefined') ? getPageContent(this.textContent.toLowerCase()) : '';
-      pageContent(this.textContent.toLowerCase());
+      pageTitle(this.textContent.toLowerCase());
       this.closest('.dropdown').querySelector('.dropdown__title').textContent = this.textContent;
     }
   })
