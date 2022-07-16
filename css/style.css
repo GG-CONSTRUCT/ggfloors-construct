@@ -3241,3 +3241,21 @@ h4~.social .social__link:hover {
 .uk-card-media-top img {
   min-height: 240px;
 }
+
+#answer {
+  color: var(--text)
+}
+
+.controlbar #answer {
+  color: #fff;
+}
+
+#loader {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+
+#loader img {
+  width: 25%;
+}

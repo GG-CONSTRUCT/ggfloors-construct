@@ -155,6 +155,8 @@ const partners = {
   'bouwpuntdeckers': 'bouwpuntdeckers.be',
   'general-floor': 'generalfloor.com',
   'perfecty': 'perfecty.be',
+  'wolff': 'grupa-wolff.eu',
+  'campaert': 'campaert.be',
 }
 
 class Partner {
