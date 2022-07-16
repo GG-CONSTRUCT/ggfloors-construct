@@ -37,7 +37,7 @@ class Card {
       card.setAttribute('title', this.name);
       card.href = createLink(this.link, '.html');
       const cardImage = document.createElement('img');
-      cardImage.src = `images/${createLink(this.link, '')}.jpg`;
+      cardImage.src = `assets/images/${createLink(this.link, '')}.jpg`;
       cardImage.alt = this.name;
       card.append(cardImage);
       parent.append(card);

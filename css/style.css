@@ -2081,42 +2081,42 @@ video {
 }
 
 html[lang='nl'] .hero {
-  background-image: url('images/hero/01.jpg');
+  background-image: url('../assets/images/hero/01.jpg');
 }
 
 html[lang='en'] .hero {
-  background-image: url('images/hero/02.jpg');
+  background-image: url('../assets/images/hero/02.jpg');
 }
 
 html[lang='de'] .hero {
-  background-image: url('images/hero/03.jpg');
+  background-image: url('../assets/images/hero/03.jpg');
 }
 
 html[lang='fr'] .hero {
-  background-image: url('images/hero/04.jpg');
+  background-image: url('../assets/images/hero/04.jpg');
 }
 
 
 @media (max-width: 490px) {
   html[lang='nl'] .hero {
-    background-image: url('images/hero/01-min.jpg');
+    background-image: url('../assets/images/hero/01-min.jpg');
   }
 
   html[lang='en'] .hero {
-    background-image: url('images/hero/02-min.jpg');
+    background-image: url('../assets/images/hero/02-min.jpg');
   }
 
   html[lang='de'] .hero {
-    background-image: url('images/hero/03-min.jpg');
+    background-image: url('../assets/images/hero/03-min.jpg');
   }
 
   html[lang='fr'] .hero {
-    background-image: url('images/hero/04-min.jpg');
+    background-image: url('../assets/images/hero/04-min.jpg');
   }
 }
 
 /*html[lang='nl'].dark .hero {
-  background-image: url(images/background.svg);
+  background-image: url(../assets/images/background.svg);
 }*/
 
 .hero__heading {
@@ -2406,139 +2406,139 @@ html[lang='fr'] .hero {
 .over-ons__image {
   padding: 8px;
   background-color: #5078cd;
-  background-image: url(images/scaffolding-workers.jpg);
+  background-image: url(../assets/images/scaffolding-workers.jpg);
 }
 
 .about-gg__image {
   padding: 8px;
   background-color: #5078cd;
-  background-image: url(images/facade-renovation.jpg);
+  background-image: url(../assets/images/facade-renovation.jpg);
 }
 
 .vloerder__image {
   padding: 8px;
   background-color: #5078cd;
-  background-image: url(images/vloerder.jpg);
+  background-image: url(../assets/images/vloerder.jpg);
 }
 
 .gyprocwerken__image {
   padding: 8px;
   background-color: #5078cd;
-  background-image: url(images/gyprocwerken.jpg);
+  background-image: url(../assets/images/gyprocwerken.jpg);
 }
 
 .pleisterwerken__image {
   padding: 8px;
   background-color: #5078cd;
-  background-image: url(images/pleisterwerken.jpg);
+  background-image: url(../assets/images/pleisterwerken.jpg);
 }
 
 .terrassen-en-opritten__image {
   padding: 8px;
   background-color: #5078cd;
-  background-image: url(images/terrassen-en-opritten.jpg);
+  background-image: url(../assets/images/terrassen-en-opritten.jpg);
 }
 
 .dakwerken__image {
   padding: 8px;
   background-color: #5078cd;
-  background-image: url(images/dakwerken.jpg);
+  background-image: url(../assets/images/dakwerken.jpg);
 }
 
 .crepi__image {
   padding: 8px;
   background-color: #5078cd;
-  background-image: url(images/crepi.jpg);
+  background-image: url(../assets/images/crepi.jpg);
 }
 
 .renovatie__image {
   padding: 8px;
   background-color: #5078cd;
-  background-image: url(images/renovatie.jpg);
+  background-image: url(../assets/images/renovatie.jpg);
 }
 
 .nieuwbouw__image {
   padding: 8px;
   background-color: #5078cd;
-  background-image: url(images/nieuwbouw.jpg);
+  background-image: url(../assets/images/nieuwbouw.jpg);
 }
 
 .natuursteen__image {
   padding: 8px;
   background-color: #5078cd;
-  background-image: url(images/natuursteen.jpg);
+  background-image: url(../assets/images/natuursteen.jpg);
 }
 
 .keramiek__image {
   padding: 8px;
   background-color: #ddd;
-  background-image: url(images/keramiek.jpg);
+  background-image: url(../assets/images/keramiek.jpg);
 }
 
 .mozaiek__image {
   padding: 8px;
   background-color: #ddd;
-  background-image: url(images/mozaiek.jpg);
+  background-image: url(../assets/images/mozaiek.jpg);
 }
 
 .exclusieve-tegels__image {
   padding: 8px;
   background-color: #ddd;
-  background-image: url(images/exclusieve-tegels.jpg);
+  background-image: url(../assets/images/exclusieve-tegels.jpg);
 }
 
 .parket__image {
   padding: 8px;
   background-color: #ddd;
-  background-image: url(images/parket.jpg);
+  background-image: url(../assets/images/parket.jpg);
 }
 
 .laminaat__image {
   padding: 8px;
   background-color: #ddd;
-  background-image: url(images/laminaat.jpg);
+  background-image: url(../assets/images/laminaat.jpg);
 }
 
 .linoleum__image {
   padding: 8px;
   background-color: #ddd;
-  background-image: url(images/linoleum.jpg);
+  background-image: url(../assets/images/linoleum.jpg);
 }
 
 .vinyl__image {
   padding: 8px;
   background-color: #ddd;
-  background-image: url(images/vinyl.jpg);
+  background-image: url(../assets/images/vinyl.jpg);
 }
 
 .tapijt__image {
   padding: 8px;
   background-color: #ddd;
-  background-image: url(images/tapijt.jpg);
+  background-image: url(../assets/images/tapijt.jpg);
 }
 
 .pvc__image {
   padding: 8px;
   background-color: #ddd;
-  background-image: url(images/pvc.jpg);
+  background-image: url(../assets/images/pvc.jpg);
 }
 
 .lvt__image {
   padding: 8px;
   background-color: #ddd;
-  background-image: url(images/lvt.jpg);
+  background-image: url(../assets/images/lvt.jpg);
 }
 
 .rubber__image {
   padding: 8px;
   background-color: #ddd;
-  background-image: url(images/rubber.jpg);
+  background-image: url(../assets/images/rubber.jpg);
 }
 
 .egaliseren__image {
   padding: 8px;
   background-color: #ddd;
-  background-image: url(images/egaliseren.jpg);
+  background-image: url(../assets/images/egaliseren.jpg);
 }
 
 .article__image.referenties {
@@ -2586,17 +2586,17 @@ html[lang='fr'] .hero {
 .list {
   margin-left: calc(var(--margin) * 3);
   padding-right: 0;
-  list-style-image: url(icons/next.svg);
+  list-style-image: url(../assets/icons/next.svg);
 }
 
 .list_contact {
   margin-left: calc(var(--margin) * 2);
   padding-right: 0;
-  list-style-image: url(icons/next.svg);
+  list-style-image: url(../assets/icons/next.svg);
 }
 
 .dark .list {
-  list-style-image: url(icons/next-dark.svg);
+  list-style-image: url(../assets/icons/next-dark.svg);
 }
 
 
@@ -2763,11 +2763,11 @@ h4~.social .social__link:hover {
 
 .no-image .list li::before {
   padding: 0 16px 0 8px;
-  content: url(icons/next-m.svg);
+  content: url(../assets/icons/next-m.svg);
 }
 
 .dark .no-image .list li::before {
-  content: url(icons/next-dark-m.svg);
+  content: url(../assets/icons/next-dark-m.svg);
 }
 
 .no-image .list li:hover {
@@ -2956,7 +2956,7 @@ h4~.social .social__link:hover {
   width: 100%;
   min-height: 360px;
   margin-bottom: 32px;
-  background-image: url(images/test.jpg);
+  background-image: url(../assets/images/test.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center top;

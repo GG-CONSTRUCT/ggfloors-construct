@@ -1,4 +1,4 @@
-![PHPMailer](https://raw.github.com/PHPMailer/PHPMailer/master/examples/images/phpmailer.png)
+![PHPMailer](https://raw.github.com/PHPMailer/PHPMailer/master/examples/assets/images/phpmailer.png)
 
 # PHPMailer - A full-featured email creation and transfer class for PHP
 

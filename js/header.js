@@ -35,7 +35,7 @@ Vue.component('navbar', {
   template: `
   <div class="navbar">
     <a href="index.html" class="logo" title="GG FLOORS & CONSTRUCT | Startpagina">
-    <img class="logo__image" src="images/logo.svg" alt="logo" width="42" height="42">
+    <img class="logo__image" src="assets/images/logo.svg" alt="logo" width="42" height="42">
     <span class="logo__title">GG FLOORS & CONSTRUCT</span>
     </a>
     <nav class="topnav">
@@ -109,11 +109,11 @@ Vue.component('navbar', {
       </ul>
     </nav>
     <a class="btn-default btn_size_l btn-call" href="tel:+32472815575">
-    <img src="icons/phone-call.svg" alt="phone" width="32" height="32">
-    <img src="icons/dial-pad.svg" alt="dial pad" width="32" height="32">
+    <img src="assets/icons/phone-call.svg" alt="phone" width="32" height="32">
+    <img src="assets/icons/dial-pad.svg" alt="dial pad" width="32" height="32">
     </a>
     <button class="btn-search">
-    <img src="icons/search.svg" alt="search icon" width="32" height="32">
+    <img src="assets/icons/search.svg" alt="search icon" width="32" height="32">
     </button>
   </div>
   `
@@ -142,7 +142,7 @@ Vue.component('search', {
         <p>
           <input onkeyup="getSearchFilter()" id="search" placeholder="Dakwerken" type="search">
           <button class="btn-default btn_size_m">
-          <img src="icons/loupe.svg" alt="loupe">
+          <img src="assets/icons/loupe.svg" alt="loupe">
           </button>
         </p>
         <ul></ul>

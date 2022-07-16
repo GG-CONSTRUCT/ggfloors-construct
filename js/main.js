@@ -174,7 +174,7 @@ class Partner {
     partnerLogo.alt = this.name;
     partnerLogo.title = this.name.toUpperCase();
     partnerLogo.draggable = false;
-    partnerLogo.src = `images/partners/${this.name}.png`;
+    partnerLogo.src = `assets/images/partners/${this.name}.png`;
     partnerLogo.width = 96;
     partnerLogo.height = 48;
     partnerLink.append(partnerLogo);
