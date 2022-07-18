@@ -2386,7 +2386,7 @@ html[lang='fr'] .hero {
 .article>section {
   flex: 1;
   flex-basis: 500px;
-  max-width: 100%;
+  max-width: 48%;
 }
 
 .article__image {
@@ -2695,7 +2695,7 @@ h4~.social .social__link:hover {
 
   .article>aside,
   .article>section {
-    width: 100%;
+    max-width: 100%;
   }
 
   .article>aside {
