@@ -2725,7 +2725,7 @@ h4~.social .social__link:hover {
 
 .no-image .section {
   display: flex;
-  width: 100%;
+  max-width: 100%;
   padding: 0;
 }
 
