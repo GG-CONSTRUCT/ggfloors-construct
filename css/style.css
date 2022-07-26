@@ -2733,7 +2733,8 @@ h4~.social .social__link:hover {
   display: table;
   margin: auto 0;
   padding: var(--size);
-  flex: 2;
+  width: 80%;
+  flex: 4;
 }
 
 .no-image .paragraph:first-child {
@@ -2792,7 +2793,7 @@ h4~.social .social__link:hover {
   }
 
   .no-image .paragraph {
-    width: 95%;
+    max-width: 95%;
   }
 }
 
