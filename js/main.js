@@ -270,7 +270,7 @@ html.setAttribute('lang', localStorage
 .getItem('current lang')
 .toLowerCase() : 'nl');
 
-const lang = get('.lang .dropdown__title').textContent = localStorage.getItem('current lang') || 'NL';
+const lang = get('.lang .dropdown__title').dataset.value = localStorage.getItem('current lang') || 'nl';
 for (const option of getAll('.option')) {
   if (option.textContent === localStorage.getItem('current lang')) {
     get('.option.selected').classList.remove('selected');
@@ -496,24 +496,24 @@ for (const option of getAll('.option')) {
   option.addEventListener('click', function () {
     if (!this.classList.contains('selected')) {
       this.parentNode.querySelector('.option.selected').classList.remove('selected');
-      localStorage.setItem('current lang', this.textContent);
-      get('html').setAttribute('lang', this.textContent.toLowerCase());
+      localStorage.setItem('current lang', this.dataset.value);
+      get('html').setAttribute('lang', this.dataset.value.toLowerCase());
       this.classList.add('selected');
-      getNav(this.textContent.toLowerCase());
-      getMobileMenu(this.textContent.toLowerCase());
-      getSearchList(this.textContent.toLowerCase());
-      (typeof getPageContent === 'undefined') ? getControlBarLinks(this.textContent.toLowerCase()) : '';
-      (typeof getPageContent === 'undefined') ? getForm(this.textContent.toLowerCase()) : '';
-      (get('#gallery .title')) ? getGalleryTitle(this.textContent.toLowerCase()) : '';
+      getNav(this.dataset.value.toLowerCase());
+      getMobileMenu(this.dataset.value.toLowerCase());
+      getSearchList(this.dataset.value.toLowerCase());
+      (typeof getPageContent === 'undefined') ? getControlBarLinks(this.dataset.value.toLowerCase()) : '';
+      (typeof getPageContent === 'undefined') ? getForm(this.dataset.value.toLowerCase()) : '';
+      (get('#gallery .title')) ? getGalleryTitle(this.dataset.value.toLowerCase()) : '';
       if (get('.sidenav .title')) { 
-        getAlsoSeeTitle(this.textContent.toLowerCase()); 
-        shuffleSidenavItems(this.textContent.toLowerCase());
+        getAlsoSeeTitle(this.dataset.value.toLowerCase()); 
+        shuffleSidenavItems(this.dataset.value.toLowerCase());
       }
-      (get('.sidenav_contact .title')) ? getContactSidenavTitle(this.textContent.toLowerCase()) : '';
-      (getAll('.sidenav_contact a')) ? getContactSidenavLink(this.textContent.toLowerCase()) : '';
-      (typeof getPageContent !== 'undefined') ? getPageContent(this.textContent.toLowerCase()) : '';
-      pageTitle(this.textContent.toLowerCase());
-      this.closest('.dropdown').querySelector('.dropdown__title').textContent = this.textContent;
+      (get('.sidenav_contact .title')) ? getContactSidenavTitle(this.dataset.value.toLowerCase()) : '';
+      (getAll('.sidenav_contact a')) ? getContactSidenavLink(this.dataset.value.toLowerCase()) : '';
+      (typeof getPageContent !== 'undefined') ? getPageContent(this.dataset.value.toLowerCase()) : '';
+      pageTitle(this.dataset.value.toLowerCase());
+      this.closest('.dropdown').querySelector('.dropdown__title').textContent = this.dataset.value.toUpperCase();
     }
   })
 }
