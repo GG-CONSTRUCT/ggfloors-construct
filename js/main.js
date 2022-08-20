@@ -346,7 +346,7 @@ const toPrint = get('.to-print');
 const socials = {
   facebook: 'GGFloorsConstructGG',
   linkedin: 'company/ggfloors-construct',
-  instagram: 'gg_floors_constructions',
+  instagram: 'gg_floors_constructionss',
 }
 
 class Social {
