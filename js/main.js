@@ -270,8 +270,8 @@ html.setAttribute('lang', localStorage
 .getItem('current lang')
 .toLowerCase() : 'nl');
 
-const lang = get('.lang .dropdown__title').textContent = localStorage.getItem('current lang').toUpperCase() || 'NL';
-get('.lang .dropdown__title').dataset.value = localStorage.getItem('current lang') || 'nl';
+const lang = get('.lang .dropdown__title').dataset.value = localStorage.getItem('current lang') || 'nl';
+get('.lang .dropdown__title').textContent = get('.lang .dropdown__title').dataset.value.toUpperCase();
 
 for (const option of getAll('.option')) {
   if (option.textContent === localStorage.getItem('current lang')) {
