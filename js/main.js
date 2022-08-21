@@ -270,7 +270,9 @@ html.setAttribute('lang', localStorage
 .getItem('current lang')
 .toLowerCase() : 'nl');
 
-const lang = get('.lang .dropdown__title').dataset.value = localStorage.getItem('current lang') || 'nl';
+const lang = get('.lang .dropdown__title').textContent = localStorage.getItem('current lang').toUpperCase() || 'NL';
+get('.lang .dropdown__title').dataset.value = localStorage.getItem('current lang') || 'nl';
+
 for (const option of getAll('.option')) {
   if (option.textContent === localStorage.getItem('current lang')) {
     get('.option.selected').classList.remove('selected');
@@ -514,6 +516,7 @@ for (const option of getAll('.option')) {
       (typeof getPageContent !== 'undefined') ? getPageContent(this.dataset.value.toLowerCase()) : '';
       pageTitle(this.dataset.value.toLowerCase());
       this.closest('.dropdown').querySelector('.dropdown__title').textContent = this.dataset.value.toUpperCase();
+      get('.lang .dropdown__title').dataset.value = localStorage.getItem('current lang') || 'nl';
     }
   })
 }
