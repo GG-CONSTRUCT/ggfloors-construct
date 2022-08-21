@@ -18,13 +18,13 @@ Vue.component('topbar', {
       <ul class="social__list"></ul>
     </div>
     <div class="dropdown lang">
-      <span class="dropdown__title">NL</span>
+      <span data-value="nl" class="dropdown__title">NL</span>
       <span class="arrow"></span>
       <ul class="dropdown__list options">
-        <li class="option selected">NL</li>
-        <li class="option">EN</li>
-        <li class="option">DE</li>
-        <li class="option">FR</li>
+        <li data-value="nl" class="option selected">NL</li>
+        <li data-value="en" class="option">EN</li>
+        <li data-value="de" class="option">DE</li>
+        <li data-value="fr" class="option">FR</li>
       </ul>
     </div>
   </div>

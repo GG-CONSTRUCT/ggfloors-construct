@@ -155,6 +155,8 @@ const partners = {
   'bouwpuntdeckers': 'bouwpuntdeckers.be',
   'general-floor': 'generalfloor.com',
   'perfecty': 'perfecty.be',
+  'wolff': 'grupa-wolff.eu',
+  'campaert': 'campaert.be',
 }
 
 class Partner {
@@ -268,9 +270,11 @@ html.setAttribute('lang', localStorage
 .getItem('current lang')
 .toLowerCase() : 'nl');
 
-const lang = get('.lang .dropdown__title').textContent = localStorage.getItem('current lang') || 'NL';
+const lang = get('.lang .dropdown__title').dataset.value = localStorage.getItem('current lang') || 'NL';
+get('.lang .dropdown__title').textContent = get('.lang .dropdown__title').dataset.value.toUpperCase();
+
 for (const option of getAll('.option')) {
-  if (option.textContent === localStorage.getItem('current lang')) {
+  if (option.dataset.value === localStorage.getItem('current lang')) {
     get('.option.selected').classList.remove('selected');
     option.classList.add('selected');
   }
@@ -437,6 +441,7 @@ const pageTitle = (lang) => {
           break;
 
         case 'vloerder': 
+          get('.paragraph').innerHTML = vloerder[lang];
           getTextContentIn(getAll('.about-gg__activities .list__link'), floorTitle, lang);
           get('.about-gg__activities')
           .lastElementChild.querySelector('a')
@@ -462,6 +467,7 @@ const pageTitle = (lang) => {
           let titleCapitalize = title[0].toUpperCase() + title.slice(1);
           let titleCurrentLang = arr[arrNL.findIndex(item => titleCapitalize.toLowerCase() === item.toLowerCase())];
           get('h1').textContent = titleCurrentLang;
+          if (get('h2 b')) get('h2 b').textContent = titleCurrentLang;
           switch (getPageName()) {
             case 'contactformulier': 
               return false;
@@ -494,24 +500,25 @@ for (const option of getAll('.option')) {
   option.addEventListener('click', function () {
     if (!this.classList.contains('selected')) {
       this.parentNode.querySelector('.option.selected').classList.remove('selected');
-      localStorage.setItem('current lang', this.textContent);
-      get('html').setAttribute('lang', this.textContent.toLowerCase());
+      localStorage.setItem('current lang', this.dataset.value);
+      get('html').setAttribute('lang', this.dataset.value.toLowerCase());
       this.classList.add('selected');
-      getNav(this.textContent.toLowerCase());
-      getMobileMenu(this.textContent.toLowerCase());
-      getSearchList(this.textContent.toLowerCase());
-      (typeof getPageContent === 'undefined') ? getControlBarLinks(this.textContent.toLowerCase()) : '';
-      (typeof getPageContent === 'undefined') ? getForm(this.textContent.toLowerCase()) : '';
-      (get('#gallery .title')) ? getGalleryTitle(this.textContent.toLowerCase()) : '';
+      getNav(this.dataset.value.toLowerCase());
+      getMobileMenu(this.dataset.value.toLowerCase());
+      getSearchList(this.dataset.value.toLowerCase());
+      (typeof getPageContent === 'undefined') ? getControlBarLinks(this.dataset.value.toLowerCase()) : '';
+      (typeof getPageContent === 'undefined') ? getForm(this.dataset.value.toLowerCase()) : '';
+      (get('#gallery .title')) ? getGalleryTitle(this.dataset.value.toLowerCase()) : '';
       if (get('.sidenav .title')) { 
-        getAlsoSeeTitle(this.textContent.toLowerCase()); 
-        shuffleSidenavItems(this.textContent.toLowerCase());
+        getAlsoSeeTitle(this.dataset.value.toLowerCase()); 
+        shuffleSidenavItems(this.dataset.value.toLowerCase());
       }
-      (get('.sidenav_contact .title')) ? getContactSidenavTitle(this.textContent.toLowerCase()) : '';
-      (getAll('.sidenav_contact a')) ? getContactSidenavLink(this.textContent.toLowerCase()) : '';
-      (typeof getPageContent !== 'undefined') ? getPageContent(this.textContent.toLowerCase()) : '';
-      pageTitle(this.textContent.toLowerCase());
-      this.closest('.dropdown').querySelector('.dropdown__title').textContent = this.textContent;
+      (get('.sidenav_contact .title')) ? getContactSidenavTitle(this.dataset.value.toLowerCase()) : '';
+      (getAll('.sidenav_contact a')) ? getContactSidenavLink(this.dataset.value.toLowerCase()) : '';
+      (typeof getPageContent !== 'undefined') ? getPageContent(this.dataset.value.toLowerCase()) : '';
+      pageTitle(this.dataset.value.toLowerCase());
+      this.closest('.dropdown').querySelector('.dropdown__title').textContent = this.dataset.value.toUpperCase();
+      get('.lang .dropdown__title').dataset.value = localStorage.getItem('current lang') || 'nl';
     }
   })
 }

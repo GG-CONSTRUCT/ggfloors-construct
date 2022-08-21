@@ -2386,7 +2386,7 @@ html[lang='fr'] .hero {
 .article>section {
   flex: 1;
   flex-basis: 500px;
-  max-width: 100%;
+  max-width: 48%;
 }
 
 .article__image {
@@ -2695,7 +2695,7 @@ h4~.social .social__link:hover {
 
   .article>aside,
   .article>section {
-    width: 100%;
+    max-width: 100%;
   }
 
   .article>aside {
@@ -2725,7 +2725,7 @@ h4~.social .social__link:hover {
 
 .no-image .section {
   display: flex;
-  width: 100%;
+  max-width: 100%;
   padding: 0;
 }
 
@@ -2733,7 +2733,8 @@ h4~.social .social__link:hover {
   display: table;
   margin: auto 0;
   padding: var(--size);
-  flex: 2;
+  width: 80%;
+  flex: 4;
 }
 
 .no-image .paragraph:first-child {
@@ -2792,7 +2793,7 @@ h4~.social .social__link:hover {
   }
 
   .no-image .paragraph {
-    width: 95%;
+    max-width: 95%;
   }
 }
 
@@ -3240,4 +3241,22 @@ h4~.social .social__link:hover {
 
 .uk-card-media-top img {
   min-height: 240px;
+}
+
+#answer {
+  color: var(--text)
+}
+
+.controlbar #answer {
+  color: #fff;
+}
+
+#loader {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+
+#loader img {
+  width: 25%;
 }

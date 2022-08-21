@@ -13,7 +13,7 @@ class ContactMailer
     /**
      * @var string
      */
-    private static $emailFrom = 'client@ggvloerbekleding.be';
+    private static $emailFrom = '';
     /**
      * @var string
      */
@@ -35,16 +35,16 @@ class ContactMailer
         
         $mailer = new PHPMailer();
         $mailer->isSMTP();
-        $mailer->Host = 'smtp.ggvloerbekleding.be';
+        $mailer->Host = '';
         $mailer->SMTPAuth = true;
         $mailer->Username = self::$emailFrom;
-        $mailer->Password = 'h862f3nj';
-        $mailer->SMTPSecure = 'ssl';
-        $mailer->Port = '465';
+        $mailer->Password = '';
+        $mailer->SMTPSecure = 'tls';
+        $mailer->Port = '587';
         
         $mailer->CharSet = 'UTF-8';
         $mailer->setFrom(self::$emailFrom, 'ggfloors-construct.be');
-        $mailer->addAddress('boris.krasko@icloud.com');
+        $mailer->addAddress('');
         $mailer->isHTML(true);
         $mailer->Subject = "Order from ggfloors-construct.be";
         $mailer->Body = $body;

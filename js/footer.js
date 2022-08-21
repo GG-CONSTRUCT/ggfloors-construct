@@ -68,7 +68,7 @@ Vue.component('footnav', {
             <a class="footnav__link" href="https://www.facebook.com/GGFloorsConstructGG/">Facebook</a>
           </li>
           <li class="footnav__item">
-            <a class="footnav__link" href="https://www.instagram.com/gg_floors_construction/">Instagram</a>
+            <a class="footnav__link" href="https://www.instagram.com/gg_floors_constructions/">Instagram</a>
           </li>
           <li class="footnav__item">
             <a class="footnav__link" href="https://www.linkedin.com/company/ggfloors-construct/">Linkedin</a>
