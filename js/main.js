@@ -441,6 +441,7 @@ const pageTitle = (lang) => {
           break;
 
         case 'vloerder': 
+          get('.paragraph').innerHTML = vloerder[lang];
           getTextContentIn(getAll('.about-gg__activities .list__link'), floorTitle, lang);
           get('.about-gg__activities')
           .lastElementChild.querySelector('a')
