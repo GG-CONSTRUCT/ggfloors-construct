@@ -467,7 +467,7 @@ const pageTitle = (lang) => {
           let titleCapitalize = title[0].toUpperCase() + title.slice(1);
           let titleCurrentLang = arr[arrNL.findIndex(item => titleCapitalize.toLowerCase() === item.toLowerCase())];
           get('h1').textContent = titleCurrentLang;
-          get('h2 b').textContent = titleCurrentLang;
+          if (get('h2 b')) get('h2 b').textContent = titleCurrentLang;
           switch (getPageName()) {
             case 'contactformulier': 
               return false;
