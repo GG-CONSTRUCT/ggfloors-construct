@@ -2387,7 +2387,7 @@ video {
 .about-gg__image {
   padding: 8px;
   background-color: #5078cd;
-  background-image: url(../assets/images/facade-renovation.jpg);
+  background-image: url(../assets/images/gc-den-bussel.jpg);
 }
 
 .vloerder__image {
@@ -2920,7 +2920,7 @@ h4~.social .social__link:hover {
 .location:hover::after {
   font-style: normal;
   margin-left: 16px;
-  content: 'Tiensesteenweg 59, 3010 Leuven, Belgia';
+  content: 'Haachtsebaan 54, 3140 Keerbergen, Belgia';
 }
 
 .over-ons .location:hover::after {
