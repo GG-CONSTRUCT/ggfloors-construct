@@ -313,6 +313,7 @@ h3 {
   background-color: var(--base, #fff);
   justify-content: space-between;
   z-index: 9;
+  transition: all 0.3s ease;
 }
 
 .logo {
