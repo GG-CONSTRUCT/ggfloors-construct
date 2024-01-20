@@ -3,25 +3,30 @@ const translateStartPage = (lang) => {
   get('.about-gg .title').innerHTML = aboutTitle[lang];
   getAll('.paragraph')[0].innerHTML = aboutCompany[lang];
   getAll('.paragraph')[1].textContent = socialMediaInvite[lang];
-  getTextContentIn(getAll('.about-gg .list__link'), activities, lang);
-  get('.about-gg .list__link').textContent += ` (${floorTitle[lang].slice(0, 7).join(', ').toLowerCase()}, ... )`;
-  getTitleAttr(getAll('.flooring-activities__link'), floorTitle[lang].slice(0, 7));
-  get('.about-gg .list')
-  .lastElementChild.querySelector('a')
-  .textContent = `${more[lang]} ...`;
+  
+  const listLinks = getAll('.about-gg .list__link');
+  getTextContentIn(listLinks, activities, lang);
+  listLinks[listLinks.length - 1].textContent += ` (${floorTitle[lang].slice(0, 7).join(', ').toLowerCase()}, ... )`;
+  
+  const flooringLinks = getAll('.flooring-activities__link');
+  getTitleAttr(flooringLinks, floorTitle[lang].slice(0, 7));
+  get('.about-gg .list').lastElementChild.querySelector('a').textContent = `${more[lang]} ...`;
+
   get('.services .title').textContent = servicesTitle[lang];
   get('.about-flooring .title').textContent = activities[lang][0];
   get('.about-flooring .paragraph').innerHTML = aboutFlooring[lang];
-  get('.about-flooring .list')
-  .firstElementChild.querySelector('a')
-  .textContent = `${more[lang]}`;
+  get('.about-flooring .list').firstElementChild.querySelector('a').textContent = `${more[lang]}`;
+
   get('.parallax .title').textContent = flooringOfferTitle[lang].toUpperCase();
   get('.parallax p').textContent = flooringOfferText[lang];
   get('.button-reveal span').textContent = flooringOfferBtn[lang].toUpperCase();
   get('.follow .title').textContent = followTitle[lang];
-  getTextContentIn(getAll('.box-title'), boxTitles, lang);
-  getTextContentOf(getAll('.box-footer span'), boxBtn, lang);
-}
+
+  const boxTitles = getAll('.box-title');
+  const boxFooters = getAll('.box-footer span');
+  getTextContentIn(boxTitles, boxTitles, lang);
+  getTextContentOf(boxFooters, boxBtn, lang);
+};
 
 const cards = get('.cards');
 
