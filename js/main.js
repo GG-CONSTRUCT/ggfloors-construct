@@ -310,25 +310,32 @@ const mobileMenu = get('#mobileMenu');
 const search = get('.search');
 const heroSubtitle = get('.hero__subtitle');
 
+let isNavbarSticky = false;
+
 const getSticky = () => {
   requestAnimationFrame(() => {
-    const isSticky = window.pageYOffset >= sticky;
+    const scrolled = window.pageYOffset;
+    const isSticky = scrolled >= sticky;
 
-    if (isSticky) {
-      navbar.classList.add('sticky');
-      mobileMenu.style.position = 'fixed';
-      mobileMenu.style.top = '64px';
-      search.style.position = 'fixed';
-      search.style.top = '64px';
-    } else {
-      navbar.classList.remove('sticky');
-      mobileMenu.style.position = 'relative';
-      mobileMenu.style.top = '0';
-      search.style.position = 'relative';
-      search.style.top = '0';
+    if (isSticky !== isNavbarSticky) {
+      isNavbarSticky = isSticky;
+
+      if (isSticky) {
+        navbar.classList.add('sticky');
+        mobileMenu.style.position = 'fixed';
+        mobileMenu.style.top = '64px';
+        search.style.position = 'fixed';
+        search.style.top = '64px';
+      } else {
+        navbar.classList.remove('sticky');
+        mobileMenu.style.position = 'relative';
+        mobileMenu.style.top = '0';
+        search.style.position = 'relative';
+        search.style.top = '0';
+      }
     }
 
-    if (window.pageYOffset >= 400) {
+    if (scrolled >= 400) {
       document.querySelectorAll('.dropdown').forEach(dropdown => {
         dropdown.classList.remove('opened');
       });
@@ -339,6 +346,9 @@ const getSticky = () => {
     }
   });
 };
+
+window.addEventListener('scroll', getSticky, { passive: true });
+
 
 window.onscroll = () => getSticky();
 
