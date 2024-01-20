@@ -1626,7 +1626,9 @@ footer {
     position: relative;
   }
 
-  .flooring-activities__icon {
+  .flooring-activities__icon,
+  .icons-block i,
+  .icons-block img {
     filter: invert(75%);
   }
 
