@@ -382,7 +382,7 @@ h3 {
 .topnav__item {
   position: relative;
   display: flex;
-  height: 100%;
+  height: calc(100% + 1px);
   padding: var(--size, 16px);
   align-items: center;
 }
