@@ -2160,8 +2160,22 @@ video {
 
   .startpage .hero {
     background-image: none;
+    min-height: 191px;
+    height: 191px;
+  }
+}
+
+@media (max-width: 403px) {
+  .startpage .hero {
     min-height: 215px;
     height: 215px;
+  }
+}
+
+@media (max-width: 342px) {
+  .startpage .hero {
+    min-height: 250px;
+    height: 250px;
   }
 }
 
