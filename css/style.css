@@ -1908,6 +1908,12 @@ video {
   color: #eee;
 }
 
+@media (max-width: 500px) {
+  .controlbar a {
+    display: none;
+  }
+}
+
 .contact-formular .footnote,
 .contact-formular textarea::placeholder {
   color: var(--text);
