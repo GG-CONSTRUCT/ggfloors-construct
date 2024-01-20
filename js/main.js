@@ -303,55 +303,6 @@ const getNav = (lang) => {
   getFootNav(lang.toLowerCase());
 }
 
-// Sticky
-const navbar = get('.navbar');
-const sticky = navbar.offsetTop;
-const mobileMenu = get('#mobileMenu');
-const search = get('.search');
-const heroSubtitle = get('.hero__subtitle');
-
-let isNavbarSticky = false;
-
-const getSticky = () => {
-  requestAnimationFrame(() => {
-    const scrolled = window.pageYOffset;
-    const isSticky = scrolled >= sticky;
-
-    if (isSticky !== isNavbarSticky) {
-      isNavbarSticky = isSticky;
-
-      if (isSticky) {
-        navbar.classList.add('sticky');
-        mobileMenu.style.position = 'fixed';
-        mobileMenu.style.top = '64px';
-        search.style.position = 'fixed';
-        search.style.top = '64px';
-      } else {
-        navbar.classList.remove('sticky');
-        mobileMenu.style.position = 'relative';
-        mobileMenu.style.top = '0';
-        search.style.position = 'relative';
-        search.style.top = '0';
-      }
-    }
-
-    if (scrolled >= 400) {
-      document.querySelectorAll('.dropdown').forEach(dropdown => {
-        dropdown.classList.remove('opened');
-      });
-    }
-
-    if (heroSubtitle) {
-      heroSubtitle.style.transform = isSticky ? 'translateY(8px) scale(1.1)' : 'translateY(0) scale(1)';
-    }
-  });
-};
-
-window.addEventListener('scroll', getSticky, { passive: true });
-
-
-window.onscroll = () => getSticky();
-
 // Socials
 const socialLists = getAll('.social__list');
 const mail = get('.e-mail');
