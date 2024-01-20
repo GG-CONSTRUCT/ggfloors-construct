@@ -307,19 +307,18 @@ h3 {
   position: sticky;
   top: 0;
   display: flex;
-  height: calc(var(--topbar-heigth, 40px) * var(--ratio));
+  height: 64px;
   padding: 0 var(--padding, 16px);
   border-bottom: 1px solid var(--base-border, #eee);
   background-color: var(--base, #fff);
   justify-content: space-between;
   z-index: 9;
-  transition: all 0.3s ease;
 }
 
 .logo {
   display: inline-flex;
   flex-direction: column;
-  height: calc(var(--topbar-heigth, 40px) * var(--ratio));
+  height: 64px;
   justify-content: space-around;
   align-items: center;
 }
