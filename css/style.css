@@ -1749,7 +1749,6 @@ footer {
 
 .controlbar {
   min-height: var(--topbar-heigth);
-  padding: 104px calc(var(--padding) / 2) 0;
   border-top: 1px solid var(--base-shadow);
   border-bottom: 1px solid var(--base-shadow);
   background-color: var(--blue);
@@ -1897,7 +1896,7 @@ video {
 }
 
 @media (max-width: 500px) {
-  .controlbar a {
+  .controlbar {
     display: none;
   }
 }
