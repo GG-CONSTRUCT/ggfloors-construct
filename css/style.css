@@ -681,12 +681,6 @@ h3 {
   user-select: none;
 }
 
-@media (max-width: 500px), print {
-  .search {
-    transition: .5s all;
-  }
-}
-
 .search input[type='checkbox'] {
   position: absolute;
   z-index: 1;
