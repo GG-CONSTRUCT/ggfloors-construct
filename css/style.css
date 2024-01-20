@@ -1513,6 +1513,8 @@ footer {
   top: 0;
   width: 100%;
   max-width: 1980px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ::-webkit-scrollbar {
@@ -2241,7 +2243,6 @@ video {
   .hero__title,
   .hero__subtitle {
     font-size: 24px;
-    transform: translateY(-8px) scale(1.1);
   }
 }
 
