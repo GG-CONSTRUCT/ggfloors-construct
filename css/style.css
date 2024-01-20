@@ -2142,8 +2142,14 @@ video {
 }
 
 @media (max-width: 490px), print {
- .hero {
+  .hero {
     background-image: url('../assets/images/hero/hero-min.jpg');
+  }
+
+  .startpage .hero {
+    background-image: none;
+    min-height: 215px;
+    height: 215px;
   }
 }
 
@@ -2214,6 +2220,7 @@ video {
   .hero__title,
   .hero__subtitle {
     font-size: 24px;
+    transform: translateY(-8px) scale(1.1);
   }
 }
 
