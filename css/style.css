@@ -1633,7 +1633,6 @@ footer {
   z-index: 1;
   padding: 8px var(--padding);
   color: var(--text);
-  border-bottom: 1px solid var(--base-shadow);
   background-color: var(--beige);
 }
 
@@ -1756,7 +1755,6 @@ footer {
 
 .heading~.article {
   margin-top: 0;
-  border-top: 1px solid var(--base-shadow);
 }
 
 .heading~.article>.section {
