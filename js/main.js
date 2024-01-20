@@ -360,7 +360,7 @@ class Link {
   }
 }
 
-const email = new Link('email', 'mailto:gg.gmail.com');
+const email = new Link('email', 'mailto:ggfloorsconstruct@gmail.com');
 email.createLink(mail);
 
 const print = new Link('print', 'javascript:window.print()');
