@@ -2673,6 +2673,10 @@ video {
   padding-left: 40px;
 }
 
+.about-gg__activities.list li:hover {
+  max-width: 100%;
+}
+
 .list_contact li:hover {
   cursor: default;
   transform: translateX(0);
