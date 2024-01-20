@@ -2148,28 +2148,10 @@ video {
 
   .startpage .hero {
     background-image: none;
-    min-height: 191px;
-    height: 191px;
+    min-height: 104px;
+    height: 104px;
   }
 }
-
-@media (max-width: 403px) {
-  .startpage .hero {
-    min-height: 215px;
-    height: 215px;
-  }
-}
-
-@media (max-width: 342px) {
-  .startpage .hero {
-    min-height: 250px;
-    height: 250px;
-  }
-}
-
-/* html[lang='nl'].dark .hero {
-  background-image: url(../assets/images/background.svg);
-} */
 
 .hero__heading {
   font-family: 'Raleway', sans-serif;
@@ -2177,7 +2159,6 @@ video {
   z-index: 1;
   bottom: 0;
   width: 100%;
-  /* max-width: 700px; */
   max-width: 800px;
   padding: var(--size, 16px * 1) var(--size, 16px) 0;
   text-align: center;
