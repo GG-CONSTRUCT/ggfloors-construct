@@ -6,7 +6,7 @@
 
 ## [Netlify](https://ggfloors-construct.netlify.app)
 
-<!-- ![Desktop - 1440](https://user-images.githubusercontent.com/59699177/154823201-e8e6a76c-7e47-4acd-be01-120b78ee8a9b.png) -->
+## [Test topnav](https://ggfloors-construct.netlify.app/socials/)
 
 <img width="998" alt="gg" src="https://github.com/GG-CONSTRUCT/ggfloors-construct/assets/59699177/5f08e0b1-dc45-4182-8ecf-71ee4416c4da">
 
