@@ -68,7 +68,7 @@ Vue.component('footnav', {
             <a class="footnav__link" href="https://www.facebook.com/GGFloorsConstructGG/">Facebook</a>
           </li>
           <li class="footnav__item">
-            <a class="footnav__link" href="https://www.instagram.com/gg_floors_constructions/">Instagram</a>
+            <a class="footnav__link" href="https://www.instagram.com/ggfloorsconstruct/">Instagram</a>
           </li>
           <li class="footnav__item">
             <a class="footnav__link" href="https://www.linkedin.com/company/ggfloors-construct/">Linkedin</a>
@@ -134,14 +134,14 @@ Vue.component('basement', {
             Ontworpen door GitHub.com
             </a>
           </li>
-          <!-- <li class="legal__item">
+          <li class="legal__item">
             <a class="legal__link" href="#bottom" onclick="document.body.classList.toggle('test')">
             Test
             </a>
           </li>
           <li class="legal__item">
             <a href="#bottom" onclick="localStorage.clear()">Clear</a>
-          </li> -->
+          </li>
         </ul>
       </div>
       <div class="social social_size_s">

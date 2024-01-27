@@ -1,0 +1,108 @@
+const navigation  = {
+  nl: {
+    0: 'Home',
+    1: 'Over ons',
+    2: 'Activiteiten',
+    3: 'Referenties',
+    4: 'Nieuws',
+    5: 'Vacatures',
+    6: 'Contact',
+  },
+  en: {
+    0: 'Home',
+    1: 'About us',
+    2: 'Activities',
+    3: 'References',
+    4: 'News',
+    5: 'Vacancies',
+    6: 'Contact',
+  },
+  fr: {
+    0: 'Maison',
+    1: 'À propos de nous',
+    2: 'Activités',
+    3: 'Références',
+    4: 'Actualités',
+    5: 'Vacances',
+    6: 'Contacter',
+  },
+  de: {
+    0: "Zuhause",
+    1: 'Über uns',
+    2: 'Aktivitäten',
+    3: 'Referenzen',
+    4: 'Neuigkeiten',
+    5: "Urlaub",
+    6: "Kontakt",
+  },
+};
+
+const activities = {
+  nl: {
+    0: 'Vloerder',
+    1: 'Schilderwerken',
+    2: 'Gyprocwerken',
+    3: 'Pleisterwerken',
+    4: 'Terrassen en opritten',
+    5: 'Dakwerken',
+    6: 'Crepi',
+    7: 'Renovatie',
+    8: 'Nieuwbouw',
+    9: 'Alle dossiers...',
+  },
+  en: {
+    0: 'Floor',
+    1: 'Painting',
+    2: 'Gyproc works',
+    3: 'Plastering',
+    4: 'Terraces and driveways',
+    5: 'Roofing works',
+    6: 'Facades',
+    7: 'Renovation',
+    8: 'New construction',
+    9: 'All...',
+  },
+  fr: {
+   0: 'Revêtement de sol',
+   1: 'Peintures',
+   2: 'Gyproc Works',
+   3: 'Plâtrage',
+   4: 'Terrasses et allées',
+   5: 'Travaux de toiture',
+   6: 'Façades',
+   7: 'Rénovation',
+   8: 'Nouvelle construction',
+   9: 'Tous les fichiers...',
+  },
+  de: {
+   0: 'Etage',
+   1: 'Malerei',
+   2: 'Gyproc-Arbeiten',
+   3: 'Verputzen',
+   4: 'Terrassen und Einfahrten',
+   5: 'Dachwerk',
+   6: 'Crepi',
+   7: 'Renovierung',
+   8: 'Neubau',
+   9: 'Alle Dateien...',
+   },
+}
+
+const topbar = {
+  nl: {
+    0: 'Onze Partners',
+    1: 'Contact',
+  },
+  en: {
+    0: 'Our Partners',
+    1: 'Contact',
+  },
+  fr: {
+    0: 'Nos partenaires',
+    1: 'Contact',
+  },
+  de: {
+     0: 'Unsere Partner',
+     1: 'Kontakt',
+   },
+}
