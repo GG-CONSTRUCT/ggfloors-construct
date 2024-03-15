@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Topbar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="glyphter-font/css/gg-font.css">
+  <link rel="stylesheet" href="dropdown.css">
+</head>
+<body>
+  <div class="dropdown">
+    <div class="select select-language">
+      <div class="select__trigger">
+        <span>nl</span>
+        <div class="arrow"></div>
+      </div>
+      <div class="options">
+        <span class="option selected" data-value="nl">nl</span>
+        <span class="option" data-value="en">en</span>
+        <span class="option" data-value="fr">fr</span>
+        <span class="option" data-value="de">de</span>
+      </div>
+    </div>
+  </div>
+  <div class="dropdown">
+    <div class="select partners">
+      <div class="select__trigger">
+        <span>Partners</span>
+        <div class="arrow"></div>
+      </div>
+      <div class="options"></div>
+    </div>
+  </div>
+  <div class="social social_size_s">
+    <ul class="social__list"></ul>
+  </div>
+  <div class="social">
+    <ul class="social__list"></ul>
+  </div>
+  <div class="social social_size_l">
+    <ul class="social__list"></ul>
+  </div>
+  <div class="topbar">
+    <div class="flex-container">
+      <div class="dropdown">
+      <div class="select partners">
+        <div class="select__trigger">
+          <span>Onze partners</span>
+          <b class="arrow"></b>
+        </div>
+        <div class="options"></div>
+      </div>
+    </div>
+     &nbsp;&nbsp;<b>|</b>&nbsp;&nbsp;
+    <a class="topbar__link" href="#">Contact</a>
+    </div>
+    <div class="flex-container">
+      <div class="social social_size_s">
+      <ul class="social__list"></ul>
+    </div>
+    <div class="dropdown">
+      <div class="select select-language">
+        <div class="select__trigger">
+          <span>nl</span>
+          <b class="arrow"></b>
+        </div>
+        <div class="options">
+          <span class="option selected" data-value="nl">nl</span>
+          <span class="option" data-value="en">en</span>
+          <span class="option" data-value="fr">fr</span>
+          <span class="option" data-value="de">de</span>
+        </div>
+      </div>
+    </div>
+</div>
+  </div>
+  <div class="topnav flex-container">
+    <a class="logo link-to-home" href="#">
+      <img class="logo__icon" src="icons/logo.svg" alt="">
+      <span class="logo__title">GG Floors & Construct</span>
+    </a>
+    <nav>
+      <ul class="topnav__items">
+        <li class="topnav__item"><a class="topnav__link" href="#">Home</a></li>
+        <li class="topnav__item"><a class="topnav__link" href="#">Over ons</a></li>
+        <li class="topnav__item hasChild"><a class="topnav__link" href="#">Activiteiten</a>
+          <b class="arrow"></b>
+          <ul class="topnav__items_dropdown">
+            <li class="topnav__item"><a class="topnav__link_child" href="#">Vloerder</a></li>
+            <li class="topnav__item"><a class="topnav__link_child" href="#">Schilderwerken</a></li>
+            <li class="topnav__item"><a class="topnav__link_child" href="#">Gyprocwerken</a></li>
+            <li class="topnav__item"><a class="topnav__link_child" href="#">Pleisterwerken</a></li>
+            <li class="topnav__item"><a class="topnav__link_child" href="#">Terrassen en opritten</a></li>
+            <li class="topnav__item"><a class="topnav__link_child" href="#">Dakwerken</a></li>
+            <li class="topnav__item"><a class="topnav__link_child" href="#">Crepi</a></li>
+            <li class="topnav__item"><a class="topnav__link_child" href="#">Renovatie</a></li>
+            <li class="topnav__item"><a class="topnav__link_child" href="#">Nieuwbouw</a></li>
+            <li class="topnav__item"><a class="topnav__link_child" href="#">Alle dossiers...</a></li>
+          </ul>
+        </li>
+        <li class="topnav__item"><a class="topnav__link" href="#">Referenties</a></li>
+        <li class="topnav__item"><a class="topnav__link" href="#">Nieuws</a></li>
+        <li class="topnav__item"><a class="topnav__link" href="#">Vacatures</a></li>
+        <li class="topnav__item"><a class="topnav__link" href="#">Contact</a></li>
+      </ul>
+      <button class="toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="topnav__items_mobile">
+        <li class="topnav__item"><a class="topnav__link" href="#">Home</a></li>
+        <li class="topnav__item"><a class="topnav__link" href="#">Over ons</a></li>
+        <li class="topnav__item"><a class="topnav__link" href="#">Activiteiten</a></li>
+        <li class="topnav__item"><a class="topnav__link" href="#">Referenties</a></li>
+        <li class="topnav__item"><a class="topnav__link" href="#">Nieuws</a></li>
+        <li class="topnav__item"><a class="topnav__link" href="#">Vacatures</a></li>
+        <li class="topnav__item"><a class="topnav__link" href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <button>Phone</button>
+    <button>Search</button>
+  </div>
+  <div style="height: 200vh;"></div>
+  <script src="socials.js"></script>
+  <script src="partners.js"></script>
+  <script src="data.js"></script>
+  <script src="nav.js"></script>
+</body>
+</html>

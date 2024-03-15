@@ -303,43 +303,6 @@ const getNav = (lang) => {
   getFootNav(lang.toLowerCase());
 }
 
-// Sticky
-const navbar = get('.navbar');
-const sticky = navbar.offsetTop;
-const mobileMenu = get('#mobileMenu');
-const search = get('.search');
-const heroSubtitle = get('.hero__subtitle');
-
-const getSticky = () => {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add('sticky');
-    mobileMenu.style.position = 'fixed';
-    mobileMenu.style.top = '64px';
-    search.style.position = 'fixed';
-    search.style.top = '64px';
-  } else {
-    navbar.classList.remove('sticky');
-    mobileMenu.style.position = 'relative';
-    mobileMenu.style.top = '0';
-    search.style.position = 'relative';
-    search.style.top = '0';
-  }
-  if (window.pageYOffset >= 400) {
-    for (const dropdown of document.querySelectorAll('.dropdown')) {
-      dropdown.classList.remove('opened');
-    }
-  }
-  if (heroSubtitle) {
-    if (window.pageYOffset > 300) {
-      heroSubtitle.style.transform = 'translateY(8px) scale(1.1)';
-    } else {
-      heroSubtitle.style.transform = 'translateY(0) scale(1)';
-    }
-  }
-}
-
-window.onscroll = () => getSticky();
-
 // Socials
 const socialLists = getAll('.social__list');
 const mail = get('.e-mail');
@@ -348,7 +311,7 @@ const toPrint = get('.to-print');
 const socials = {
   facebook: 'GGFloorsConstructGG',
   linkedin: 'company/ggfloors-construct',
-  instagram: 'gg_floors_constructions',
+  instagram: 'ggfloorsconstruct',
 }
 
 class Social {
@@ -397,99 +360,84 @@ class Link {
   }
 }
 
-const email = new Link('email', 'mailto:gg.gmail.com');
+const email = new Link('email', 'mailto:ggfloorsconstruct@gmail.com');
 email.createLink(mail);
 
 const print = new Link('print', 'javascript:window.print()');
 print.createLink(toPrint);
 
-const getPageName = () => window.location.pathname
-.slice(window.location.pathname
-.lastIndexOf('/') + 1)
-.replace('.html', '');
-
+const getPageName = () => window.location.pathname.slice(window.location.pathname.lastIndexOf('/') + 1).replace('.html', '');
 
 const pageTitle = (lang) => {
-  let cardTitle, cardTitles;
-  switch (getPageName()) {
-    case 'index':
-      return false
-      break;
-    case 'home': 
-      return false
-      break;
-    case 'index':
-      return false
-      break;
-    case '': 
-      return false
-      break
-    default:
-      let arrNL = [...navigation.nl, ...activities.nl, ...floorTitle.nl, ...contact.nl];
-      let arr = [...navigation[lang], ...activities[lang], ...floorTitle[lang], ...contact[lang]];
-      let title = getPageName().replace(/-/g, ' ');
+  if (getPageName() !== 'index' && getPageName() !== 'home' && getPageName() !== '') {
+    let arrNL = [...navigation.nl, ...activities.nl, ...floorTitle.nl, ...contact.nl];
+    let arr = [...navigation[lang], ...activities[lang], ...floorTitle[lang], ...contact[lang]];
+    let title = getPageName().replace(/-/g, ' ');
+    title = (title === 'mozaiek') ? title.replace('i', 'ï') : title;
+    let titleTransform = title[0].toUpperCase() + title.slice(1);
 
-      switch (title) {
-        case 'mozaiek':
-         title.replace('i', 'ï');
-        case 'vloerbekleding':
-          cardTitles = getAll('.uk-card-title');
-          getTextContentIn(cardTitles, floorTitle, lang);
-          for (cardTitle of cardTitles) {
-            cardTitle.nextElementSibling.innerHTML = eval(cardTitle.title.replace(/ /g, ''))[lang].substring(0, 160) + '...';
-          }
-          break;
+    if (titleTransform == 'Vloerbekleding') titleTransform = 'Vloerder';
 
-        case 'vloerder': 
-          get('.paragraph').innerHTML = vloerder[lang];
-          getTextContentIn(getAll('.about-gg__activities .list__link'), floorTitle, lang);
-          get('.about-gg__activities')
+    let titleForCurrentLang = arr[arrNL.findIndex(item => titleTransform.toLowerCase() === item.toLowerCase())];
+
+    get('h1').textContent = titleForCurrentLang;
+
+    if (getPageName() !== 'contactformulier' && getPageName() !== 'activiteiten' && getPageName() !== 'vloerbekleding') {
+      (title == 'over ons') ? get('h2').textContent = aboutTitle[lang] : (get('h2 b')) ? get('h2 b').textContent = titleForCurrentLang : '';
+
+      for (let img of getAll('#gallery .grid img')) {
+        img.alt = titleForCurrentLang;
+      }
+
+      for (let achor of getAll('#gallery .grid a')) {
+        achor.dataset.caption = titleForCurrentLang;
+      }
+
+      let pageName = getPageName().replace(/-/g, '');
+
+      (title == 'bel ons' || title == 'bedrijfsgegevens') ? get('h2').textContent = ' ' + eval(pageName + 'Title')[lang] : '';
+
+      if (getPageName() == 'nieuws') get('.hero__copy').textContent = eval(pageName)[lang];
+
+      if (get('.paragraph')) get('.paragraph').innerHTML = eval(pageName)[lang];
+
+      if (get('.list_contact')) getInnerHtmlIn(getAll('.list__item_data'), eval(pageName), lang);
+
+      if (get('.submit-app')) get('.submit-app').textContent = submitApp[lang].toUpperCase();
+
+      if (title == 'over ons') {
+        getAll('.paragraph')[1].textContent = socialMediaInvite[lang];
+        getTextContentIn(getAll('.about-gg__activities .list__link'), activities, lang);
+        get('.about-gg__activities .list__link').textContent += ` (${floorTitle[lang].slice(0, 7).join(', ').toLowerCase()}, ... )`;
+        getTitleAttr(getAll('.flooring-activities__link'), floorTitle[lang].slice(0, 7));
+      }
+
+      if (title == 'vloerder') {
+        getTextContentIn(getAll('.about-gg__activities .list__link'), floorTitle, lang);
+        get('.about-gg__activities')
           .lastElementChild.querySelector('a')
           .textContent = `${more[lang]} ...`;
-          break;
-
-        case 'over ons': 
-          get('h2').textContent = aboutTitle[lang]
-          getAll('.paragraph')[1].textContent = socialMediaInvite[lang];
-          getTextContentIn(getAll('.about-gg__activities .list__link'), activities, lang);
-          get('.about-gg__activities .list__link').textContent += ` (${floorTitle[lang].slice(0, 7).join(', ').toLowerCase()}, ... )`;
-          getTitleAttr(getAll('.flooring-activities__link'), floorTitle[lang].slice(0, 7));
-          break;
-
-        case 'activiteiten' || 'alle dossiers': 
-          cardTitles = getAll('.uk-card-title');
-          getTextContentIn(cardTitles, activities, lang);
-          for (cardTitle of cardTitles) {
-            cardTitle.nextElementSibling.innerHTML = eval(cardTitle.title.replace(/ /g, ''))[lang].substring(0, 200) + '...';
-          }
-          break;
-        default:
-          let titleCapitalize = title[0].toUpperCase() + title.slice(1);
-          let titleCurrentLang = arr[arrNL.findIndex(item => titleCapitalize.toLowerCase() === item.toLowerCase())];
-          get('h1').textContent = titleCurrentLang;
-          if (get('h2 b')) get('h2 b').textContent = titleCurrentLang;
-          switch (getPageName()) {
-            case 'contactformulier': 
-              return false;
-              break;
-            case 'vloerbekleding': 
-              return false;
-              break;
-            default: 
-              for (let img of getAll('#gallery .grid img')) {
-                img.alt = titleCurrentLang;
-              }
-              for (let achor of getAll('#gallery .grid a')) {
-                achor.dataset.caption = titleCurrentLang;
-              }
-              let pageName = getPageName().replace(/-/g, '');
-              if (getPageName() == 'nieuws') get('.hero__copy').textContent = eval(pageName)[lang];
-              if (get('.paragraph')) get('.paragraph').innerHTML = eval(pageName)[lang];
-              if (get('.list_contact')) getInnerHtmlIn(getAll('.list__item_data'), eval(pageName), lang);
-              if (get('.submit-app')) get('.submit-app').textContent = submitApp[lang].toUpperCase();
-            }
-            break
       }
+    }
+
+    if (title == 'activiteiten' || title == 'alle dossiers') {
+      console.log(title);
+      let cardTitles = getAll('.uk-card-title');
+      getTextContentIn(cardTitles, activities, lang);
+
+      for (let cardTitle of cardTitles) {
+        cardTitle.nextElementSibling.innerHTML = eval(cardTitle.title.replace(/ /g, ''))[lang].substring(0, 200) + '...';
+      }
+    }
+
+    if (title == 'vloerbekleding') {
+      let cardTitles = getAll('.uk-card-title');
+      getTextContentIn(cardTitles, floorTitle, lang);
+
+      for (let cardTitle of cardTitles) {
+        cardTitle.nextElementSibling.innerHTML = eval(cardTitle.title.replace(/ /g, ''))[lang].substring(0, 160) + '...';
+      }
+    }
   }
 }
 
